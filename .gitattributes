@@ -1,0 +1,2 @@
+RememberMe/Assets/Environments/MexicanCity/Textures/HouseTextureMasterPSD.psd filter=lfs diff=lfs merge=lfs -text
+RememberMe/Assets/Environments/MexicanCity/Scene/MexicanCity/LightingData.asset filter=lfs diff=lfs merge=lfs -text
