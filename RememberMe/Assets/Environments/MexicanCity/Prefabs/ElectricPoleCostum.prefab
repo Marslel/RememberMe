@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4322589336457453365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8995832108928043674}
+  m_Layer: 0
+  m_Name: ElectricPoleCostum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8995832108928043674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322589336457453365}
+  m_LocalRotation: {x: 0.40821797, y: -0.23456967, z: 0.10938164, w: 0.87542605}
+  m_LocalPosition: {x: 1.8599997, y: 11.120004, z: -6.790001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1049641938396640}
+  - {fileID: 6177050104763469777}
+  - {fileID: 6591663045541362111}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1049641938730354
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8995832108928043674}
+    m_Modifications:
+    - target: {fileID: 109872, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_Name
+      value: ElectricityPole01
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.662671
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.173613
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.335859
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.33036602
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9076734
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.24321035
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.088521324
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+--- !u!4 &1049641938396640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+  m_PrefabInstance: {fileID: 1049641938730354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6177050104763063909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8995832108928043674}
+    m_Modifications:
+    - target: {fileID: 169448, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_Name
+      value: ElectricityWire
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.119194
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.320503
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.017492294
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30649805
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8420966
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4170079
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.15177839
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -82.689
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+--- !u!4 &6177050104763469777 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 414132, guid: 38187d74fea125549adca92e5a8838c2, type: 3}
+  m_PrefabInstance: {fileID: 6177050104763063909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6591663045540897069
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8995832108928043674}
+    m_Modifications:
+    - target: {fileID: 109872, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_Name
+      value: ElectricityPole01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.982111
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.58529
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0047016144
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.32687742
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.89808846
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27651283
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.100642405
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.226
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+--- !u!4 &6591663045541362111 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 465042, guid: dc075bb721d06c14bb200dfdd09e207b, type: 3}
+  m_PrefabInstance: {fileID: 6591663045540897069}
+  m_PrefabAsset: {fileID: 0}
