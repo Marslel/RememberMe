@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
  //Add this Script Directly to The Death Zone
-public class SawSoundController : MonoBehaviour
+public class AudioOnCollision : MonoBehaviour
 {
 	public AudioClip saw;    // Add your Audi Clip Here;
 
