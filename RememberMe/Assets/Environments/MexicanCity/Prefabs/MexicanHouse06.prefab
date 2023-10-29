@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 485010}
   - component: {fileID: 3391030}
   - component: {fileID: 2359990}
+  - component: {fileID: 6745889666034271334}
   m_Layer: 0
   m_Name: MexicanHouse06
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6745889666034271334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.458365, y: 5.372389, z: 4.122012}
+  m_Center: {x: -0.00000047683716, y: 0, z: 2.0609946}
