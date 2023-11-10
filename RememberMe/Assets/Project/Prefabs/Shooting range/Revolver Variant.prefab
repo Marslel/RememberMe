@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6929508767645665350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2082, y: -0.0476, z: 0}
+  m_LocalPosition: {x: -0.20819998, y: -0.0476, z: 0}
   m_LocalScale: {x: 0.10132, y: 0.29263747, z: 0.11501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1420644797282032309}
-  m_RootOrder: 0
+  m_Father: {fileID: 5504647791747721481}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &539940915299144311
 BoxCollider:
@@ -73,7 +73,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4162309805930483208}
   - {fileID: 6392020966317423928}
   m_Father: {fileID: 5504647791747721481}
   m_RootOrder: 0
@@ -108,7 +107,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1420644797282032309}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!65 &6737298090269294163
 BoxCollider:
@@ -180,7 +179,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: da01b15729aefeb429cacdd764a2e450, type: 2}
     - target: {fileID: 919132149155446097, guid: a19d2da931e9a7946baefbab93b19e76, type: 3}
       propertyPath: m_Name
-      value: Revolver
+      value: Revolver Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19d2da931e9a7946baefbab93b19e76, type: 3}
