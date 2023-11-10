@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1531113383685766043}
-  startTime: 0
+  startTime: 38
   audioSpeed: 2
 --- !u!111 &6310937711591681527
 Animation:
