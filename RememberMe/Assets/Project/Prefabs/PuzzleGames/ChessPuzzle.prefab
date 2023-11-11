@@ -69,7 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3043779555354701008}
   m_Layer: 0
-  m_Name: Chess
+  m_Name: ChessPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,7 +6,7 @@ public class CalcForceOfRope : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    HingeJoint hingeJoint;
+    HingeJoint hinJoint;
 
     [SerializeField]
     Animation anim;
@@ -19,7 +19,7 @@ public class CalcForceOfRope : MonoBehaviour
 
     void Start()
     {
-        startForce = hingeJoint.currentForce;
+        startForce = hinJoint.currentForce;
         // anim = gameObject.GetComponent<Animation>();
 
     }
@@ -33,7 +33,7 @@ public class CalcForceOfRope : MonoBehaviour
             return;
         }
 
-        curForce = hingeJoint.currentForce;
+        curForce = hinJoint.currentForce;
         if(curForce.z > startForce.z + 50){
             Debug.Log("Current force: " + curForce.z );
             anim.Play("Bell");
