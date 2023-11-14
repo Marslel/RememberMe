@@ -4553,6 +4553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e6d0fb4a0ab9148a12f4a6bc6287e6, type: 3}
+--- !u!59 &544841459 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 7550323140823551662, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+  m_PrefabInstance: {fileID: 1177296565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &555849712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9213,6 +9218,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Church_Bell
       objectReference: {fileID: 0}
+    - target: {fileID: 8286224967046927495, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: hinJoint
+      value: 
+      objectReference: {fileID: 544841459}
+    - target: {fileID: 8378706580814291966, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d2bbbd01c5b7a6b4bb5a1316f21fc1ff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
 --- !u!1001 &1191001220
@@ -13719,6 +13732,10 @@ PrefabInstance:
     - target: {fileID: 5183528848138298425, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
       propertyPath: m_Name
       value: ChessPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111067215692614387, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
+      propertyPath: whitePlayers.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
