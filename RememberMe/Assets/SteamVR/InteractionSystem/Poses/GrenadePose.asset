@@ -96,7 +96,7 @@ MonoBehaviour:
     pinkyFingerMovementType: 2
     ignoreRootPoseData: 1
     ignoreWristPoseData: 1
-    position: {x: -0.011057403, y: -0.009645041, z: -0.14749119}
+    position: {x: -0.011057384, y: -0.0096451035, z: -0.14749123}
     rotation: {x: -0.024889965, y: -0.047168545, z: 0.8833779, w: 0.46561697}
     bonePositions:
     - {x: -0, y: 0, z: 0}
