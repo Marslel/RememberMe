@@ -10,15 +10,22 @@ public class Non_VR_Player_Interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E)){
-            float interactRange = 2f;
+        
+       /*     float interactRange = 2f;
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
             foreach (Collider collider in colliderArray){
                 if (collider.TryGetComponent(out NPCInteractable npcInteractable)){
                     npcInteractable.Interact();
                 }
             }
-        }
+
+        */
+            Collider[] colliderArray2 = Physics.OverlapSphere(transform.position, 0.5f);
+            foreach (Collider collider in colliderArray2){
+                if (collider.TryGetComponent(out HandInteractable handInteractable)){
+                    handInteractable.Interact();
+                }
+            }
     }
     public NPCInteractable GetInteractableObject(){
         float interactRange = 2f;
