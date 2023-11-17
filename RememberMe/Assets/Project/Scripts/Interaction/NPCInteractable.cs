@@ -19,7 +19,7 @@ public class NPCInteractable : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other){
+    public void OnTriggerStay(Collider other){
         Debug.Log("Object entered");
         dm.ShowDialog(transform.position);
         npcHeadLookAt.LookAtPosition(interactorTransform.position);

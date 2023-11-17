@@ -5,7 +5,7 @@ public class DialogManager : MonoBehaviour
 {
     public Text dialogText;
     public GameObject containerGameObject;
-    public Non_VR_Player_Interact playerInteract;
+    public Transform playerInteract;
     
 
 
@@ -33,7 +33,7 @@ public class DialogManager : MonoBehaviour
 
         // Setze die Position des Dialogfensters
         transform.position = dialogPosition;
-        transform.LookAt(playerInteract.transform);
+        transform.LookAt(playerInteract);
         containerGameObject.SetActive(true);
     }
 
