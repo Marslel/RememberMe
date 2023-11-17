@@ -9,25 +9,29 @@ public class SpawnBullet : MonoBehaviour
 
     public float initlialSpeed;
 
+    private GameObject newBullet;
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
             Spawn();
-            Invoke("DestroyObject", 3f);
+            Invoke("Sleep", 3f);
         }
     }
 
     public void Spawn(){
-        
-        GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody>().velocity = transform.forward * initlialSpeed;
-        newBullet.transform.parent = transform;
+        Invoke("DestroyObject", 3f);
         
     }
 
     void DestroyObject(){
-        Destroy(bullet);
+        Destroy(newBullet);
+    }
+
+    void Sleep(){
+        Debug.Log("Cooldown");
     }
 }
