@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bb5b267ec40b447be8f625d8685ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hingeJoint: {fileID: 7550323140823551662}
+  hinJoint: {fileID: 7550323140823551662}
   anim: {fileID: 6310937711591681527}
 --- !u!1 &4030341592084581089 stripped
 GameObject:
