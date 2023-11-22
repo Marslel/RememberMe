@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -760,7 +760,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79403878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133999826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -2637,7 +2637,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293701273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -6692,7 +6692,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822210445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -8980,6 +8980,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 498688, guid: 1503c3d6cb3d856439a9b17a26e10fe2, type: 3}
   m_PrefabInstance: {fileID: 1149618263}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1151910902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9022324458558345893, guid: 117dc82ed3ba37446bc953ea7188adab, type: 3}
+  m_PrefabInstance: {fileID: 481784344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1151910906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151910902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99f51d7c2b8f93449cca76c3eec80a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1154557280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9129,6 +9146,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 414658354}
     m_Modifications:
+    - target: {fileID: 1710336073751061122, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2307895988607918716, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: m_Animation
       value: 
@@ -9213,6 +9234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Church_Bell
       objectReference: {fileID: 0}
+    - target: {fileID: 8286224967046927495, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: hinJoint
+      value: 
+      objectReference: {fileID: 1755425285}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
 --- !u!1001 &1191001220
@@ -10719,6 +10744,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8965266533993451608, guid: 0a8867ca06b37cb4297d4c5914f3e114, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a8867ca06b37cb4297d4c5914f3e114, type: 3}
 --- !u!4 &1407091506 stripped
@@ -10839,6 +10868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleportarea
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a897b229b521d544a09301f92ad46d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a897b229b521d544a09301f92ad46d7, type: 3}
 --- !u!1 &1444067534 stripped
@@ -10853,7 +10886,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444067534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -13210,6 +13243,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489590, guid: c6a14b5af53301e45b50ad1ac1b3f934, type: 3}
   m_PrefabInstance: {fileID: 1754112054}
   m_PrefabAsset: {fileID: 0}
+--- !u!59 &1755425285 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 7550323140823551662, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+  m_PrefabInstance: {fileID: 1177296565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1760899941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 404776, guid: f8c20c6b3f45c054da38d190b8c20b44, type: 3}
@@ -13719,6 +13757,10 @@ PrefabInstance:
     - target: {fileID: 5183528848138298425, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
       propertyPath: m_Name
       value: ChessPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788733117894095979, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d63a555f0de7c45833736d68a0b9a2, type: 3}
@@ -14469,7 +14511,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 417e639b66cd3a24e9c5312be99ce3bd, type: 2}
+  - {fileID: 2100000, guid: d2bbbd01c5b7a6b4bb5a1316f21fc1ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14990,7 +15032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066606572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84a4f15a3179f1d4993aded11f4d0232, type: 3}
   m_Name: 
@@ -15925,6 +15967,10 @@ PrefabInstance:
     - target: {fileID: 3851977878260880146, guid: 8a2a8996eda5a224aad65a7b61bc2a96, type: 3}
       propertyPath: m_Name
       value: Teleporting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3851977878260880146, guid: 8a2a8996eda5a224aad65a7b61bc2a96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a2a8996eda5a224aad65a7b61bc2a96, type: 3}
