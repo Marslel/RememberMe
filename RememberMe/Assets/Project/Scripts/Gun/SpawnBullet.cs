@@ -5,33 +5,34 @@ using UnityEngine;
 public class SpawnBullet : MonoBehaviour
 {
     public GameObject bullet;
-
-
     public float initlialSpeed;
-
     private GameObject newBullet;
-
+    private bool canSpawn = true;
+    public int maxBullets = 0;
+    public int shootBullets = 0;
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(canSpawn && Input.GetKeyDown(KeyCode.Space) && shootBullets < maxBullets){
             Spawn();
-            Invoke("Sleep", 3f);
+            StartCoroutine(StartCooldown());
+            shootBullets++;
         }
     }
 
     public void Spawn(){
         newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody>().velocity = transform.forward * initlialSpeed;
-        Invoke("DestroyObject", 3f);
-        
     }
 
     void DestroyObject(){
         Destroy(newBullet);
     }
 
-    void Sleep(){
-        Debug.Log("Cooldown");
+    IEnumerator StartCooldown(){
+        canSpawn = false;
+        yield return new WaitForSeconds(2);
+        DestroyObject();
+        canSpawn = true;
     }
 }

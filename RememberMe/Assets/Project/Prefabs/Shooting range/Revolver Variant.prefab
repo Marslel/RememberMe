@@ -264,6 +264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8845273530902966381, guid: 8eb38bb4469e1c04db4c711a8285ebb3, type: 3}
   initlialSpeed: 10
+  maxBullets: 6
+  shootBullets: 0
 --- !u!114 &3003412237663898627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundClip: {fileID: 8300000, guid: 809438c214d33a1418ceec205d4869a0, type: 3}
   volume: 0.01
+  objectWithBulletSpawn: {fileID: 8831058615872066706}
 --- !u!82 &5105303073732012130
 AudioSource:
   m_ObjectHideFlags: 0
