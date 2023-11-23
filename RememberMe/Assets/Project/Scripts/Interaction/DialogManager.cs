@@ -33,7 +33,11 @@ public class DialogManager : MonoBehaviour
 
         // Setze die Position des Dialogfensters
         transform.position = dialogPosition;
+
+
         transform.LookAt(playerInteract);
+        
+        
         containerGameObject.SetActive(true);
     }
 

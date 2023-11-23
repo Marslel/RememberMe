@@ -19,14 +19,19 @@ public class NPCInteractable : MonoBehaviour
         
     }
 
+    
+
+
     public void OnTriggerStay(Collider other){
         Debug.Log("Object entered");
         dm.ShowDialog(transform.position);
         npcHeadLookAt.LookAtPosition(interactorTransform.position);
 
     }
+    
     public void OnTriggerExit (Collider other){
         Debug.Log("Object left");
         dm.HideDialog();
+        npcHeadLookAt.isLookingAtPosition = false;
     }
 }
