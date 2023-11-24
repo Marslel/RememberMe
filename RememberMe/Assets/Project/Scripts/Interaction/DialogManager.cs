@@ -39,6 +39,9 @@ public class DialogManager : MonoBehaviour
         containerGameObject.SetActive(false);
     }
 
+    public void exitDialogue(){
+        pd.textComponent.text = string.Empty;
+    }
     
     
 

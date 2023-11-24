@@ -6942,7 +6942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerGameObject: {fileID: 608844952}
-  playerInteract: {fileID: 1536267552}
+  playerInteract: {fileID: 242881954}
   pd: {fileID: 1438411467}
 --- !u!1 &822210445
 GameObject:
@@ -7735,7 +7735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 121078, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Head
       objectReference: {fileID: 0}
     - target: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
@@ -7747,15 +7751,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.285
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.362
+      value: 5.491
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7005
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12170,11 +12174,6 @@ MonoBehaviour:
   chController: {fileID: 1427472361}
   speedUpDown: 20
   FPSInput: {fileID: 0}
---- !u!4 &1536267552 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6838575778314346524, guid: 3bba0182104debe41bac07dc1d99f0d0, type: 3}
-  m_PrefabInstance: {fileID: 6838575779698012309}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1536267555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12523,7 +12522,7 @@ PrefabInstance:
     - target: {fileID: 42762270635062840, guid: d41bb32a5c4044747b4e2d8483a600cb, type: 3}
       propertyPath: interactorTransform
       value: 
-      objectReference: {fileID: 1536267552}
+      objectReference: {fileID: 242881954}
     - target: {fileID: 42762270635062840, guid: d41bb32a5c4044747b4e2d8483a600cb, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: hey was geht
@@ -16724,7 +16723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838575778411352292, guid: 3bba0182104debe41bac07dc1d99f0d0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838575778411352295, guid: 3bba0182104debe41bac07dc1d99f0d0, type: 3}
       propertyPath: m_RootOrder
