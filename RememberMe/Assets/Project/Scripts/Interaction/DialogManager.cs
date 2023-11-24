@@ -3,22 +3,10 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    public Text dialogText;
     public GameObject containerGameObject;
     public Transform playerInteract;
-    
+    public PanelDialogue pd;
 
-
- /* void Update(){
-        if(playerInteract.GetInteractableObject() != null){
-            ShowDialog(playerInteract.GetInteractableObject().transform.position);
-        }
-        else{
-            HideDialog();
-        }
-        }
-
-*/
      public void Start(){
 
         containerGameObject.SetActive(false);
@@ -26,7 +14,7 @@ public class DialogManager : MonoBehaviour
      }
     public void ShowDialog( Vector3 npcPosition)
     {
-        //dialogText.text = text;
+        
 
         // Position des Dialogfensters relativ zur Position des NPCs
         Vector3 dialogPosition = npcPosition + new Vector3(0f, 2.5f, 0f);
@@ -37,8 +25,13 @@ public class DialogManager : MonoBehaviour
 
         transform.LookAt(playerInteract);
         
-        
+    }
+    public void beginDialogue(string[] dialogue){
         containerGameObject.SetActive(true);
+        pd.textComponent.text = string.Empty;
+        pd.dialogueLines = dialogue;
+        pd.startDialogue();
+
     }
 
     public void HideDialog()

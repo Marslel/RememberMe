@@ -19,13 +19,14 @@ public class Non_VR_Player_Interact : MonoBehaviour
                 }
             }
 
-        */
+        
             Collider[] colliderArray2 = Physics.OverlapSphere(transform.position, 0.5f);
             foreach (Collider collider in colliderArray2){
                 if (collider.TryGetComponent(out HandInteractable handInteractable)){
                     handInteractable.Interact();
                 }
             }
+         */   
     }
     public NPCInteractable GetInteractableObject(){
         float interactRange = 2f;

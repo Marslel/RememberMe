@@ -8,6 +8,7 @@ public class NPCInteractable : MonoBehaviour
     private Animator animator;
     private NPCHeadLookAt npcHeadLookAt;
     public DialogManager dm;
+    public string[] dialogue;
 
     private void Awake(){
         animator = GetComponent<Animator>();
@@ -20,10 +21,12 @@ public class NPCInteractable : MonoBehaviour
     }
 
     
+    public void OnTriggerEnter(Collider other){
+        dm.beginDialogue(dialogue);
+    }
 
 
     public void OnTriggerStay(Collider other){
-        Debug.Log("Object entered");
         dm.ShowDialog(transform.position);
         npcHeadLookAt.LookAtPosition(interactorTransform.position);
 

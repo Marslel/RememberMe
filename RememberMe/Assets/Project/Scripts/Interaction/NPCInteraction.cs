@@ -5,6 +5,7 @@ public class NPCInteraction : MonoBehaviour
 {
      public DialogManager dialogManager;
     public float interactDistance = 0.5f;
+    
 
     private void HandHoverUpdate(Hand hand)
     {
