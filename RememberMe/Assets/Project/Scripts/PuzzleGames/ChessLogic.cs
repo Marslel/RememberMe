@@ -17,6 +17,8 @@ public class ChessLogic : MonoBehaviour
     [SerializeField]
     List<GameObject> blackPlayers = new List<GameObject>();
     
+    [SerializeField]
+    Collectables col;
 
     List<Vector3> startPosBlack;
     List<Quaternion> startRotBlack;
@@ -24,15 +26,17 @@ public class ChessLogic : MonoBehaviour
     int startX;
     int startY;
     float distance;
+    bool solved;
     Vector3 startPos;
     Quaternion startRot;
+
 
     ChessTile endTilePiece;
 
     // Start is called before the first frame update
     void Start()
-    {
-
+    {   
+        solved = false;
         cp = chessPlayer.GetComponent<ChessPlayer>();
         endTilePiece = endTile.GetComponent<ChessTile>();
         startPosBlack = new List<Vector3>();
@@ -58,9 +62,11 @@ public class ChessLogic : MonoBehaviour
 
         ChessPlayer incomeCP = figure.GetComponent<ChessPlayer>();
 
-        if(incomeTile == endTilePiece && incomeCP.currPlayer == cp.currPlayer && incomeCP.currPlayerColor == cp.currPlayerColor){
+        if(!solved && incomeTile == endTilePiece && incomeCP.currPlayer == cp.currPlayer && incomeCP.currPlayerColor == cp.currPlayerColor){
 
             Debug.Log("Position found: " + chessPlayer.transform.position );
+            col.addPuzzlePiece();
+            solved = true;
         }else if(incomeTile == endTilePiece && incomeCP.currPlayerColor != cp.currPlayerColor){
             Debug.Log("You ar not Black!");
         }
