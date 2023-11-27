@@ -6,7 +6,10 @@ public class Collectables : MonoBehaviour
 {
     [SerializeField]
     List<GameObject> puzzleObjects = new List<GameObject>();
-
+    [SerializeField]
+    public Data_Storage data_Storage;
+    [SerializeField]
+    public GameObject time;
 
     ArrayList puzzleparts = new ArrayList();
     int countPiece;
@@ -20,6 +23,10 @@ public class Collectables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(data_Storage != null){
+            data_Storage.time = time.GetComponent<Timer>().timeRemaining;
+        }
         
     }
 

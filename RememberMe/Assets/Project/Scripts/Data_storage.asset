@@ -20,3 +20,4 @@ MonoBehaviour:
   chess: 0
   bell: 0
   alpaca: 0
+  time: 6000

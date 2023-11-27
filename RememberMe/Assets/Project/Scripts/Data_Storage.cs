@@ -20,6 +20,8 @@ public class Data_Storage : ScriptableObject {
      [SerializeField] public bool bell = false;
      [SerializeField] public bool alpaca = false;
 
+     [SerializeField] public float time;
+
      public void updatePuzzlesSolved(int num){
             puzzlesSolved += num;
      }
@@ -38,6 +40,10 @@ public class Data_Storage : ScriptableObject {
             this.chess = chess;
             this.bell = bell;
             this.alpaca = alpaca;
+     }
+
+     public void adaptTimer(float timeToReduce){
+       time -= timeToReduce;
      }
 
 }
