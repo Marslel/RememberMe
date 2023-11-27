@@ -23,7 +23,7 @@ public class Collectables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //update the remaining time in Data Storage scriptable Object
         if(data_Storage != null){
             data_Storage.time = time.GetComponent<Timer>().timeRemaining;
         }
