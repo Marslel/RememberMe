@@ -7454,6 +7454,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1427472361}
     m_Modifications:
+    - target: {fileID: 100470, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Name
       value: VR_Player
@@ -7473,6 +7477,34 @@ PrefabInstance:
     - target: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 129006, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 165334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 167242, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 171246, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 177230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
@@ -7517,6 +7549,14 @@ PrefabInstance:
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013428287994, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014277073068, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
@@ -8740,8 +8780,10 @@ MonoBehaviour:
   - {fileID: 5085522859649220366, guid: 6d942a087e0d73749a58b1b83cb7264d, type: 3}
   - {fileID: 5085522859649220366, guid: 6d942a087e0d73749a58b1b83cb7264d, type: 3}
   - {fileID: 5085522859649220366, guid: 6d942a087e0d73749a58b1b83cb7264d, type: 3}
+  - {fileID: 5085522859649220366, guid: 6d942a087e0d73749a58b1b83cb7264d, type: 3}
   alpacaTreat: {fileID: 0}
   treatCollected: 0
+  alpacaIgnorePlayer: 0
 --- !u!1001 &1111429533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10962,7 +11004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a897b229b521d544a09301f92ad46d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a897b229b521d544a09301f92ad46d7, type: 3}
       propertyPath: m_LocalPosition.z
