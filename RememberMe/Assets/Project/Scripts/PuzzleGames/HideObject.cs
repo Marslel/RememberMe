@@ -35,11 +35,11 @@ public class HideObject : MonoBehaviour
         customRenderer.enabled = true;
         var renderers = gameObject.GetComponentsInChildren<Renderer>();
         foreach (Renderer r in renderers) {
-            r.enabled = !r.enabled;
+            r.enabled = true;
         }
         var lights = gameObject.GetComponentsInChildren<Light>();
         foreach (Light l  in lights) {
-            l.enabled = visibleAtStart;
+            l.enabled = true;
         }
            
     }
@@ -55,7 +55,7 @@ public class HideObject : MonoBehaviour
         }
         var lights = gameObject.GetComponentsInChildren<Light>();
         foreach (Light l  in lights) {
-            l.enabled = visibleAtStart;
+            l.enabled = false;
         }
 
     }
