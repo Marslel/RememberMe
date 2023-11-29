@@ -22,9 +22,12 @@ public class NPCInteractable : MonoBehaviour
 
     
     public void OnTriggerEnter(Collider other){
+       
         if(other.gameObject.CompareTag("Head")){
+       
             dm.beginDialogue(dialogue);
         }
+        
         
     }
 
@@ -40,5 +43,6 @@ public class NPCInteractable : MonoBehaviour
         dm.HideDialog();
         dm.exitDialogue();
         npcHeadLookAt.isLookingAtPosition = false;
+        animator.SetTrigger("Dances");
     }
 }
