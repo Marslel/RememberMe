@@ -23,7 +23,7 @@ public class Update_Maze_Status : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
 
-        if(other.tag == "Player"){
+        if(other.tag == "Head"){
 
             if(data_Storage != null){
                 data_Storage.updateMazeWon(true);
