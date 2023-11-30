@@ -31,6 +31,8 @@ public class Timer : MonoBehaviour
             if(totaltime < timeRemaining){
                 timeRemaining = totaltime;
             }
+        }else if(currentScene.name == "Mainscene"){
+            timeRemaining = data_Storage.time;
         }
         
     }

@@ -79,7 +79,7 @@ public class AlpacaWalkBehaviour : MonoBehaviour
 
      private void OnTriggerEnter(Collider other){
         
-        if(col!=null && other.tag == "Player" && !col.alpacaIgnorePlayer){
+        if(col!=null && other.tag == "Head" && !col.alpacaIgnorePlayer){
 
         if(alpacca != null &&!col.treatCollected){
             // alpaca runs away from player
@@ -99,7 +99,7 @@ public class AlpacaWalkBehaviour : MonoBehaviour
 
         private void OnTriggerStay(Collider other){
         
-        if(col!=null && other.tag == "Player"&& !col.alpacaIgnorePlayer){
+        if(col!=null && other.tag == "Head" && !col.alpacaIgnorePlayer){
 
         if(alpacca != null &&!col.treatCollected){
             // alpaca runs away from player

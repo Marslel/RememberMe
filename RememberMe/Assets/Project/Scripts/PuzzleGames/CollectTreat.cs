@@ -17,14 +17,9 @@ public class CollectTreat : MonoBehaviour
     {
         
     }
-     private void OnTriggerEnter(Collider other){
-        
-        if(col!=null && other.tag == "Player"){
-
-            col.collectTreat();
-            this.GetComponent<HideObject>().makeInvisible();
-
-        }
+     public void collectTreat(){
+        col.collectTreat();
+        this.GetComponent<HideObject>().makeInvisible();
      }
 
 }

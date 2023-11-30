@@ -30,7 +30,7 @@ public class ChangeHat : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        if(other.tag == "Player" && !hatSwapped){
+        if(other.tag == "Head" && !hatSwapped){
             pos = alpacaHat.transform.position;
             rot = alpacaHat.transform.rotation;
             newHat.transform.position = pos;

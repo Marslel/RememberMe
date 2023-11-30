@@ -10,7 +10,7 @@ public class TeleportLadderUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
 
-        if(other.tag == "Player"){
+        if(other.tag == "Head"){
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             UnityEngine.Vector3 currPos = player.transform.position;
             teleportPosition = new UnityEngine.Vector3(currPos.x ,currPos.y + 6, currPos.z -2);
