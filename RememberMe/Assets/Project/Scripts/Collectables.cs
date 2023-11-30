@@ -13,6 +13,10 @@ public class Collectables : MonoBehaviour
     public bool treatCollected;
     public bool alpacaIgnorePlayer;
 
+    [SerializeField]
+    public Data_Storage data_Storage;
+    [SerializeField]
+    public GameObject time;
 
     ArrayList puzzleparts = new ArrayList();
     int countPiece;
@@ -28,6 +32,10 @@ public class Collectables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //update the remaining time in Data Storage scriptable Object
+        if(data_Storage != null){
+            data_Storage.time = time.GetComponent<Timer>().timeRemaining;
+        }
         
     }
 

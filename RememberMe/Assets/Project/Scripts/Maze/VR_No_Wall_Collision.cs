@@ -19,6 +19,7 @@ public class VR_No_Wall_Collision : MonoBehaviour
         if(Physics.CheckSphere(transform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore)){
             cameraFade(1f);
             isCameraFadedOut = true;
+            print("i hit the wall");
         }else{
             if(!isCameraFadedOut){
                 return;

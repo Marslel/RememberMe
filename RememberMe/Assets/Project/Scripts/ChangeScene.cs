@@ -26,10 +26,10 @@ public class ChangeScene : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
+Debug.Log("irgebndways gefunden auf zum Maze :" + other.tag + other.name);
+        if(other.tag == "Head"){
 
-        if(other.tag == "Player"){
-
-        
+            Debug.Log("Player gefunden auf zum Maze");
                 SceneManager.LoadScene(sceneName);
             
         }
