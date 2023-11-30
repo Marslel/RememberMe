@@ -1,35 +1,8 @@
 fileFormatVersion: 2
 guid: 4f322962346480e4fa9326ce2eddead7
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable:
-  - first:
-      74: 1989289236423521904
-    second: Default
-  - first:
-      74: -1334897793117029260
-    second: AlpacaDance
-  - first:
-      74: -3100369314251171874
-    second: AlpacaIdle
-  - first:
-      74: -4259275128050659460
-    second: AlpacaIdleLookAround
-  - first:
-      74: 6273140199887260497
-    second: AlpacaJumpFWD
-  - first:
-      74: 8521470458871766595
-    second: AlpacaJumpUp
-  - first:
-      74: 5522812681064789136
-    second: AlpacaRun
-  - first:
-      74: 3242377777057648195
-    second: AlpacaTurnOnSpot90
-  - first:
-      74: 2667949614841947897
-    second: AlpacaWalk
+  serializedVersion: 21300
+  internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -37,7 +10,7 @@ ModelImporter:
       name: Alpaca
     second: {fileID: 2100000, guid: d8660ed9e48b3384abb01b56389cdbf0, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -46,6 +19,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -331,24 +305,32 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 0
   tangentSpace:
@@ -361,7 +343,6 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -379,8 +360,12 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
