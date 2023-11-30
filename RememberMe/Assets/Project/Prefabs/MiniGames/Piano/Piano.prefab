@@ -167,6 +167,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: e64b8d830b2ef7b47a6dac0c0ed2baec, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &6260126162831953795
 AudioSource:
   m_ObjectHideFlags: 0
@@ -430,6 +431,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 1a06c4574133c5c4c8528d3cd8c3047a, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2293641532709515503
 AudioSource:
   m_ObjectHideFlags: 0
@@ -693,6 +695,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: c9ed8e743356452489c8d0a48f853485, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3861149984981850130
 AudioSource:
   m_ObjectHideFlags: 0
@@ -956,6 +959,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: f9e0596dfe936ef47b77df50f2b8a7ea, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &7125398782750816267
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1219,6 +1223,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 134a88de6e24bac4aafa1fb04dcb9dbf, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &6314754325525334260
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1482,6 +1487,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 4f20d3dcdf40e4f44983185e77ff1ed7, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5318468075657710363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2008,6 +2014,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 47b8d2f7390798148a8b85bc88f5d9e5, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2813891614117261732
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2271,6 +2278,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: d8a10a9f9fca3a04eb9b1d2bdf17af29, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3823272908279713645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2534,6 +2542,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: fa491c0016582e244b59f89b866b632a, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5543833345996613443
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2797,6 +2806,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 9f384a6653537314898e73575d30ff60, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &1723298335188782915
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3060,6 +3070,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 37eca504a128e8e4d8934a871ea490b6, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2919753783973370676
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3323,6 +3334,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 68dad3c68d92322468993784c9348220, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &277291878430973473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3586,6 +3598,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 4888433e7873a6d4db17182d9915fe28, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &1590387262253028676
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3849,6 +3862,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 62ba82ff24cf384448a02e7cd9e80087, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &1883188665121865378
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4112,6 +4126,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 95f5e9f48fbeace49bfd69eefbff2d8c, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3743249841540715060
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4375,6 +4390,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 59b5141b206d941419d8c74f36f96ee8, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &4461610862362795082
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4638,6 +4654,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: a4d50330aa716fc4cba109c3a5eaddfe, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2362849096039282707
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4901,6 +4918,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 3fe841fc9f2e23049acaaf34fce4e55a, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2084385220612734027
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5164,6 +5182,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: b9f64096490cb5749bf6928ca67c55cd, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2712054876278822285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5427,6 +5446,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: df2fd1ebc5c70c74a9ff9472ab8a6d5e, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &1105462646802432430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5690,6 +5710,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 92beebcad05519f489f8e5c3adade305, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3860083513374401986
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5953,6 +5974,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 06f6b73b977cc8c4d922208ad788c8a3, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5050275754864133646
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6216,6 +6238,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 00965613986fc9143b88d4f5fe31e5b8, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &4366905367017146223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6479,6 +6502,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 6ffc59abc8240c140bf863f7d89fef60, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5595625606589488636
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6742,6 +6766,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 030527aec2fe16f409d9710f421631e1, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3177618329639055548
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7005,6 +7030,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 5879b3ec6485ec142871c132c7360d18, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &8336531470397082563
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7268,6 +7294,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 152db7348bc6e6446b0daa0c2b57f379, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5007056675272186247
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7531,6 +7558,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 9e31bb4b032b6fa4491a515be92c821b, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &811263861519392407
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7794,6 +7822,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 59ff7abff840d6147b66a48c9d296c28, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3972995351600892346
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8057,6 +8086,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 1639715c84cf64b409f9ef23f1fd964e, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3017118791279144673
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8320,6 +8350,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 65da79ac79d801e41a32189b6f650be9, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3182573904992285948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8583,6 +8614,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 95d132a24540ba9429ec9dbe574d2c4f, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &6676488952295888753
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8846,6 +8878,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: f5906bddc15af854abf19396261d3503, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &4257079721461568125
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9109,6 +9142,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: bb8dac382a64f9543bba8e756f9100c9, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3465530317694157083
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9372,6 +9406,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 47ce3c1d95aa734488df09c073022fc0, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &7388886298727319817
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9635,6 +9670,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: fd4c74d75d9de644fa55cc696bea93b4, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5693819176556891069
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9898,6 +9934,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 1fb5eb991765be047a1eba59fbd7b3f7, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5367899206200029028
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10161,6 +10198,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 8057e53a4dd123841a328bcf9da6c8ba, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &7512498370435778849
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10424,6 +10462,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 8cf1e49981f5a4c40b0a1580c584be39, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &532619798530276645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10687,6 +10726,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 01d0fd0eb4a834e4b9697b95c5e4970f, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &6412353244912917736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10950,6 +10990,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 9e70cc8441f3d354fa3b9c2b7836f620, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &6018398505821608508
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11213,6 +11254,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: f175323ac26a1dc4c808020828a524db, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3435343428250931696
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11476,6 +11518,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: b8a348c56c498904183e9684764da5c3, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &3437150167298531483
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11739,6 +11782,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: e58187dfc71b9c046b6027ccf3d726a6, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2526516739982240022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12002,6 +12046,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 041ecfac7850f9d4d9c7707be6868425, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2627080429861071766
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12265,6 +12310,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 88696bc13ecab7b488589e69954a2ab7, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &150666256710844388
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12528,6 +12574,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 80b6b03c2ffaae14a8acb6699dac9554, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &5467020858560668471
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12791,6 +12838,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 34bab346df8c87a44aed813b661b1d68, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2102400635123288492
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13054,6 +13102,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 856c7f747a674cd42a1cb9b110ea8b54, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &4169470269264710649
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13317,6 +13366,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 224091b85e49878458267383a527bb64, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2218023722627964291
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13580,6 +13630,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 8bcc5555cd59d0e4594eb848d1293a9b, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &1100839605507012955
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13843,6 +13894,7 @@ MonoBehaviour:
   saw: {fileID: 8300000, guid: 006e09e0212b2af4d8a9d28f86f48b7d, type: 3}
   chosen: 0
   timer: 0
+  eighthNotePrefab: {fileID: 0}
 --- !u!82 &2558917711463470831
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14050,4 +14102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentKey: {fileID: 0}
+  numberOfKeys: 5
+  keyRange: 10
+  inputTime: 10000
   IsSequenceGoing: 0

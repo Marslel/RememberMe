@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class ShowSequence : MonoBehaviour
 {
-    public static int TIME = 5000;
+    private static int SHOWTIME = 5000;
 
     [HideInInspector]
     public GameObject currentKey;
+
+    [Min (1)]
+    public int numberOfKeys = 5;
+
+    [Range (0, 26)]
+    public int keyRange = 15;
+
+    [Min (1)]
+    public int inputTime = 10000;
 
     GameObject lastKey;
 
@@ -16,6 +25,7 @@ public class ShowSequence : MonoBehaviour
     System.DateTime timer;
     bool IsPlayerTrying = false;
     bool modifiable = true;
+    int keyCount = 0;
 
     void Update()
     {
@@ -25,7 +35,7 @@ public class ShowSequence : MonoBehaviour
             {
                 ChangeColor(currentKey, Color.blue);
 
-                if(System.DateTime.Now < timer.AddMilliseconds(TIME))
+                if(System.DateTime.Now < timer.AddMilliseconds(inputTime))
                 {
                     if(rightKey.HasValue)
                     {
@@ -39,24 +49,43 @@ public class ShowSequence : MonoBehaviour
             }
             else
             {
-                if ( System.DateTime.Now > timer.AddMilliseconds(TIME))
-                { 
-                    ChangeColor(currentKey, Color.white);
-                    for(int i = 1; i < 53; i++)
+                if ( System.DateTime.Now > timer.AddMilliseconds(SHOWTIME))
+                {
+                    keyCount++;
+                    if(keyCount == numberOfKeys)
                     {
-                        ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.white);
+                        for (int i = 1; i < 53; i++)
+                        {
+                            ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.green);
+                            timer = System.DateTime.Now;
+                        }
                     }
-                    if (rightKey.Value)
+                    else if(keyCount >= numberOfKeys)
                     {
-                        currentKey = GetRandomKey();
-                        IsPlayerTrying = true;
-                        rightKey = null;
-                        timer = System.DateTime.Now;
-                        modifiable = true;
+                        for (int i = 1; i < 53; i++)
+                        {
+                            ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.white);
+                        }
+                        IsSequenceGoing = false;
                     }
                     else
                     {
-                        IsSequenceGoing = false;
+                        for(int i = 1; i < 53; i++)
+                        {
+                            ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.white);
+                        }
+                        if (rightKey.Value)
+                        {
+                            currentKey = GetRandomKey();
+                            IsPlayerTrying = true;
+                            rightKey = null;
+                            timer = System.DateTime.Now;
+                            modifiable = true;
+                        }
+                        else
+                        {
+                            IsSequenceGoing = false;
+                        }
                     }
                 }
             }
@@ -72,12 +101,13 @@ public class ShowSequence : MonoBehaviour
         IsSequenceGoing = true;
         IsPlayerTrying = true;
         rightKey = null;
+        keyCount = 0;
     }
 
     GameObject GetRandomKey()
     {
         // Finde das andere Objekt mit dem Namen "AnderesObjekt"
-        int id = new System.Random().Next(1, 53);
+        int id = new System.Random().Next(27 - keyRange, 27 + keyRange);
         return GameObject.Find("props_148key" + id.ToString());
     }
 
