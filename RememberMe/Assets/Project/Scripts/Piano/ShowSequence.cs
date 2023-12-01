@@ -104,6 +104,8 @@ public class ShowSequence : MonoBehaviour
     public Vector3 vec1;
     public Vector3 vec2;
 
+    UnityEngine.Vector3 teleportPosition;
+
     void OnCollisionEnter()  //Plays Sound Whenever collision detected
     {
         currentKey = GetRandomKey();
@@ -114,6 +116,11 @@ public class ShowSequence : MonoBehaviour
         rightKey = null;
         keyCount = 0;
 
+
+            player = GameObject.FindGameObjectWithTag("Player");
+            UnityEngine.Vector3 currPos = player.transform.position;
+            teleportPosition = new UnityEngine.Vector3(currPos.x ,currPos.y - 6, currPos.z);
+            player.transform.position = cameraHolder.transform.position;
         //vec1 = new Vector3(0.0f, 1.02f, 16.2f);
         //player.transform.position = vec1;
         //vec2 = new Vector3(0.0f, 0.0f, 0.0f);
@@ -124,6 +131,9 @@ public class ShowSequence : MonoBehaviour
     {
         // Finde das andere Objekt mit dem Namen "AnderesObjekt"
         int id = new System.Random().Next(27 - keyRange, 27 + keyRange);
+        while (id % 2 != 0){
+            id = new System.Random().Next(27 - keyRange, 27 + keyRange); 
+        }
         return GameObject.Find("props_148key" + id.ToString());
     }
 
@@ -132,10 +142,10 @@ public class ShowSequence : MonoBehaviour
         // Versuche, den Renderer des letzten Objekts zu erhalten
         Renderer lastObjectRenderer = gameObject.GetComponent<Renderer>();
 
-        // Überprüfe, ob ein Renderer vorhanden ist
+        // ï¿½berprï¿½fe, ob ein Renderer vorhanden ist
         if (lastObjectRenderer != null)
         {
-            // Ändere das Material des gefundenen Objekts
+            // ï¿½ndere das Material des gefundenen Objekts
             lastObjectRenderer.material.color = color;
         }
         else
