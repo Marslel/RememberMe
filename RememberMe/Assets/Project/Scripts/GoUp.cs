@@ -15,6 +15,13 @@ public class GoUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        obj.transform.position += Vector3.up * speed;
+        if(obj != null)
+        {
+            obj.transform.position += Vector3.up * speed;
+        }
+        else
+        {
+            gameObject.transform.position += Vector3.up * speed;
+        }
     }
 }
