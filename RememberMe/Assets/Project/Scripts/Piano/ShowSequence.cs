@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowSequence : MonoBehaviour
 {
-    private static int SHOWTIME = 5000;
+    public int SHOWTIME = 5000;
 
     [HideInInspector]
     public GameObject currentKey;
@@ -19,6 +19,10 @@ public class ShowSequence : MonoBehaviour
     public int inputTime = 10000;
 
     GameObject lastKey;
+
+    public GameObject player;
+    public GameObject bench;
+    public GameObject cameraHolder;
 
     public bool? rightKey = null;
     public bool IsSequenceGoing = false;
@@ -44,7 +48,13 @@ public class ShowSequence : MonoBehaviour
                 }
                 else
                 {
-                    IsSequenceGoing = false;
+                    rightKey = false;
+                    IsPlayerTrying = false;
+                    for (int i = 1; i < 53; i++)
+                    {
+                        ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.red);
+                    }
+                    timer = System.DateTime.Now;
                 }
             }
             else
@@ -52,7 +62,7 @@ public class ShowSequence : MonoBehaviour
                 if ( System.DateTime.Now > timer.AddMilliseconds(SHOWTIME))
                 {
                     keyCount++;
-                    if(keyCount == numberOfKeys)
+                    if(keyCount == numberOfKeys && rightKey.Value == true)
                     {
                         for (int i = 1; i < 53; i++)
                         {
@@ -60,7 +70,7 @@ public class ShowSequence : MonoBehaviour
                             timer = System.DateTime.Now;
                         }
                     }
-                    else if(keyCount >= numberOfKeys)
+                    else if(keyCount >= numberOfKeys && rightKey.Value == true)
                     {
                         for (int i = 1; i < 53; i++)
                         {
@@ -91,7 +101,8 @@ public class ShowSequence : MonoBehaviour
             }
         }
     }
-
+    public Vector3 vec1;
+    public Vector3 vec2;
 
     void OnCollisionEnter()  //Plays Sound Whenever collision detected
     {
@@ -102,6 +113,11 @@ public class ShowSequence : MonoBehaviour
         IsPlayerTrying = true;
         rightKey = null;
         keyCount = 0;
+
+        vec1 = new Vector3(0.0f, 1.02f, 16.2f);
+        player.transform.position = vec1;
+        vec2 = new Vector3(0.0f, 0.0f, 0.0f);
+        cameraHolder.transform.position = vec2;
     }
 
     GameObject GetRandomKey()
