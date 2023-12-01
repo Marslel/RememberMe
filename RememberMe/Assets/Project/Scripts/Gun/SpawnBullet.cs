@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class SpawnBullet : MonoBehaviour
 {
@@ -10,7 +11,15 @@ public class SpawnBullet : MonoBehaviour
     private bool canSpawn = true;
     public int maxBullets = 0;
     public int shootBullets = 0;
+
+    public SteamVR_TrackedObject trackedObject;
+
+    
     // Update is called once per frame
+    void Start(){
+        trackedObject = GetComponent<SteamVR_TrackedObject>();
+    }
+
     void Update()
     {
         if(canSpawn && Input.GetKeyDown(KeyCode.Space) && shootBullets < maxBullets){

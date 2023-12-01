@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class Can : MonoBehaviour
 {
-    
-    public void OnCollisionEnter(Collision collision){
-        if(collision.gameObject.CompareTag("Bullet")){
+    private bool isCooldownActive = false;
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (!isCooldownActive && collision.gameObject.CompareTag("Bullet"))
+        {
             Debug.Log("Kollision mit: " + collision.gameObject.name);
             WinTheGame.Instance.collectPoints();
             Debug.Log("Punkte: " + WinTheGame.Instance.points);
-        } 
-        StartCoroutine(StartCooldown());  
+
+            // Setze den Cooldown-Zustand auf aktiv und starte die Coroutine
+            isCooldownActive = true;
+            StartCoroutine(StartCooldown());
+        }
     }
 
-    IEnumerator StartCooldown(){
+    IEnumerator StartCooldown()
+    {
         yield return new WaitForSeconds(2);
+
+        // Setze den Cooldown-Zustand nach Ablauf der Zeit zurück
+        isCooldownActive = false;
     }
 }
