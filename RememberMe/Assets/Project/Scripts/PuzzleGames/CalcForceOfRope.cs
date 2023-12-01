@@ -10,16 +10,22 @@ public class CalcForceOfRope : MonoBehaviour
 
     [SerializeField]
     Animation anim;
+    int countBellRinging;
 
+    [SerializeField]
+    Collectables col;
 
     Vector3 startForce = new Vector3(0.0f, 0.0f, 0.0f);
 
     Vector3 curForce = new Vector3(0.0f, 0.0f, 0.0f);
+    bool solved;
 
 
     void Start()
     {
         startForce = hinJoint.currentForce;
+        countBellRinging = 0;
+        solved = false;
         // anim = gameObject.GetComponent<Animation>();
 
     }
@@ -31,12 +37,21 @@ public class CalcForceOfRope : MonoBehaviour
         if (anim.isPlaying)
         {
             return;
+
+        }else{
+            curForce = hinJoint.currentForce;
+            if(curForce.z > startForce.z + 50){
+                Debug.Log("Current force: " + curForce.z );
+                anim.Play("Bell");
+                countBellRinging ++;
+            }
+            if(!solved && countBellRinging == 3){
+                    Debug.Log("You rang the bell 3 times you found a puzzle piece");
+                    col.addPuzzlePiece();
+                    solved = true;
+            }
         }
 
-        curForce = hinJoint.currentForce;
-        if(curForce.z > startForce.z + 50){
-            Debug.Log("Current force: " + curForce.z );
-            anim.Play("Bell");
-        }
+
     }
 }

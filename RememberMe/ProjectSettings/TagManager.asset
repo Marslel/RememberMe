@@ -5,8 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - TestAction
-  - Log
-  - Bullet
+  - Ladder
+  - SceneExit
+  - Head
+  - UICamera
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Wall_Collision_Layer
   - 
   - whatIsGround
   - whatIsPlayer
