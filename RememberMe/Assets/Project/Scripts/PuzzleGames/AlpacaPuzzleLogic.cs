@@ -11,7 +11,13 @@ public class AlpacaPuzzleLogic : MonoBehaviour
     GameObject skellyHat;
 
     [SerializeField]
+    GameObject tempHat;
+
+    [SerializeField]
     Collectables col;
+
+    [SerializeField]
+    Animator anim;
 
     bool puzzleCompleted;
 
@@ -22,15 +28,27 @@ public class AlpacaPuzzleLogic : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        if(other == alpacaHat.GetComponent<Collider>() && !puzzleCompleted){
+        if(!puzzleCompleted && other == alpacaHat.GetComponent<Collider>()){
             alpacaHat.GetComponent<HideObject>().makeInvisible();
-            skellyHat.GetComponent<HideObject>().makeVisible();
-            Debug.Log("You found my Hat thank you!");
-            col.addPuzzlePiece();
-            puzzleCompleted = true;
-            col.alpacaIgnorePlayer = true;
+            //tempHat.GetComponent<HideObject>().makeVisible();
+            anim.Play("Base Layer.transformhat");
+
+
 
         }
     }
+
+public void updateAlpacaPuzzle(){
+    //tempHat.GetComponent<HideObject>().makeInvisible();
+    anim.Play("Base Layer.invisiblehat");
+    skellyHat.GetComponent<HideObject>().makeVisible();
+    Debug.Log("You found my Hat thank you!");
+    
+    tempHat.GetComponent<HideObject>().makeInvisible();
+    col.addPuzzlePiece();
+    puzzleCompleted = true;
+    col.alpacaIgnorePlayer = true;
+}
+
 
 }
