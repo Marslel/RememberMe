@@ -35,4 +35,8 @@ Debug.Log("irgebndways gefunden auf zum Maze :" + other.tag + other.name);
         }
     }
 
+    public void LoadOtherScene(){
+        SceneManager.LoadScene(sceneName);
+    }
+
 }
