@@ -6,6 +6,13 @@ public class Collectables : MonoBehaviour
 {
     [SerializeField]
     List<GameObject> puzzleObjects = new List<GameObject>();
+
+    [SerializeField]
+    GameObject alpacaTreat;
+
+    public bool treatCollected;
+    public bool alpacaIgnorePlayer;
+
     [SerializeField]
     public Data_Storage data_Storage;
     [SerializeField]
@@ -18,6 +25,8 @@ public class Collectables : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         countPiece = 0;
+        treatCollected = false;
+        alpacaIgnorePlayer = false;
     }
 
     // Update is called once per frame
@@ -36,6 +45,12 @@ public class Collectables : MonoBehaviour
 
         Instantiate(puzzleObjects[countPiece], new Vector3(3, 10, 8), Quaternion.identity);
         countPiece ++;
+    }
+
+    public void collectTreat(){
+        treatCollected = true;
+         Debug.Log("You found an alpaca treat");
+        
     }
 }
 

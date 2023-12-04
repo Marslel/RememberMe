@@ -8,6 +8,7 @@ TagManager:
   - Ladder
   - SceneExit
   - Head
+  - UICamera
   layers:
   - Default
   - TransparentFX
