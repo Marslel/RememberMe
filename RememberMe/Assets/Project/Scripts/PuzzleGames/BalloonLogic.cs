@@ -22,6 +22,10 @@ public class BalloonLogic : MonoBehaviour
     GameObject objectToHide;
 
     Vector3 startPos;
+
+    [SerializeField]
+    Data_Storage dataStorage;
+
     bool puzzleCompleted;
 
 
@@ -29,7 +33,15 @@ public class BalloonLogic : MonoBehaviour
     void Start()
     {
         startPos = pos.position;
-        puzzleCompleted = false;
+        puzzleCompleted = dataStorage.balloon;
+        if(puzzleCompleted){
+            neededItem.GetComponent<HideObject>().makeInvisible();
+            objectToHide.GetComponent<HideObject>().chooseVisibleInGame = true;
+            ani.Play("airballoon");
+            objectToHide.GetComponent<HideObject>().makeVisible();
+
+         
+        }
     }
 
     /// <summary>
@@ -46,9 +58,10 @@ public class BalloonLogic : MonoBehaviour
             ani.Play("airballoon");
             col.addPuzzlePiece();
             puzzleCompleted = true;
+            dataStorage.balloon = true;
 
         }
-    }    
+    }
 
     /// <summary>
     /// set the position of the Balloon to the sky

@@ -12,19 +12,25 @@ public class HideObject : MonoBehaviour
     [SerializeField]
     bool visibleAtStart;
     public Renderer customRenderer;
+
+    [SerializeField]
+    public bool chooseVisibleInGame;
     // Start is called before the first frame update
     void Start()
     {   
-        customRenderer = GetComponent<Renderer>();
-        customRenderer.enabled = visibleAtStart;
-        var renderers = gameObject.GetComponentsInChildren<Renderer>();
-        foreach (Renderer r  in renderers) {
-            r.enabled = visibleAtStart;
+        if(!chooseVisibleInGame){
+            customRenderer = GetComponent<Renderer>();
+            customRenderer.enabled = visibleAtStart;
+            var renderers = gameObject.GetComponentsInChildren<Renderer>();
+            foreach (Renderer r  in renderers) {
+                r.enabled = visibleAtStart;
+            }
+            var lights = gameObject.GetComponentsInChildren<Light>();
+            foreach (Light l  in lights) {
+                l.enabled = visibleAtStart;
+            }
         }
-        var lights = gameObject.GetComponentsInChildren<Light>();
-        foreach (Light l  in lights) {
-            l.enabled = visibleAtStart;
-        }
+
         
     }
 
