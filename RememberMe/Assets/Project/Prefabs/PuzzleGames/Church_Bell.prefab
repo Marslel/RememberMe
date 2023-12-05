@@ -1375,6 +1375,7 @@ MonoBehaviour:
   hinJoint: {fileID: 7550323140823551662}
   anim: {fileID: 6310937711591681527}
   col: {fileID: 0}
+  dataStorage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!1 &4030341592084581089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7553238816612254548, guid: c1fcef67e31b68449af55d3f34564cd0, type: 3}
