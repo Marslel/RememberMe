@@ -356,6 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleAtStart: 0
   customRenderer: {fileID: 0}
+  chooseVisibleInGame: 0
 --- !u!1 &811791927984016468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4743,10 +4744,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alpacaHat: {fileID: 4004606794493812030}
+  alHat: {fileID: 2746422782621492308}
   skellyHat: {fileID: 711226657118794417}
   tempHat: {fileID: 6718732817746304634}
   col: {fileID: 0}
   anim: {fileID: 426964551083573523}
+  dataStorage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!1 &6607821260555762568
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleAtStart: 0
   customRenderer: {fileID: 0}
+  chooseVisibleInGame: 0
 --- !u!114 &7514460263888041786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6882,6 +6886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {fileID: 0}
+  dataStorage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1221140144397429171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7016,6 +7021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleAtStart: 1
   customRenderer: {fileID: 0}
+  chooseVisibleInGame: 0
 --- !u!4 &1187712788620358517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014221411770, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
@@ -7050,15 +7056,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5503443614062149624, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.009663345
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5503443614062149624, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00024803606
+      value: 0.056
       objectReference: {fileID: 0}
     - target: {fileID: 5503443614062149624, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.010821663
+      value: -0.015
       objectReference: {fileID: 0}
     - target: {fileID: 5503443614062149624, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7152,6 +7158,10 @@ PrefabInstance:
       propertyPath: visibleAtStart
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7761119736172967041, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
+      propertyPath: chooseVisibleInGame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8807757835925851627, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
       propertyPath: m_Name
       value: SombreroThrowable
@@ -7163,6 +7173,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5503443614062149624, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
   m_PrefabInstance: {fileID: 5595803624328220885}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2746422782621492308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7761119736172967041, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}
+  m_PrefabInstance: {fileID: 5595803624328220885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4004606794493812030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae93ff48480c464db53f18928e741e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4004606794493812030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8807757835925851627, guid: 5be02dcb490cc4e4c9238702a46854bf, type: 3}

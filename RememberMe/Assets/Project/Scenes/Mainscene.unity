@@ -11065,6 +11065,14 @@ PrefabInstance:
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 2746422782621492308, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: visibleAtStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746422782621492308, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: chooseVisibleInGame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3832866989287917066, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: player
       value: 

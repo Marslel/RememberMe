@@ -6,6 +6,8 @@ public class AlpacaPuzzleLogic : MonoBehaviour
 {
     [SerializeField]
     GameObject alpacaHat;
+    [SerializeField]
+    HideObject alHat;
 
     [SerializeField]
     GameObject skellyHat;
@@ -19,12 +21,21 @@ public class AlpacaPuzzleLogic : MonoBehaviour
     [SerializeField]
     Animator anim;
 
+    [SerializeField]
+    Data_Storage dataStorage;
+
     bool puzzleCompleted;
 
     // Start is called before the first frame update
     void Start()
     {
-        puzzleCompleted = false;
+        puzzleCompleted = dataStorage.alpaca;
+        if(puzzleCompleted){
+            
+            alHat.chooseVisibleInGame = true;
+            updateAlpacaPuzzle();
+
+        }
     }
 
     private void OnTriggerEnter(Collider other){
@@ -47,7 +58,10 @@ public void updateAlpacaPuzzle(){
     tempHat.GetComponent<HideObject>().makeInvisible();
     col.addPuzzlePiece();
     puzzleCompleted = true;
+    dataStorage.alpaca = true;
     col.alpacaIgnorePlayer = true;
+    alpacaHat.GetComponent<HideObject>().makeInvisible();
+
 }
 
 

@@ -6,10 +6,16 @@ public class CollectTreat : MonoBehaviour
 {
     [SerializeField]
     Collectables col;
+
+   [SerializeField]
+    Data_Storage dataStorage;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(dataStorage.alpacaTreat){
+         collectTreat();
+        }
     }
 
     // Update is called once per frame
@@ -20,6 +26,7 @@ public class CollectTreat : MonoBehaviour
      public void collectTreat(){
         col.collectTreat();
         this.GetComponent<HideObject>().makeInvisible();
+        dataStorage.alpacaTreat = true;
      }
 
 }

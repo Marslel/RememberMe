@@ -18,8 +18,8 @@ public class HideObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+        customRenderer = GetComponent<Renderer>();
         if(!chooseVisibleInGame){
-            customRenderer = GetComponent<Renderer>();
             customRenderer.enabled = visibleAtStart;
             var renderers = gameObject.GetComponentsInChildren<Renderer>();
             foreach (Renderer r  in renderers) {
