@@ -12,7 +12,11 @@ public class SpawnBullet : MonoBehaviour
     public int maxBullets = 0;
     public int shootBullets = 0;
 
+    private bool deleteTargets = true;
+
     public SteamVR_TrackedObject trackedObject;
+
+    public StartGame startGame;
 
     
     // Update is called once per frame
@@ -26,6 +30,10 @@ public class SpawnBullet : MonoBehaviour
             Spawn();
             StartCoroutine(StartCooldown());
             shootBullets++;
+        }
+        if((shootBullets == maxBullets) && deleteTargets){
+            startGame.DeleteList();
+            deleteTargets = false;
         }
     }
 

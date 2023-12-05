@@ -4,31 +4,21 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
-    public GameObject[] prefabToSpawn;
-    public int numberOfObjectsToSpawn;
-
     private GameObject[] spawnedGameObjekcList;
+    private bool startDestroy = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        spawnedGameObjekcList = new GameObject[numberOfObjectsToSpawn];
-        SpawnObjects();
-        
+    void Start(){
+        spawnedGameObjekcList = new GameObject[100];
     }
 
-    // Update is called once per frame
-    void SpawnObjects(){
-        
-
+    public void SpawnObjects(int numberOfObjectsToSpawn, GameObject[] prefabToSpawn){
         for (int i = 0; i < numberOfObjectsToSpawn; i++){
-
             GameObject spawnedGameObject;
 
             do{
             int randomIndex = Random.Range(0, prefabToSpawn.Length);
-            float randomX = Random.Range(-16f,-12f);
-            float randomZ = Random.Range(-13f, -4f);
+            float randomX = Random.Range(-14f,-11f);
+            float randomZ = Random.Range(-14f, -6f);
             Vector3 randomSpawnPosition = new Vector3(randomX, -0.55f, randomZ);
 
             spawnedGameObject = Instantiate(prefabToSpawn[randomIndex], randomSpawnPosition, Quaternion.identity);
@@ -55,4 +45,21 @@ public class ObjectSpawner : MonoBehaviour
         }
         return false;
     }
+
+    public void DeleteList(){
+        //Hier 2 Sekunden warten
+        
+        // Iteriere durch das Array und zerstöre jedes GameObject.
+
+        Debug.Log("Listemgröße" + spawnedGameObjekcList.Length);
+        foreach (GameObject obj in spawnedGameObjekcList)
+        {
+            // Überprüfe, ob das GameObject gültig ist, bevor du versuchst, es zu zerstören.
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
+    }
+    
 }
