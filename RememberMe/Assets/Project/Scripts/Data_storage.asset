@@ -20,4 +20,12 @@ MonoBehaviour:
   chess: 0
   bell: 0
   alpaca: 0
-  time: 6000
+  time: 1000
+  mazetime: 200
+  level: 0
+  MazePrefabs: []
+  MazepPrefabIndex: 0
+  ShootingrangePrefabs: []
+  ShootingrangepPrefabIndex: 0
+  PianoPrefabs: []
+  PianoPrefabIndex: 0
