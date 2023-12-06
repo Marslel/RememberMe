@@ -1630,6 +1630,7 @@ MonoBehaviour:
     m_Bits: 64
   fadeSpeed: 6
   sphereCheckSize: 0.15
+  isCameraFadedOut: 0
 --- !u!23 &212355166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7710,11 +7711,6 @@ Transform:
 --- !u!4 &899323265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 429506, guid: a3fad27fb184c56418479e3196882f5e, type: 3}
-  m_PrefabInstance: {fileID: 73492817}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &899323268 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2014920, guid: a3fad27fb184c56418479e3196882f5e, type: 3}
   m_PrefabInstance: {fileID: 73492817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &904377419
@@ -17991,6 +17987,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 309169572237290818, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169572243286380, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.09
+      objectReference: {fileID: 0}
     - target: {fileID: 309169572243304828, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -18001,7 +18005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 309169572243304828, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -68.976
+      value: -68.03
       objectReference: {fileID: 0}
     - target: {fileID: 309169572243304828, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18043,8 +18047,33 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465699, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465701, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465701, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: collisionLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574244296798, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 423169584984164694, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: doNotDestroy
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+--- !u!20 &1967760431 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 309169574244296768, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+  m_PrefabInstance: {fileID: 1967760430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970507162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f1c3f8e347f55f44e98e7ea73efac66e, type: 3}
@@ -18257,7 +18286,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 899323268}
+  m_Camera: {fileID: 1967760431}
   m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

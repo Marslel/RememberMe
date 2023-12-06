@@ -9,7 +9,12 @@ public class VR_No_Wall_Collision : MonoBehaviour
     [SerializeField] float sphereCheckSize = 0.15f;
 
     private Material cameraFadeMaterial;
-    private bool isCameraFadedOut = false;
+    public bool isCameraFadedOut = false;
+
+    void start(){
+        isCameraFadedOut = false;
+        cameraFade(0f);
+    }
     private void Awake() => cameraFadeMaterial = GetComponent<Renderer>().material;
 
     // Update is called once per frame

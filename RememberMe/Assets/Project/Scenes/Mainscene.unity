@@ -16332,6 +16332,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465699, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465700, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465700, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.455
+      objectReference: {fileID: 0}
+    - target: {fileID: 309169574108465701, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: collisionLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 423169584984164694, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+      propertyPath: doNotDestroy
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
 --- !u!1001 &329117420207927579

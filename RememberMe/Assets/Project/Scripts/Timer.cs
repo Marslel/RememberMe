@@ -28,6 +28,7 @@ public class Timer : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         if(currentScene.name == "Maze"){
             float totaltime = data_Storage.time;
+            timeRemaining = data_Storage.mazetime;
             if(totaltime < timeRemaining){
                 timeRemaining = totaltime;
             }

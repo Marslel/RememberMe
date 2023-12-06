@@ -21,6 +21,15 @@ public class Data_Storage : ScriptableObject {
      [SerializeField] public bool alpaca = false;
 
      [SerializeField] public float time;
+     [SerializeField] public float mazetime;
+     [SerializeField] public int level;
+     public List<GameObject> MazePrefabs;
+     public int MazepPrefabIndex;
+
+     public GameObject[] ShootingrangePrefabs;
+     public int ShootingrangepPrefabIndex;
+     public GameObject[] PianoPrefabs;
+     public int PianoPrefabIndex;
 
      public void updatePuzzlesSolved(int num){
             puzzlesSolved += num;
@@ -44,6 +53,18 @@ public class Data_Storage : ScriptableObject {
 
      public void adaptTimer(float timeToReduce){
        time -= timeToReduce;
+     }
+
+     public void setLevel(int level){
+       this.level = level;
+     }
+
+     public void setMazePrefabs(List<GameObject> mazePrefabs){
+       this.MazePrefabs = mazePrefabs;
+     }
+
+     public void setMazePrefabIndex(int index){
+       this.MazepPrefabIndex = index;
      }
 
 }
