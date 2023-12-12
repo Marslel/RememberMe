@@ -2841,6 +2841,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2307895988607918717}
     m_Modifications:
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Size.x
+      value: 5.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Size.y
+      value: 5.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Size.z
+      value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Center.y
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 149570677880454440, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Center.z
+      value: -3.58
+      objectReference: {fileID: 0}
     - target: {fileID: 2054513076428022214, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: m_Controller
       value: 
