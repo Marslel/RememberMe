@@ -29,6 +29,12 @@ public class ChessLogic : MonoBehaviour
 
     List<Vector3> startPosBlack;
     List<Quaternion> startRotBlack;
+
+        [SerializeField]
+    NPCInteractable npcTextBlack;
+
+        [SerializeField]
+    NPCInteractable npcTextWhite;
     
     int startX;
     int startY;
@@ -44,6 +50,10 @@ public class ChessLogic : MonoBehaviour
     void Start()
     {   
         solved = dataStorage.chess;
+        if(solved){
+            npcTextBlack.dialogueIndex = 1;
+            npcTextWhite.dialogueIndex = 1;
+        }
         cp = chessPlayer.GetComponent<ChessPlayer>();
         endTilePiece = endTile.GetComponent<ChessTile>();
         startPosBlack = new List<Vector3>();
@@ -76,6 +86,9 @@ public class ChessLogic : MonoBehaviour
             solved = true;
             dataStorage.chess = true;
 
+            npcTextBlack.dialogueIndex = 1;
+            npcTextWhite.dialogueIndex = 1;
+
             foreach(GameObject cp in blackPlayers){
                 cp.GetComponent<ChessPlayer>().freezePlayer();
             }
@@ -83,23 +96,25 @@ public class ChessLogic : MonoBehaviour
                 cp.GetComponent<ChessPlayer>().freezePlayer();
             }
 
+            
+
 
 
         }else if(incomeCP.currPlayerColor != cp.currPlayerColor){
-            Debug.Log("You ar not White!");
+            Debug.Log("You are not White!");
             Debug.Log(incomeCP.currPlayer);
             incomeCP.setBackToStart();
             //resetChess.resetChessBoard(chessPrefab);
             //OnReset();
         }else if(incomeCP.currPlayer != cp.currPlayer){
             Debug.Log("Nein versuchs nochmal");
-incomeCP.setBackToStart();
+            incomeCP.setBackToStart();
             //resetChess.resetChessBoard(chessPrefab);
             //OnReset();
         }else if(incomeTile != endTilePiece){
             Debug.Log("Nein versuchs nochmal");
-                                    Debug.Log(incomeCP.currPlayer);
-incomeCP.setBackToStart();
+            Debug.Log(incomeCP.currPlayer);
+            incomeCP.setBackToStart();
             //resetChess.resetChessBoard(chessPrefab);
         }
 

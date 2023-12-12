@@ -45,9 +45,7 @@ public class ChessPlayer : MonoBehaviour
     }
 
     public void setBackToStart()
-    {
-        Debug.Log("SETTING BACKA BAKKKU");
-        
+    {        
         transform.position = startPos;
         transform.rotation = startRot;
         //transform.scale = startPos.scale;
