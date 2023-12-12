@@ -5,6 +5,11 @@ using UnityEngine;
 public class ChessLogic : MonoBehaviour
 {
     [SerializeField]
+    ResetChessBoard resetChess;
+    [SerializeField]
+    GameObject chessPrefab;
+
+    [SerializeField]
     GameObject chessPlayer;
     ChessPlayer cp;
 
@@ -19,6 +24,8 @@ public class ChessLogic : MonoBehaviour
     
     [SerializeField]
     Collectables col;
+    [SerializeField]
+    Data_Storage dataStorage;
 
     List<Vector3> startPosBlack;
     List<Quaternion> startRotBlack;
@@ -36,7 +43,7 @@ public class ChessLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        solved = false;
+        solved = dataStorage.chess;
         cp = chessPlayer.GetComponent<ChessPlayer>();
         endTilePiece = endTile.GetComponent<ChessTile>();
         startPosBlack = new List<Vector3>();
@@ -67,21 +74,48 @@ public class ChessLogic : MonoBehaviour
             Debug.Log("Position found: " + chessPlayer.transform.position );
             col.addPuzzlePiece();
             solved = true;
-        }else if(incomeTile == endTilePiece && incomeCP.currPlayerColor != cp.currPlayerColor){
-            Debug.Log("You ar not Black!");
+            dataStorage.chess = true;
+
+            foreach(GameObject cp in blackPlayers){
+                cp.GetComponent<ChessPlayer>().freezePlayer();
+            }
+            foreach(GameObject cp in whitePlayers){
+                cp.GetComponent<ChessPlayer>().freezePlayer();
+            }
+
+
+
+        }else if(incomeCP.currPlayerColor != cp.currPlayerColor){
+            Debug.Log("You ar not White!");
+            Debug.Log(incomeCP.currPlayer);
+            incomeCP.setBackToStart();
+            //resetChess.resetChessBoard(chessPrefab);
+            //OnReset();
+        }else if(incomeCP.currPlayer != cp.currPlayer){
+            Debug.Log("Nein versuchs nochmal");
+incomeCP.setBackToStart();
+            //resetChess.resetChessBoard(chessPrefab);
+            //OnReset();
+        }else if(incomeTile != endTilePiece){
+            Debug.Log("Nein versuchs nochmal");
+                                    Debug.Log(incomeCP.currPlayer);
+incomeCP.setBackToStart();
+            //resetChess.resetChessBoard(chessPrefab);
         }
 
     }
 
 
+
+
     // Update is called once per frame
     void Update()
     {
-        if(chessPlayer.transform.position.x > (startX +2) || chessPlayer.transform.position.x < (startX -2) || chessPlayer.transform.position.z > (startY +2) || chessPlayer.transform.position.z < (startY -2) ){
-            Debug.Log("Position not legal back to origin" );
-            chessPlayer.transform.position = startPos;
-            chessPlayer.transform.rotation = startRot;
-        }
+        // if(chessPlayer.transform.position.x > (startX +2) || chessPlayer.transform.position.x < (startX -2) || chessPlayer.transform.position.z > (startY +2) || chessPlayer.transform.position.z < (startY -2) ){
+        //     Debug.Log("Position not legal back to origin" );
+        //     chessPlayer.transform.position = startPos;
+        //     chessPlayer.transform.rotation = startRot;
+        // }
         // if(chessPlayer.transform.position.x >= endTile.transform.position.x - distance || chessPlayer.transform.position.x <= endTile.transform.position.x + distance && 
         //     chessPlayer.transform.position.z >= endTile.transform.position.z - distance || chessPlayer.transform.position.z <= endTile.transform.position.z + distance){
         //     Debug.Log("Position found: " + chessPlayer.transform.position );

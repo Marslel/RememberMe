@@ -19,6 +19,7 @@ public class Data_Storage : ScriptableObject {
      [SerializeField] public bool chess = false;
      [SerializeField] public bool bell = false;
      [SerializeField] public bool alpaca = false;
+     [SerializeField] public bool alpacaTreat = false;
 
      [SerializeField] public float time;
      [SerializeField] public float mazetime;

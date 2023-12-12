@@ -15,7 +15,7 @@ public class PanelDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+                index = 0;
     }
 
     // Update is called once per frame
@@ -24,8 +24,13 @@ public class PanelDialogue : MonoBehaviour
         
     }
 
+    public void startDialogue(int index){
+        this.index = index;
+        StartCoroutine(TypeLine());
+    }
+
     public void startDialogue(){
-        index = 0;
+
         StartCoroutine(TypeLine());
         
     }
@@ -38,7 +43,7 @@ public class PanelDialogue : MonoBehaviour
         }
     }
 
-    void NextLine(){
+    public void NextLine(){
         if(index < dialogueLines.Length - 1){
             index ++;
             textComponent.text = string.Empty;

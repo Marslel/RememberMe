@@ -7,10 +7,13 @@ public class ChessTile : MonoBehaviour
 
     [SerializeField]
     public position pos;
+    [SerializeField]
+    public ChessPlayer startPlayer;
 
+    private UnityEngine.Vector3 startPosition;
     ChessPlayer cp;
 
-    ChessLogic logic;
+    public ChessLogic logic;
 
     public enum position{
         a1, b1, c1, d1, e1, f1, g1, h1,
@@ -27,16 +30,23 @@ public class ChessTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        logic = GameObject.Find("ChessPuzzle").GetComponent<ChessLogic>();
+        //logic = GameObject.Find("ChessPuzzle-Easy").GetComponent<ChessLogic>();
+        startPosition = startPlayer.transform.position;
     }
 
     void OnTriggerEnter(Collider other){
 
         cp = other.GetComponent<ChessPlayer>();
-
-        if(cp != null){
-            logic.checkEndField(other,this);
+        if(startPlayer != null){
+            if(cp != null && cp != startPlayer && cp.transform.position != startPosition){
+                logic.checkEndField(other,this);
+            }
+        }else{
+            if(cp != null){
+                logic.checkEndField(other,this);
+            }
         }
+        
     }
 
     // Update is called once per frame

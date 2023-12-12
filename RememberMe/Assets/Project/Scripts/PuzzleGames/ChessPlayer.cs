@@ -10,6 +10,9 @@ public class ChessPlayer : MonoBehaviour
     [SerializeField]
     public playercolor currPlayerColor;
 
+
+    Vector3 startPos;
+    Quaternion startRot;
     public enum playertype{
         tower1,
         horse1,
@@ -37,12 +40,26 @@ public class ChessPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startPos = transform.position;
+        startRot = transform.rotation;
+    }
+
+    public void setBackToStart()
+    {
+        Debug.Log("SETTING BACKA BAKKKU");
+        
+        transform.position = startPos;
+        transform.rotation = startRot;
+        //transform.scale = startPos.scale;
+
+    }
+
+    public void freezePlayer(){
+        //GetComponent<Throwable>().enabled = false;
+        //this.AddComponent<IgnoreHovering>();
+        // GetComponent<Rigidbody>().velocity = Vector3.zero;
+        // GetComponent<Interactable>().enabled = false;
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

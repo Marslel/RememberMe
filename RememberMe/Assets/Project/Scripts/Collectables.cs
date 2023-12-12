@@ -27,6 +27,12 @@ public class Collectables : MonoBehaviour
         countPiece = 0;
         treatCollected = false;
         alpacaIgnorePlayer = false;
+        if(data_Storage.alpaca){
+            alpacaIgnorePlayer = true;
+        }  
+        for(int i = 0; i <data_Storage.puzzlesSolved ; i++){
+            addPuzzlePiece();
+        }  
     }
 
     // Update is called once per frame

@@ -31,7 +31,15 @@ public class DialogManager : MonoBehaviour
         pd.textComponent.text = string.Empty;
         pd.dialogueLines = dialogue;
         pd.startDialogue();
+        
+        
 
+    }
+    public void beginDialogue(string[] dialogue, int index){
+        containerGameObject.SetActive(true);
+        pd.textComponent.text = string.Empty;
+        pd.dialogueLines = dialogue;
+        pd.startDialogue(index);
     }
 
     public void HideDialog()

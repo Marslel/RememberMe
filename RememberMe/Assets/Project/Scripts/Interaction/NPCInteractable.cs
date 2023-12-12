@@ -10,9 +10,12 @@ public class NPCInteractable : MonoBehaviour
     public DialogManager dm;
     public string[] dialogue;
 
+    public int dialogueIndex;
+
     private void Awake(){
         animator = GetComponent<Animator>();
         npcHeadLookAt = GetComponent<NPCHeadLookAt>();
+        dialogueIndex = 0;
         
     }
 
@@ -23,10 +26,12 @@ public class NPCInteractable : MonoBehaviour
     
     public void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Head")){
-            dm.beginDialogue(dialogue);
+            //dm.beginDialogue(dialogue);
+            dm.beginDialogue(dialogue, dialogueIndex );
         }
         
     }
+  
 
 
     public void OnTriggerStay(Collider other){

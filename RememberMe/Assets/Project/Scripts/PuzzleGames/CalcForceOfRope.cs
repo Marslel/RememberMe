@@ -20,12 +20,21 @@ public class CalcForceOfRope : MonoBehaviour
     Vector3 curForce = new Vector3(0.0f, 0.0f, 0.0f);
     bool solved;
 
+    [SerializeField]
+    Data_Storage dataStorage;
+    
+    [SerializeField]
+    NPCInteractable npcText;
+
 
     void Start()
     {
         startForce = hinJoint.currentForce;
         countBellRinging = 0;
-        solved = false;
+        solved = dataStorage.bell;
+        if(solved){
+           npcText.dialogueIndex = 1;
+        }
         // anim = gameObject.GetComponent<Animation>();
 
     }
@@ -49,6 +58,9 @@ public class CalcForceOfRope : MonoBehaviour
                     Debug.Log("You rang the bell 3 times you found a puzzle piece");
                     col.addPuzzlePiece();
                     solved = true;
+                    dataStorage.bell = true;
+                    npcText.dialogueIndex = 1;
+
             }
         }
 

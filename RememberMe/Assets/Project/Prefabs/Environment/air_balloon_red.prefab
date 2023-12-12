@@ -113,6 +113,9 @@ MonoBehaviour:
   ani: {fileID: 9029605533788995097}
   pos: {fileID: 8572398582537843313}
   col: {fileID: 0}
+  neededItem: {fileID: 0}
+  objectToHide: {fileID: 0}
+  dataStorage: {fileID: 0}
 --- !u!1 &9060283380776216779
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,9 +149,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1326402938590535150}
   - {fileID: 1283463964219342058}
   - {fileID: 5398782083735922397}
-  - {fileID: 1326402938590535150}
   - {fileID: 3333407864051500605}
   - {fileID: 5662004028887615434}
   - {fileID: 4076156402173599643}
@@ -250,6 +253,9 @@ MonoBehaviour:
   ani: {fileID: 9029605533788995097}
   pos: {fileID: 8572398582537843313}
   col: {fileID: 0}
+  neededItem: {fileID: 0}
+  objectToHide: {fileID: 0}
+  dataStorage: {fileID: 0}
 --- !u!1001 &1279570202848313044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -263,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010563502654, guid: 054e8622a5bae1644b0baa6708dbbc5d, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010563502654, guid: 054e8622a5bae1644b0baa6708dbbc5d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1039,7 +1045,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6360420542703049432, guid: 8fcb9d2d43929c04f8c70c38581418d4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6360420542703049432, guid: 8fcb9d2d43929c04f8c70c38581418d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2799,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 618734d7372a25d48a2f7fca21aaec8b, type: 2}
     - target: {fileID: 4015755547284541891, guid: d86f001c0a9236440b367314445a79fd, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4015755547284541891, guid: d86f001c0a9236440b367314445a79fd, type: 3}
       propertyPath: m_LocalScale.x
