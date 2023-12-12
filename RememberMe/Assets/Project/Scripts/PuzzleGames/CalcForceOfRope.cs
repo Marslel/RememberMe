@@ -22,6 +22,9 @@ public class CalcForceOfRope : MonoBehaviour
 
     [SerializeField]
     Data_Storage dataStorage;
+    
+    [SerializeField]
+    NPCInteractable npcText;
 
 
     void Start()
@@ -29,6 +32,9 @@ public class CalcForceOfRope : MonoBehaviour
         startForce = hinJoint.currentForce;
         countBellRinging = 0;
         solved = dataStorage.bell;
+        if(solved){
+           npcText.dialogueIndex = 1;
+        }
         // anim = gameObject.GetComponent<Animation>();
 
     }
@@ -53,6 +59,8 @@ public class CalcForceOfRope : MonoBehaviour
                     col.addPuzzlePiece();
                     solved = true;
                     dataStorage.bell = true;
+                    npcText.dialogueIndex = 1;
+
             }
         }
 

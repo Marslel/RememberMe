@@ -26,6 +26,8 @@ public class BalloonLogic : MonoBehaviour
     [SerializeField]
     Data_Storage dataStorage;
 
+    [SerializeField]
+    NPCInteractable npcText;
     bool puzzleCompleted;
 
 
@@ -35,6 +37,7 @@ public class BalloonLogic : MonoBehaviour
         startPos = pos.position;
         puzzleCompleted = dataStorage.balloon;
         if(puzzleCompleted){
+            npcText.dialogueIndex = 1;
             neededItem.GetComponent<HideObject>().makeInvisible();
             objectToHide.GetComponent<HideObject>().chooseVisibleInGame = true;
             ani.Play("airballoon");
@@ -59,6 +62,7 @@ public class BalloonLogic : MonoBehaviour
             col.addPuzzlePiece();
             puzzleCompleted = true;
             dataStorage.balloon = true;
+            npcText.dialogueIndex = 1;
 
         }
     }

@@ -14,10 +14,15 @@ public class Teleport2Position : MonoBehaviour
     GameObject vrPlayer;
 
 
-    void OnTriggerEnter(Collider other){
-        if(other == vrPlayer.GetComponent<Collider>()){
-            player.position = destination.position;
+      private void OnTriggerEnter(Collider other){
+
+        if(other.tag == "Head"){
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            UnityEngine.Vector3 currPos = player.transform.position;
+            Vector3 teleportPosition = new UnityEngine.Vector3(currPos.x ,currPos.y+5, currPos.z -3);
+            player.transform.position = teleportPosition;
         }
+
     }
     // Start is called before the first frame update
     void Start()

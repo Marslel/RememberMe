@@ -78,10 +78,10 @@ public class AlpacaWalkBehaviour : MonoBehaviour
     }
 
      private void OnTriggerEnter(Collider other){
-        
         if(col!=null && other.tag == "Head" && !col.alpacaIgnorePlayer){
 
         if(alpacca != null &&!col.treatCollected){
+
             // alpaca runs away from player
             animator.Play("Alpaca Run Layer.Run");
             alpacca.speed = 9f;
@@ -98,8 +98,8 @@ public class AlpacaWalkBehaviour : MonoBehaviour
      }
 
         private void OnTriggerStay(Collider other){
-        
-        if(col!=null && other.tag == "Head" && !col.alpacaIgnorePlayer){
+       
+
 
         if(alpacca != null &&!col.treatCollected){
             // alpaca runs away from player
@@ -123,7 +123,7 @@ public class AlpacaWalkBehaviour : MonoBehaviour
             alpacca.SetDestination(SpecificNavMeshLocation(player.transform.position));
         }
 
-        }
+    
      }
 
 

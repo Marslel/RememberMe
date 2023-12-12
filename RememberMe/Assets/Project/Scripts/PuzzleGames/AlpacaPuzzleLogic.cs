@@ -24,6 +24,9 @@ public class AlpacaPuzzleLogic : MonoBehaviour
     [SerializeField]
     Data_Storage dataStorage;
 
+    [SerializeField]
+    NPCInteractable npcText;
+
     bool puzzleCompleted;
 
     // Start is called before the first frame update
@@ -51,6 +54,7 @@ public class AlpacaPuzzleLogic : MonoBehaviour
 
 public void updateAlpacaPuzzle(){
     //tempHat.GetComponent<HideObject>().makeInvisible();
+    npcText.dialogueIndex = 1;
     anim.Play("Base Layer.invisiblehat");
     skellyHat.GetComponent<HideObject>().makeVisible();
     Debug.Log("You found my Hat thank you!");
@@ -61,6 +65,7 @@ public void updateAlpacaPuzzle(){
     dataStorage.alpaca = true;
     col.alpacaIgnorePlayer = true;
     alpacaHat.GetComponent<HideObject>().makeInvisible();
+
 
 }
 

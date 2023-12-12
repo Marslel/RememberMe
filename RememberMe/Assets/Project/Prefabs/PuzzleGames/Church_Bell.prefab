@@ -332,6 +332,7 @@ Transform:
   - {fileID: 1797101286267796939}
   - {fileID: 3356793829671700983}
   - {fileID: 9014093185910030753}
+  - {fileID: 3450664033452978097}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1376,6 +1377,7 @@ MonoBehaviour:
   anim: {fileID: 6310937711591681527}
   col: {fileID: 0}
   dataStorage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  npcText: {fileID: 3822982244809998196}
 --- !u!1 &4030341592084581089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7553238816612254548, guid: c1fcef67e31b68449af55d3f34564cd0, type: 3}
@@ -2832,6 +2834,109 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8213951108333365165, guid: 13219c1d85050e44191f9dc91a97a90f, type: 3}
   m_PrefabInstance: {fileID: 6485621376556576921}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6767260593026622221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2307895988607918717}
+    m_Modifications:
+    - target: {fileID: 2054513076428022214, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2a5daa85cfc11294b9c9912176d95856, type: 2}
+    - target: {fileID: 2054513076428022214, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923070841293471407, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_Name
+      value: Skeleton Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559245516305833081, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559245516305833081, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: "Aua mein R\xFCcken. Ich bin vorhin von der Leiter gefallen und kann
+        mich nicht mehr bewegen. Kannst du f\xFCr mich heute die Glocke l\xE4uten? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559245516305833081, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: 'Danke dir Hermano! Jetzt muss ich nur noch wieder auf die beine kommen,
+        aber das schaffe ich schon irgendwie. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.887
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.25883874
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.37062654
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5304966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7170857
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 107.69501
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 122.300995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.153015
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+--- !u!4 &3450664033452978097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8217128683353640124, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+  m_PrefabInstance: {fileID: 6767260593026622221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3822982244809998196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7559245516305833081, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+  m_PrefabInstance: {fileID: 6767260593026622221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d458bc133854b14099b722d9e2f1f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7122218618539853847
 PrefabInstance:
   m_ObjectHideFlags: 0
