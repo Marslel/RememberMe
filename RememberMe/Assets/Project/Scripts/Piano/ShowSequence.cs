@@ -30,16 +30,6 @@ public class ShowSequence : MonoBehaviour
     void Update()
     {
 
-        GameObject position = GameObject.Find("Teleport_Position_Piano");
-        GameObject player = GameObject.FindGameObjectWithTag("test");
-        if(player != null)
-        {
-        }else{
-            player = GameObject.FindGameObjectWithTag("Player");
-            player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
-            GameObject perspective = GameObject.Find("FallbackObjects");
-            perspective.transform.eulerAngles = new Vector3(45, 142, 0);
-        }
         
         if (IsSequenceGoing)
         {
