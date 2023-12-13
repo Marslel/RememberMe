@@ -9,7 +9,7 @@ public class AudioOnCollision : MonoBehaviour
 
     public bool chosen;
     public int timer;
-    private GameObject eighthNotePrefab; // Das Prefab, das du in der Unity-Editor-Oberfläche zuweisen musst.
+    private GameObject eighthNotePrefab; // Das Prefab, das du in der Unity-Editor-Oberflï¿½che zuweisen musst.
 
     // This Will Configure the  AudioSource Component; 
     // MAke Sure You added AudioSouce to death Zone;
@@ -23,6 +23,7 @@ public class AudioOnCollision : MonoBehaviour
 
 	void OnCollisionEnter ()  //Plays Sound Whenever collision detected
 	{
+        Debug.Log("Collision detected");
 		GameObject pianoObject = GameObject.Find("Piano_Cube"); // Hier den richtigen Namen des GameObjects einsetzen
 		ShowSequence showSequenceScript = pianoObject.GetComponent<ShowSequence>();
         if (showSequenceScript.IsSequenceGoing)
@@ -54,6 +55,10 @@ public class AudioOnCollision : MonoBehaviour
         else
         {
             GetComponent<AudioSource>().Play();
+            if(transform.parent.name == "Test2"){
+                GameObject parent = GameObject.Find("Test2");
+                parent.GetComponent<Animator>().Play("TestAnimation");
+            }
         }
     }
 
@@ -62,10 +67,10 @@ public class AudioOnCollision : MonoBehaviour
         // Versuche, den Renderer des letzten Objekts zu erhalten
         Renderer lastObjectRenderer = gameObject.GetComponent<Renderer>();
 
-        // Überprüfe, ob ein Renderer vorhanden ist
+        // ï¿½berprï¿½fe, ob ein Renderer vorhanden ist
         if (lastObjectRenderer != null)
         {
-            // Ändere das Material des gefundenen Objekts
+            // ï¿½ndere das Material des gefundenen Objekts
             lastObjectRenderer.material.color = color;
         }
         else
@@ -76,18 +81,18 @@ public class AudioOnCollision : MonoBehaviour
 
     GameObject SpawnEighthNote()
     {
-        // Prüfe, ob das Prefab zugewiesen wurde.
+        // Prï¿½fe, ob das Prefab zugewiesen wurde.
         if (eighthNotePrefab != null)
         {
-            // Erzeuge eine Instanz des Prefabs an der aktuellen Position des GameObjects, zu dem dieses Skript gehört.
+            // Erzeuge eine Instanz des Prefabs an der aktuellen Position des GameObjects, zu dem dieses Skript gehï¿½rt.
             return Instantiate(eighthNotePrefab, transform.position, Quaternion.identity);
             Debug.Log(transform.position);
 
-            // Hier könntest du zusätzliche Aktionen für die neue Instanz durchführen, falls erforderlich.
+            // Hier kï¿½nntest du zusï¿½tzliche Aktionen fï¿½r die neue Instanz durchfï¿½hren, falls erforderlich.
         }
         else
         {
-            Debug.Log("Prefab für die Achtelnote nicht zugewiesen!");
+            Debug.Log("Prefab fï¿½r die Achtelnote nicht zugewiesen!");
             return null;
         }
     }

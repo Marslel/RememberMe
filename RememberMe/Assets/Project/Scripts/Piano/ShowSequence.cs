@@ -20,10 +20,6 @@ public class ShowSequence : MonoBehaviour
 
     GameObject lastKey;
 
-    public GameObject player;
-    public GameObject bench;
-    public GameObject cameraHolder;
-
     public bool? rightKey = null;
     public bool IsSequenceGoing = false;
     System.DateTime timer;
@@ -33,6 +29,18 @@ public class ShowSequence : MonoBehaviour
 
     void Update()
     {
+
+        GameObject position = GameObject.Find("Teleport_Position_Piano");
+        GameObject player = GameObject.FindGameObjectWithTag("test");
+        if(player != null)
+        {
+        }else{
+            player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
+            GameObject perspective = GameObject.Find("FallbackObjects");
+            perspective.transform.eulerAngles = new Vector3(45, 142, 0);
+        }
+        
         if (IsSequenceGoing)
         {
             if (IsPlayerTrying)
@@ -116,15 +124,24 @@ public class ShowSequence : MonoBehaviour
         rightKey = null;
         keyCount = 0;
 
+        GameObject position = GameObject.Find("Teleport_Position_Piano");
+        GameObject player = GameObject.FindGameObjectWithTag("test");
+        if(player != null)
+        {
 
+        position = GameObject.Find("Teleport_Position_Piano");
+        player = GameObject.FindGameObjectWithTag("test");
+        player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
+        
+        //player.transform.position = new Vector3(0, 1, 6);
+        GameObject camHolder = GameObject.Find("CameraHolder"); 
+        camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
+        }else{
             player = GameObject.FindGameObjectWithTag("Player");
-            UnityEngine.Vector3 currPos = player.transform.position;
-            teleportPosition = new UnityEngine.Vector3(currPos.x ,currPos.y - 6, currPos.z);
-            player.transform.position = cameraHolder.transform.position;
-        //vec1 = new Vector3(0.0f, 1.02f, 16.2f);
-        //player.transform.position = vec1;
-        //vec2 = new Vector3(0.0f, 0.0f, 0.0f);
-        //cameraHolder.transform.position = vec2;
+            player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
+            GameObject perspective = GameObject.Find("FallbackObjects");
+            perspective.transform.eulerAngles = new Vector3(45, 142, 0);
+        }
     }
 
     GameObject GetRandomKey()

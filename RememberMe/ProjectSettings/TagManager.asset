@@ -9,6 +9,7 @@ TagManager:
   - SceneExit
   - Head
   - UICamera
+  - test
   layers:
   - Default
   - TransparentFX
