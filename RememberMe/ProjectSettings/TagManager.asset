@@ -9,15 +9,17 @@ TagManager:
   - SceneExit
   - Head
   - UICamera
+  - Log
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain Layer
   - Water
   - UI
   - Wall_Collision_Layer
-  - 
+  - Teleport Layer
   - whatIsGround
   - whatIsPlayer
   - 
