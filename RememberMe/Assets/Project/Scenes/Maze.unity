@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: a3fad27fb184c56418479e3196882f5e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: a3fad27fb184c56418479e3196882f5e, type: 3}
       propertyPath: m_TagString
@@ -3664,6 +3664,7 @@ MonoBehaviour:
   sceneName: Mainscene
   main:
     m_Handle: 0
+  sky: {fileID: 0}
 --- !u!114 &396263404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3678,6 +3679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleAtStart: 0
   customRenderer: {fileID: 0}
+  chooseVisibleInGame: 0
 --- !u!65 &396263405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3955,6 +3957,7 @@ MonoBehaviour:
   interactorTransform: {fileID: 0}
   dm: {fileID: 0}
   dialogue: []
+  dialogueIndex: 0
 --- !u!114 &431636538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11030,6 +11033,7 @@ MonoBehaviour:
   sceneName: Mainscene
   main:
     m_Handle: 0
+  sky: {fileID: 0}
 --- !u!114 &1304468773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11044,6 +11048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleAtStart: 0
   customRenderer: {fileID: 0}
+  chooseVisibleInGame: 0
 --- !u!4 &1305397173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8147382519136418711, guid: f5cc2f22e8f190b46b76f553aa40beb0, type: 3}

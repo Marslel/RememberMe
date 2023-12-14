@@ -3437,6 +3437,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 06ef340763453ce4fb4e42c5846b6e6c, type: 3}
+--- !u!1 &359935517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 309169572243359906, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+  m_PrefabInstance: {fileID: 309169573141959376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &359935518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 309169572243286380, guid: abf7054231193f348b993a9025f9ee7a, type: 3}
+  m_PrefabInstance: {fileID: 309169573141959376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &359935522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359935517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ea99a324fd29e4b838ce9fb6509d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector: {fileID: 2026809792}
+  player: {fileID: 29301105}
+  pushBackStrength: 1
 --- !u!1001 &364008942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9550,6 +9575,25 @@ MonoBehaviour:
   timeText: {fileID: 313894770}
   sceneName: 
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  sky: {fileID: 1103035755}
+--- !u!114 &1103035755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaddac3174bbb44ca45c263119a3bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyMaterial:
+  - {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5519fe434eaa6614d8a0252f23fa5db6, type: 2}
+  - {fileID: 2100000, guid: c9ec6e8fde1426847a863e9ea1b54790, type: 2}
+  startIndex: 0
+  sunlight: {fileID: 1496444753}
 --- !u!1001 &1111429533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17749,6 +17793,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 492298, guid: fd599d410c701324ab9e117ca03c55d1, type: 3}
   m_PrefabInstance: {fileID: 2018660604}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2026809790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026809791}
+  - component: {fileID: 2026809792}
+  m_Layer: 1
+  m_Name: Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2026809791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026809790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 359935518}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2026809792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026809790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4113d52a3f0f1f43acdf1667bca94e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionDelay: 0.05
+  detectionDistance: 0.2
+  detectionLayers:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &2048030088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21544,6 +21637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 508115057011575347, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
+      propertyPath: sky
+      value: 
+      objectReference: {fileID: 1103035755}
     - target: {fileID: 1932207975197202858, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.4444

@@ -17,6 +17,10 @@ public class Timer : MonoBehaviour
     [SerializeField]
     public Data_Storage data_Storage;
 
+    
+    [SerializeField]
+    Skybox sky;
+
     Scene main;
     // Start is called before the first frame update
     void Start()
@@ -46,6 +50,12 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 displayTime(timeRemaining);
+                if(timeRemaining <= 5300.0 && timeRemaining >= 5298.0){
+                    sky.changeSkyboxMaterial(1);
+                }
+                if (timeRemaining <= 5200.0&& timeRemaining >= 5198.0){
+                    sky.changeSkyboxMaterial(2);
+                }
             }
             else
             {
