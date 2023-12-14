@@ -12,6 +12,7 @@ public class AgentAI : MonoBehaviour
     public int currentWayPointIndex = 0;
     public float waitTime = 2.0f;
     private float waitTimer;
+    public bool shouldStop;
 
     private bool isEventActive = false;
     private bool canTriggerEvent = true;
@@ -42,14 +43,18 @@ public class AgentAI : MonoBehaviour
         if(navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
         {
             waitTimer += Time.deltaTime;
-            if (waitTimer >= waitTime)
+            if (waitTimer >= waitTime && shouldStop)
             {
                 
                 currentWayPointIndex = (currentWayPointIndex + 1) % wayPoint.Count;
                 SetDestination();
                 waitTimer = 0f;
             }
-
+            else
+            {
+                currentWayPointIndex = (currentWayPointIndex + 1) % wayPoint.Count;
+                SetDestination();
+            }
                 
 
         }

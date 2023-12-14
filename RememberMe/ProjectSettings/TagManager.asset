@@ -9,6 +9,7 @@ TagManager:
   - SceneExit
   - Head
   - UICamera
+  - EventTrigger
   layers:
   - Default
   - TransparentFX
