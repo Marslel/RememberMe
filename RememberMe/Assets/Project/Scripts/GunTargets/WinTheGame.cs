@@ -5,7 +5,7 @@ using UnityEngine;
 public class WinTheGame : MonoBehaviour
 {
     private static WinTheGame _Instance;
-    public int difficulty = 6;
+    public int difficulty = 3;
     public int points{ get; private set;}
 
     public static WinTheGame Instance{

@@ -35,14 +35,12 @@ public class BulletSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        shootBullets = spawnBulletComponent.shootBullets;
         if (canSpawn && Input.GetKeyDown(KeyCode.Space) && shootBullets < maxBullets)
         {
             // Spiele den Sound ab
             PlaySound();
             StartCoroutine(StartCooldown());
-            shootBullets = spawnBulletComponent.shootBullets;
-            shootBullets++;
         }
     }
     void PlaySound()

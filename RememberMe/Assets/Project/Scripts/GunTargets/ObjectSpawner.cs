@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObjectSpawner : MonoBehaviour
 {
     private GameObject[] spawnedGameObjekcList;
-    private bool startDestroy = false;
 
     void Start(){
         spawnedGameObjekcList = new GameObject[100];
