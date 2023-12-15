@@ -29,7 +29,7 @@ public class AgentAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isEventActive) // Führe die normale Bewegung des Agenten aus, wenn das Event nicht aktiv ist
+        if (!isEventActive) // Fï¿½hre die normale Bewegung des Agenten aus, wenn das Event nicht aktiv ist
         {
             Walking();
         }
@@ -79,17 +79,18 @@ public class AgentAI : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         
-        if (canTriggerEvent && other.gameObject.CompareTag("EventTrigger")) // Annahme: "EventTrigger" ist der Tag des Triggers
+        if (canTriggerEvent && other.gameObject.name == "HandColliderRight(Clone)"|| other.gameObject.name == "HandColliderLeft(Clone)") // Annahme: "EventTrigger" ist der Tag des Triggers
         {
+
             // Stoppe den Agenten
             navMeshAgent.isStopped = true;
             isEventActive = true;
 
-            // Hier kannst du die Logik für das Event ausführen
-            // Zum Beispiel: Coroutine starten, die das Event durchführt
+            // Hier kannst du die Logik fï¿½r das Event ausfï¿½hren
+            // Zum Beispiel: Coroutine starten, die das Event durchfï¿½hrt
             StartCoroutine(ProcessEvent());
 
-            // Starte den Cooldown-Timer für das erneute Auslösen des Events
+            // Starte den Cooldown-Timer fï¿½r das erneute Auslï¿½sen des Events
             StartCoroutine(EventCooldown());
         }
     }
@@ -97,22 +98,22 @@ public class AgentAI : MonoBehaviour
     // Coroutine, die das Event behandelt (hier als Platzhalter)
     IEnumerator ProcessEvent()
     {
-        // Führe das Event aus (z. B. Dialog, Animation, usw.)
+        // Fï¿½hre das Event aus (z. B. Dialog, Animation, usw.)
         Debug.Log("Event gestartet...");
 
-        // Hier würde deine Event-Logik stehen, die den Agenten stoppt
+        // Hier wï¿½rde deine Event-Logik stehen, die den Agenten stoppt
 
-        // Simuliere eine Verzögerung
+        // Simuliere eine Verzï¿½gerung
         yield return new WaitForSeconds(3.0f);
 
-        // Setze das Event zurück, damit der Agent weitergeht
+        // Setze das Event zurï¿½ck, damit der Agent weitergeht
         isEventActive = false;
         navMeshAgent.isStopped = false;
 
-        Debug.Log("Event abgeschlossen. Agent läuft weiter.");
+        Debug.Log("Event abgeschlossen. Agent lï¿½uft weiter.");
     }
 
-    // Coroutine für die Abklingzeit des Events
+    // Coroutine fï¿½r die Abklingzeit des Events
     IEnumerator EventCooldown()
     {
         canTriggerEvent = false; // Deaktiviere das Event-Triggering

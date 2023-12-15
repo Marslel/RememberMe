@@ -19,7 +19,8 @@ MonoBehaviour:
   balloon: 0
   chess: 0
   bell: 0
-  alpaca: 0
+  alpaca: 1
+  alpacaTreat: 0
   time: 1000
   mazetime: 200
   level: 0
@@ -29,4 +30,3 @@ MonoBehaviour:
   ShootingrangepPrefabIndex: 0
   PianoPrefabs: []
   PianoPrefabIndex: 0
-  alpacaTreat: 0
