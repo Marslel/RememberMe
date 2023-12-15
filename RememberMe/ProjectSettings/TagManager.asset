@@ -12,6 +12,7 @@ TagManager:
   - Log
   - Bullet
   - EventTrigger
+  - House
   layers:
   - Default
   - TransparentFX

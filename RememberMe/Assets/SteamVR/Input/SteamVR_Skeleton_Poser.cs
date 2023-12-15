@@ -146,7 +146,7 @@ namespace Valve.VR
             if (behaviour == null)
             {
                 if (throwErrors)
-                    Debug.LogError("[SteamVR] Blending Behaviour: " + behaviourName + " not found on Skeleton Poser: " + gameObject.name, this);
+                    //Debug.LogError("[SteamVR] Blending Behaviour: " + behaviourName + " not found on Skeleton Poser: " + gameObject.name, this);
 
                 return null;
             }

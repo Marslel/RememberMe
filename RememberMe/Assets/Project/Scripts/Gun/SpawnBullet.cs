@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+namespace Valve.VR.InteractionSystem{
 public class SpawnBullet : MonoBehaviour
 {
     public GameObject bullet;
@@ -12,12 +13,21 @@ public class SpawnBullet : MonoBehaviour
     public int maxBullets = 0;
     public int shootBullets = 0;
 
+    public SteamVR_Action_Boolean gunTrigger = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI");
+    private SteamVR_Input_Sources handTypeleft;
+    private SteamVR_Input_Sources handTyperight;
+
     public StartGame startGame;
+    void Start()
+    {
+       handTyperight = SteamVR_Input_Sources.RightHand;
+       handTypeleft = SteamVR_Input_Sources.LeftHand;
+    }
 
 
     void Update()
     {
-        if(canSpawn && Input.GetKeyDown(KeyCode.Space) && shootBullets < maxBullets){
+        if(canSpawn && Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight) && shootBullets < maxBullets){
             Spawn();
             StartCoroutine(StartCooldown());
             shootBullets++;
@@ -44,4 +54,5 @@ public class SpawnBullet : MonoBehaviour
         DestroyObject();
         canSpawn = true;
     }
+}
 }

@@ -19,7 +19,7 @@ MonoBehaviour:
   balloon: 0
   chess: 0
   bell: 0
-  alpaca: 1
+  alpaca: 0
   alpacaTreat: 0
   time: 1000
   mazetime: 200

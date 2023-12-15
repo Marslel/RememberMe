@@ -1,27 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinTheGame : MonoBehaviour
 {
-    private static WinTheGame _Instance;
     public int difficulty = 3;
-    public int points{ get; private set;}
+    public int points;
+    public Data_Storage data;
 
-    public static WinTheGame Instance{
-        get{
-            if(_Instance == null){
-                GameObject go = new GameObject("WinTheGame");
-                _Instance = go.AddComponent<WinTheGame>();
-            }
-            return _Instance;
-        }
-    }
+
+   
     public void collectPoints(){
         points++;
         Debug.Log("Add Points: " + points);
         if(enoughPoints(points)){
             Debug.Log("Win Game");
+            data.updateShootingRangeWon(true);
+            data.updatePuzzlesSolved(1);
+            SceneManager.LoadScene("MainScene");
         }
     }
 

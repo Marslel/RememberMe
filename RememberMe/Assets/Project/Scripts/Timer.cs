@@ -38,6 +38,8 @@ public class Timer : MonoBehaviour
             }
         }else if(currentScene.name == "Mainscene"){
             timeRemaining = data_Storage.time;
+        }else if(currentScene.name == "ShootingRange"){
+            timeRemaining = data_Storage.time;
         }
         
     }

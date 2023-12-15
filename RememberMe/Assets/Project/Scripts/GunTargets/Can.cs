@@ -7,16 +7,23 @@ public class Can : MonoBehaviour
     private bool isCooldownActive = false;
 
     public GameObject prefabToLoad;
+    public WinTheGame winthegame;
 
     public GameObject CanDestroy;
+
+    
+
+    void Start(){
+        winthegame = GameObject.FindGameObjectWithTag("House").GetComponent<WinTheGame>();
+    }
 
     public void OnCollisionEnter(Collision collision)
     {
         if (!isCooldownActive && collision.gameObject.CompareTag("Bullet"))
         {
             Debug.Log("Kollision mit: " + collision.gameObject.name);
-            WinTheGame.Instance.collectPoints();
-            Debug.Log("Punkte: " + WinTheGame.Instance.points);
+            winthegame.collectPoints();
+            Debug.Log("Punkte: " + winthegame.points);
 
             GameObject instantiatedPrefab = Instantiate(prefabToLoad, transform.position, Quaternion.identity);
             // Setze den Cooldown-Zustand auf aktiv und starte die Coroutine

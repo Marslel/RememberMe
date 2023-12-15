@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+namespace Valve.VR.InteractionSystem{
 public class BulletSound : MonoBehaviour
 {
     public AudioClip soundClip;
@@ -62,4 +63,5 @@ public class BulletSound : MonoBehaviour
         canSpawn = true;
     }
 
+}
 }
