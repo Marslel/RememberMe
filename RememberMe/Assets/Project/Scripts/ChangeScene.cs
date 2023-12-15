@@ -26,7 +26,7 @@ public class ChangeScene : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-Debug.Log("irgebndways gefunden auf zum Maze :" + other.tag + other.name);
+        Debug.Log("irgebndways gefunden auf zum Maze :" + other.tag + other.name);
         if(other.tag == "Head"){
 
             Debug.Log("Player gefunden auf zum Maze");
