@@ -65,7 +65,7 @@ public class ChessLogic : MonoBehaviour
 
             startPosBlack.Add(player.transform.position);
             startRotBlack.Add(player.transform.rotation);
-            Debug.Log("Start Position of" +i + player.transform.position + "is : " + startPosBlack[i]);
+            
             i++;
         }
         startPos = chessPlayer.transform.position;

@@ -30,8 +30,11 @@ public class ChessTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(startPlayer != null){
         //logic = GameObject.Find("ChessPuzzle-Easy").GetComponent<ChessLogic>();
         startPosition = startPlayer.transform.position;
+        }
+        
     }
 
     void OnTriggerEnter(Collider other){

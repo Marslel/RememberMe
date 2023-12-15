@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4171052308648814048}
   - component: {fileID: 611556028837014354}
   - component: {fileID: 1306594555975157479}
-  - component: {fileID: 3573068465537400182}
   - component: {fileID: 7923231004673232590}
   m_Layer: 0
   m_Name: Revolver VariantTest
@@ -218,20 +217,6 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
---- !u!114 &3573068465537400182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5129495165126489011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  origin: {fileID: 0}
 --- !u!114 &7923231004673232590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,6 +536,7 @@ MonoBehaviour:
   maxBullets: 6
   shootBullets: 0
   trackedObject: {fileID: 0}
+  startGame: {fileID: 0}
 --- !u!114 &3003412237663898627
 MonoBehaviour:
   m_ObjectHideFlags: 0

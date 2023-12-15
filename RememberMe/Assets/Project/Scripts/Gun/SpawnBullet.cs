@@ -12,17 +12,8 @@ public class SpawnBullet : MonoBehaviour
     public int maxBullets = 0;
     public int shootBullets = 0;
 
-
-
-    public SteamVR_TrackedObject trackedObject;
-
     public StartGame startGame;
 
-    
-    // Update is called once per frame
-    void Start(){
-        trackedObject = GetComponent<SteamVR_TrackedObject>();
-    }
 
     void Update()
     {

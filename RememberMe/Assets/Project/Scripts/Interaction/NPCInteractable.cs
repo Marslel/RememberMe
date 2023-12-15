@@ -41,9 +41,8 @@ public class NPCInteractable : MonoBehaviour
     }
     
     public void OnTriggerExit (Collider other){
-        Debug.Log("Object left");
+        
         dm.HideDialog();
-        dm.exitDialogue();
         npcHeadLookAt.isLookingAtPosition = false;
     }
 }
