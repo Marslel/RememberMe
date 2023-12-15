@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCInteractable : MonoBehaviour
 {
     public Transform interactorTransform;
-    private Animator animator;
+    public Animator animator;
     private NPCHeadLookAt npcHeadLookAt;
     public DialogManager dm;
     public string[] dialogue;
@@ -13,7 +13,7 @@ public class NPCInteractable : MonoBehaviour
     public int dialogueIndex;
 
     private void Awake(){
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         npcHeadLookAt = GetComponent<NPCHeadLookAt>();
         dialogueIndex = 0;
         
