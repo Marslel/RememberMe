@@ -179,6 +179,7 @@ namespace Valve.VR.InteractionSystem
 
 			player = InteractionSystem.Player.instance;
 
+
 			if ( player == null )
 			{
 				Debug.LogError("<b>[SteamVR Interaction]</b> Teleport: No Player instance found in map.", this);
