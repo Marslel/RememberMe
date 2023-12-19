@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class WinTheGame : MonoBehaviour
 {
-    public int difficulty = 3;
+    public int level;
     public int points;
     public Data_Storage data;
 
-
+    void Start(){
+        level = data.level;
+    }
    
     public void collectPoints(){
         points++;
@@ -23,8 +25,28 @@ public class WinTheGame : MonoBehaviour
     }
 
     public bool enoughPoints(int points){
-        if(points >= difficulty){
-            return true;
+        switch (level)
+        {
+            case 1:
+                if(points == 3){
+                    return true;
+                }else{
+                    return false;
+                }
+            
+            case 2:
+                if(points == 5){
+                    return true;
+                }else{
+                    return false;
+                }
+
+            case 3:
+                if(points == 8){
+                    return true;
+                }else{
+                    return false;
+                }
         }
         return false;
     }

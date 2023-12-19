@@ -10,8 +10,14 @@ public class StartGame : MonoBehaviour
     public int numberOfObjectsToSpawn;
     private ObjectSpawner objectSpawner;
 
+    public int level;
+
+    public Data_Storage data_Storage;
+
     void Start(){
         objectSpawner = gameObject.AddComponent<ObjectSpawner>();
+
+        level = data_Storage.level;
     }
 
     private void OnTriggerEnter(Collider other){
