@@ -13,7 +13,7 @@ public class Update_Maze_Status : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        time = GameObject.FindGameObjectWithTag("House");
     }
 
     // Update is called once per frame

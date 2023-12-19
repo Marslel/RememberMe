@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Skybox : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Skybox : MonoBehaviour
     List<Material> skyMaterial;
     [SerializeField]
     int startIndex;
+    [SerializeField]
+    Data_Storage data; 
 
     [SerializeField]
     Light sunlight;
@@ -23,8 +26,18 @@ public class Skybox : MonoBehaviour
 
     void Start()
     {
-        currIndex = startIndex;
-        changeSettings();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if(currentScene.name == "Maze"){
+            currIndex = startIndex;
+            if(data.level == 3){
+                currIndex = 2;
+            }
+        
+            changeSettings();
+        }else{
+            currIndex = startIndex;
+            changeSettings();
+        }
     }
 
     // Update is called once per frame
