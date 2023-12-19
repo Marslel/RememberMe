@@ -2,13 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WinTheGame : MonoBehaviour
 {
     public int difficulty = 3;
     public int points;
     public Data_Storage data;
+    [SerializeField]
+    public Text timeText;
 
+    void Start()
+    {
+         // adapt puzzles solved on ui
+        timeText.text = data.puzzlesSolved.ToString();
+    }
 
    
     public void collectPoints(){

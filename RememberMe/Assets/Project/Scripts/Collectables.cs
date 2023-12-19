@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collectables : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Collectables : MonoBehaviour
     public Data_Storage data_Storage;
     [SerializeField]
     public GameObject time;
+    [SerializeField]
+    public Text timeText;
 
     ArrayList puzzleparts = new ArrayList();
     int countPiece;
@@ -51,6 +54,7 @@ public class Collectables : MonoBehaviour
 
         Instantiate(puzzleObjects[countPiece], new Vector3(3, 10, 8), Quaternion.identity);
         countPiece ++;
+        timeText.text = countPiece.ToString();
     }
 
     public void collectTreat(){

@@ -798,7 +798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
   MazePrefabs:
-  - {fileID: 2347289687019606403, guid: 8ad7aefd7c5d61d46ad82ed2ffe77a75, type: 3}
+  - {fileID: 8661597617040858875, guid: 28e704ece7cd9b14a85d8db36c051134, type: 3}
   - {fileID: 8816501678639030573, guid: f5cc2f22e8f190b46b76f553aa40beb0, type: 3}
   - {fileID: 2969354089982196590, guid: 47ccb15b0a0e5b14a9473ee7aa27c47e, type: 3}
 --- !u!114 &1111111305
