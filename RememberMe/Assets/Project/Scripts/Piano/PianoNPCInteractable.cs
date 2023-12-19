@@ -30,8 +30,8 @@ public class PianoNPCInteractable : MonoBehaviour
     
     public void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Head")){
-            //dm.beginDialogue(dialogue);
-            dm.beginDialogue(dialogue, dialogueIndex );
+            dm.beginDialogue(dialogue);
+            //dm.beginDialogue(dialogue, dialogueIndex );
             timer = System.DateTime.Now;
             HideNote();
         }
