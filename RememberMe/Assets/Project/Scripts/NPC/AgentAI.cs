@@ -20,12 +20,14 @@ public class AgentAI : MonoBehaviour
     private Animator animator; // Referenz auf den Animator für die Animation
     private bool collisionHandled = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
 
         navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
+
 
         SetDestination();
     }
@@ -160,7 +162,7 @@ public class AgentAI : MonoBehaviour
 
      IEnumerator ResetCollisionHandling()
     {
-        yield return new WaitForSeconds(5.0f); // Anpassen der Wartezeit hier (z.B. 5 Sekunden)
+        yield return new WaitForSeconds(5.0f); // npassen der Wartezeit hier (z.B. 5 Sekunden)
         collisionHandled = false; // Erlaube erneute Kollisionsbehandlung
     }
 
