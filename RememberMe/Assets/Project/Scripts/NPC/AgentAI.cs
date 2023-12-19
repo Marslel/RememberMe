@@ -13,23 +13,30 @@ public class AgentAI : MonoBehaviour
     public float waitTime = 2.0f;
     private float waitTimer;
     public bool shouldStop;
-
+    public string animationTrigger;
     private bool isEventActive = false;
     private bool canTriggerEvent = true;
     public float eventCooldown = 5.0f;
+    private Animator animator; // Referenz auf den Animator für die Animation
+    private bool collisionHandled = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
 
         navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        animator = GetComponent<Animator>();
+
+
         SetDestination();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isEventActive) // F�hre die normale Bewegung des Agenten aus, wenn das Event nicht aktiv ist
+        CheckAgentCollisions();
+        if (!isEventActive) // F hre die normale Bewegung des Agenten aus, wenn das Event nicht aktiv ist
         {
             Walking();
         }
@@ -72,48 +79,78 @@ public class AgentAI : MonoBehaviour
 
 
 
-
-    
-
-    // Wenn der Agent den Trigger betritt
-    void OnCollisionEnter(Collision other)
+    void CheckAgentCollisions()
     {
-        
-        if (canTriggerEvent && other.gameObject.name == "HandColliderRight(Clone)"|| other.gameObject.name == "HandColliderLeft(Clone)") // Annahme: "EventTrigger" ist der Tag des Triggers
+        NavMeshAgent[] agents = FindObjectsOfType<NavMeshAgent>();
+
+        foreach (NavMeshAgent otherAgent in agents)
+        {
+            if (otherAgent != navMeshAgent)
+            {
+                float distance = Vector3.Distance(transform.position, otherAgent.transform.position);
+
+                if (distance < 2.0f && !collisionHandled)
+                {
+                    // Rufe die Methode auf, wenn die Agenten sich nahe genug sind
+                    HandleAgentCollision(otherAgent);
+                }
+            }
+        }
+    }
+
+    void HandleAgentCollision(NavMeshAgent otherAgent)
+    {
+        if (canTriggerEvent) // Annahme: "EventTrigger" ist der Tag des Triggers
         {
 
             // Stoppe den Agenten
             navMeshAgent.isStopped = true;
             isEventActive = true;
 
-            // Hier kannst du die Logik f�r das Event ausf�hren
-            // Zum Beispiel: Coroutine starten, die das Event durchf�hrt
-            StartCoroutine(ProcessEvent());
+            StartCoroutine(PlayAnimationAndProcessEvent());
+            StartCoroutine(ResetCollisionHandling());
+            collisionHandled = true;
+        }
+    }
+    
 
-            // Starte den Cooldown-Timer f�r das erneute Ausl�sen des Events
+    // Wenn der Agent den Trigger betritt
+    void OnCollisionEnter(Collision other)
+    {
+        if (canTriggerEvent && other.gameObject.name == "HandColliderRight(Clone)"|| other.gameObject.name == "HandColliderLeft(Clone)") // Annahme: "EventTrigger" ist der Tag des Triggers
+        {
+                    
+
+            // Stoppe den Agenten
+            navMeshAgent.isStopped = true;
+            isEventActive = true;
+
+            StartCoroutine(PlayAnimationAndProcessEvent());
             StartCoroutine(EventCooldown());
         }
     }
 
     // Coroutine, die das Event behandelt (hier als Platzhalter)
-    IEnumerator ProcessEvent()
+    IEnumerator PlayAnimationAndProcessEvent()
     {
-        // F�hre das Event aus (z. B. Dialog, Animation, usw.)
-        Debug.Log("Event gestartet...");
+        // Trigger die Animation
+        animator.SetBool(animationTrigger,true);
 
-        // Hier w�rde deine Event-Logik stehen, die den Agenten stoppt
+        // Warte, bis die Animation beendet ist
+        float currentAnimationTime = animator.GetCurrentAnimatorStateInfo(0).normalizedTime * animator.GetCurrentAnimatorStateInfo(0).length;
 
-        // Simuliere eine Verz�gerung
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(currentAnimationTime);
+                animator.SetBool(animationTrigger,false);
 
-        // Setze das Event zur�ck, damit der Agent weitergeht
+        //yield return new WaitForSeconds(3f);
+        // Setze das Event zurück, damit der Agent weitergeht
         isEventActive = false;
         navMeshAgent.isStopped = false;
 
-        Debug.Log("Event abgeschlossen. Agent l�uft weiter.");
+        // Setze auch das Triggering für das nächste Event zurück
+        //StartCoroutine(EventCooldown());
     }
-
-    // Coroutine f�r die Abklingzeit des Events
+    // Coroutine f r die Abklingzeit des Events
     IEnumerator EventCooldown()
     {
         canTriggerEvent = false; // Deaktiviere das Event-Triggering
@@ -123,6 +160,10 @@ public class AgentAI : MonoBehaviour
         canTriggerEvent = true; // Aktiviere das Event-Triggering nach der Abklingzeit
     }
 
-
+     IEnumerator ResetCollisionHandling()
+    {
+        yield return new WaitForSeconds(5.0f); // npassen der Wartezeit hier (z.B. 5 Sekunden)
+        collisionHandled = false; // Erlaube erneute Kollisionsbehandlung
+    }
 
 }
