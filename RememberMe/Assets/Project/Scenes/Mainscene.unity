@@ -8859,6 +8859,14 @@ PrefabInstance:
       value: Ayyy Carramba Amigo ! Bitte spiele diese eine Melodie bitee Amigo, por
         favor.      Amigo Amigo Amigo
       objectReference: {fileID: 0}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: collectables
+      value: 
+      objectReference: {fileID: 1103035753}
     - target: {fileID: 1100234148061056002, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
@@ -24633,6 +24641,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 90597ad475d9c3f479232f7366583962, type: 3}
+--- !u!1 &1892510188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2136823622802978082, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+  m_PrefabInstance: {fileID: 987106368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1892510194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892510188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c888242dcd4d1d547b9636806a1b5374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactorTransform: {fileID: 915905976}
+  animator: {fileID: 2030920717}
+  dm: {fileID: 820202583}
+  dialogue:
+  - Ayy Carramba Amigo. Spiele noch einmal diese Melodie.          Amigo Amigo Amigo        
+    Ergreife die Note und du ergreifst mein Herz
+  dialogueIndex: 0
+  test: 15000
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!4 &1904263274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 486006, guid: 80d67ffa5fd4a7747939e0e90837d2ad, type: 3}
@@ -25407,6 +25441,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 492298, guid: fd599d410c701324ab9e117ca03c55d1, type: 3}
   m_PrefabInstance: {fileID: 2018660604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2030920717 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2669159821889158730, guid: d41bb32a5c4044747b4e2d8483a600cb, type: 3}
+  m_PrefabInstance: {fileID: 42762270161934385}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2048030088
 PrefabInstance:

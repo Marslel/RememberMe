@@ -14,6 +14,9 @@ public class PianoNPCInteractable : MonoBehaviour
 
     public int test;
 
+    [SerializeField]
+    Data_Storage data;
+
     private System.DateTime timer = System.DateTime.Now.AddDays(10);
 
     private void Awake(){
@@ -44,7 +47,7 @@ public class PianoNPCInteractable : MonoBehaviour
         if(other.gameObject.CompareTag("Head")){
             dm.ShowDialog(transform.position);
             npcHeadLookAt.LookAtPosition(interactorTransform.position);
-                if(System.DateTime.Now > timer.AddMilliseconds(test)){
+                if(System.DateTime.Now > timer.AddMilliseconds(test) && !data.pianoWon){
                     ShowNote();
                     timer = System.DateTime.Now.AddDays(10);
                 }

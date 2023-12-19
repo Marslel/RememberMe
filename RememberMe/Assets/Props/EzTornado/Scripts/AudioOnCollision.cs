@@ -24,7 +24,7 @@ public class AudioOnCollision : MonoBehaviour
 	void OnCollisionEnter ()  //Plays Sound Whenever collision detected
 	{
         Debug.Log("Collision detected");
-		GameObject pianoObject = transform.parent.parent.Find("eighth_note").gameObject;// GameObject.Find("Piano_Cube"); // Hier den richtigen Namen des GameObjects einsetzen
+		GameObject pianoObject = transform.parent.parent.parent.Find("eighth_note").gameObject;// GameObject.Find("Piano_Cube"); // Hier den richtigen Namen des GameObjects einsetzen
 		ShowSequence showSequenceScript = pianoObject.GetComponent<ShowSequence>();
         if (showSequenceScript.IsSequenceGoing)
         {
