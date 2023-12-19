@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ChessLogic : MonoBehaviour
 {
-    [SerializeField]
-    ResetChessBoard resetChess;
+
     [SerializeField]
     GameObject chessPrefab;
 
@@ -49,6 +48,12 @@ public class ChessLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+
+        col = GameObject.FindGameObjectWithTag("House").GetComponent<Collectables>();
+        npcTextBlack = GameObject.Find("Carlos").GetComponentInChildren<NPCInteractable>();
+        npcTextWhite = GameObject.Find("Diego").GetComponentInChildren<NPCInteractable>();
+
+    
         solved = dataStorage.chess;
         if(solved){
             npcTextBlack.dialogueIndex = 1;
