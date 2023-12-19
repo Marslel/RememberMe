@@ -13,6 +13,7 @@ TagManager:
   - Bullet
   - EventTrigger
   - House
+  - Dialog
   layers:
   - Default
   - TransparentFX

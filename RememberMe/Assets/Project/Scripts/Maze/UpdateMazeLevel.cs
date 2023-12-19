@@ -14,6 +14,7 @@ public class UpdateMazeLevel : MonoBehaviour
 
     [SerializeField]
     public Text timeText;
+    int countPiece;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,9 @@ public class UpdateMazeLevel : MonoBehaviour
         }
 
         // adapt puzzles solved on ui
-        timeText.text = data_Storage.puzzlesSolved.ToString();
+        countPiece = data_Storage.puzzlesSolved;
+        Debug.Log("Puzzles solved :" +countPiece);
+        timeText.text = countPiece.ToString();
         
     }
 

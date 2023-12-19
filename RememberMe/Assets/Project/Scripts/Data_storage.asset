@@ -21,9 +21,9 @@ MonoBehaviour:
   bell: 0
   alpaca: 0
   alpacaTreat: 0
-  time: 1000
+  time: 744.6739
   mazetime: 200
-  level: 1
+  level: 3
   MazePrefabs: []
   MazepPrefabIndex: 0
   ShootingrangePrefabs: []
