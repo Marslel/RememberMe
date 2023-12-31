@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2383,6 +2383,7 @@ GameObject:
   - component: {fileID: 185852408}
   - component: {fileID: 185852407}
   - component: {fileID: 185852406}
+  - component: {fileID: 185852410}
   m_Layer: 0
   m_Name: Cube
   m_TagString: SceneExit
@@ -2412,7 +2413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185852404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da71a3cb5e17c3141ba629848259563d, type: 3}
   m_Name: 
@@ -2420,6 +2421,7 @@ MonoBehaviour:
   sceneName: ShootingRange
   main:
     m_Handle: 0
+  data_Storage: {fileID: 0}
 --- !u!65 &185852407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2483,6 +2485,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185852404}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &185852410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185852404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebab471e01db4348b81886b78ec1351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: ShootingRange
+  main:
+    m_Handle: 0
+  data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!4 &192746050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446164, guid: 946a4974b6ec78f4fbfdc53aa2363b28, type: 3}
@@ -34233,6 +34251,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 134755422060676585, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
+      propertyPath: m_Name
+      value: Mazeportal
+      objectReference: {fileID: 0}
     - target: {fileID: 489959614643986094, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -34281,6 +34303,10 @@ PrefabInstance:
       propertyPath: sky
       value: 
       objectReference: {fileID: 1103035755}
+    - target: {fileID: 508115057011575347, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
+      propertyPath: data_Storage
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
     - target: {fileID: 1932207975197202858, guid: ee8b2561399de7146920766ff5c6ada6, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.4444

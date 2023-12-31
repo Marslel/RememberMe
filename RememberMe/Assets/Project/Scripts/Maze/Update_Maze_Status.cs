@@ -9,6 +9,7 @@ public class Update_Maze_Status : MonoBehaviour
     public GameObject exit;
     [SerializeField]
     public GameObject time;
+    private bool alreadyUpdated;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +26,11 @@ public class Update_Maze_Status : MonoBehaviour
 
         if(other.tag == "Head"){
 
-            if(data_Storage != null){
+            if(data_Storage != null && alreadyUpdated != true){
                 data_Storage.updateMazeWon(true);
                 data_Storage.updatePuzzlesSolved(1);
                 data_Storage.adaptTimer(time.GetComponent<Timer>().timeRemaining);
+                alreadyUpdated = true;
             }
             exit.GetComponent<HideObject>().makeVisible();
         }  
