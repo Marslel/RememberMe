@@ -392,7 +392,6 @@ GameObject:
   - component: {fileID: 400020}
   - component: {fileID: 9500000}
   - component: {fileID: 14300000}
-  - component: {fileID: 11418234}
   m_Layer: 0
   m_Name: eighth_note
   m_TagString: Untagged
@@ -456,23 +455,3 @@ CharacterController:
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &11418234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fbe9780de27c74439857201a87b4c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chrAnimator: {fileID: 9500000}
-  chrAnimatorController:
-  - {fileID: 9100000, guid: 9b5c7cf1106a6be4db0d1d193470e4a4, type: 2}
-  - {fileID: 9100000, guid: 445a86573e22fc348bea4d0b710a8f74, type: 2}
-  chrController: {fileID: 14300000}
-  meshData:
-  - {fileID: 100018}
-  jumpSpeed: 6

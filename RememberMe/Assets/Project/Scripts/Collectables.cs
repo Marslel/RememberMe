@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collectables : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Collectables : MonoBehaviour
     public Data_Storage data_Storage;
     [SerializeField]
     public GameObject time;
+    [SerializeField]
+    public Text timeText;
 
     ArrayList puzzleparts = new ArrayList();
     int countPiece;
@@ -61,6 +64,7 @@ public class Collectables : MonoBehaviour
             Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
             countPiece ++;
             pablo.dialogueIndex ++;
+            timeText.text = countPiece.ToString();
         }  
     }
 
@@ -85,6 +89,7 @@ public class Collectables : MonoBehaviour
 
         
         
+        timeText.text = countPiece.ToString();
     }
 
     public void collectTreat(){

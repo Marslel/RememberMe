@@ -24,26 +24,27 @@ public class AudioOnCollision : MonoBehaviour
 	void OnCollisionEnter ()  //Plays Sound Whenever collision detected
 	{
         Debug.Log("Collision detected");
-		GameObject pianoObject = GameObject.Find("Piano_Cube"); // Hier den richtigen Namen des GameObjects einsetzen
+		GameObject pianoObject = transform.parent.parent.parent.Find("eighth_note").gameObject;// GameObject.Find("Piano_Cube"); // Hier den richtigen Namen des GameObjects einsetzen
 		ShowSequence showSequenceScript = pianoObject.GetComponent<ShowSequence>();
         if (showSequenceScript.IsSequenceGoing)
         {
             if (showSequenceScript.currentKey == gameObject)
             {
                 GetComponent<AudioSource>().Play();
+                Animator anim = transform.parent.gameObject.GetComponent<Animator>();
+                anim.SetTrigger("Play");
                 showSequenceScript.rightKey = true;
                 ChangeColor(gameObject, Color.green);
                 GameObject note = SpawnEighthNote();
                 FindChild findChildScript = note.GetComponent<FindChild>();
 
                 ChangeColor(findChildScript.FindNoteBody(), Color.green);
-                //Transform childTransform = transform.Find("eighthNotePrefab_note");
-                //GameObject childObject = childTransform.gameObject;
-                //ChangeColor(childObject, Color.green);
             }
             else
             {
                 GetComponent<AudioSource>().Play();
+                Animator anim = transform.parent.gameObject.GetComponent<Animator>();
+                anim.SetTrigger("Play");
                 showSequenceScript.rightKey = false;
                 ChangeColor(gameObject, Color.red);
                 GameObject note = SpawnEighthNote();
@@ -55,10 +56,8 @@ public class AudioOnCollision : MonoBehaviour
         else
         {
             GetComponent<AudioSource>().Play();
-            if(transform.parent.name == "Test2"){
-                GameObject parent = GameObject.Find("Test2");
-                parent.GetComponent<Animator>().Play("TestAnimation");
-            }
+            Animator anim = transform.parent.gameObject.GetComponent<Animator>();
+            anim.SetTrigger("Play");
         }
     }
 
