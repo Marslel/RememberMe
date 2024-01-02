@@ -895,6 +895,7 @@ MonoBehaviour:
   allowedDistance: 50
   alpacca: {fileID: 8780361679799631425}
   col: {fileID: 0}
+  nextDesination: {x: 0, y: 0, z: 0}
   speed: 8.5
   walkRadius: 20
 --- !u!95 &4309597070029935186
@@ -1916,6 +1917,10 @@ PrefabInstance:
     - target: {fileID: 3102109538421093342, guid: 7c83c8df1e206fe4cbf54dfd87eefe94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859971421473235693, guid: 7c83c8df1e206fe4cbf54dfd87eefe94, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7553660968927349390, guid: 7c83c8df1e206fe4cbf54dfd87eefe94, type: 3}
       propertyPath: m_Transforms.Array.data[34]
@@ -3443,6 +3448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5221980483118299772}
     m_Modifications:
+    - target: {fileID: 1747133645555049094, guid: 4e8fdb10fc061824d9f851f375bcd05b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6327561232034642453, guid: 4e8fdb10fc061824d9f851f375bcd05b, type: 3}
       propertyPath: m_Name
       value: Rafael_Raul
@@ -5487,6 +5496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5221980483118299772}
     m_Modifications:
+    - target: {fileID: 410331132400075438, guid: adef185ebc117774899fb6b90ab446e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5434492961128736675, guid: adef185ebc117774899fb6b90ab446e5, type: 3}
       propertyPath: m_RootOrder
       value: 6
