@@ -14,6 +14,8 @@ public class ChangeScene : MonoBehaviour
     [SerializeField]
     public Data_Storage data_Storage;
 
+    private Scene currentScene;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,7 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        currentScene = SceneManager.GetActiveScene();
         
     }
 
@@ -34,6 +36,9 @@ public class ChangeScene : MonoBehaviour
             Debug.Log("Player gefunden auf zum Maze");
                 SceneManager.LoadScene(sceneName);
             
+        }else if(other.tag == "Head" && currentScene.name == "Maze"){
+            Debug.Log("Player gefunden , raus aus dem Maze");
+                SceneManager.LoadScene(sceneName);
         }
     }
 
