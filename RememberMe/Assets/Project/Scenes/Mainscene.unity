@@ -22606,7 +22606,7 @@ PrefabInstance:
       objectReference: {fileID: 915905976}
     - target: {fileID: 8152474393746327537, guid: d41bb32a5c4044747b4e2d8483a600cb, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: TODO
+      value: Schau mal nach, ich glaube ein Pflaze ist schon reif
       objectReference: {fileID: 0}
     - target: {fileID: 8226153423884239895, guid: d41bb32a5c4044747b4e2d8483a600cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31267,7 +31267,7 @@ PrefabInstance:
       objectReference: {fileID: 915905976}
     - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
       propertyPath: dialogue.Array.data[7]
-      value: Du hast unser photo wieder vereint! Mi AMIGO EASTAS INCREIBLE
+      value: Du hast unser photo wieder vereint! Mi AMIGO ESTAS INCREIBLE
       objectReference: {fileID: 0}
     - target: {fileID: 8032086406355794569, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
       propertyPath: m_Effectors.Array.size
