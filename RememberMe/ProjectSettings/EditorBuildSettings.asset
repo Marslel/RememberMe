@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/ShootingRange.unity
     guid: cc89f153a9bb92c41afbea625ff13a94
+  - enabled: 1
+    path: Assets/Project/Scenes/EndSceneHappyEnd.unity
+    guid: fae7ec7eaa7d7a847b4576f7c5e87463
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 17174c330040045418b4b2ca8f21d0fe, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c570d59b3914c5442ab88ecb60148017, type: 2}
