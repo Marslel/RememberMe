@@ -71,6 +71,18 @@
       "requirement": "suggested"
     },
     {
+      "name": "/actions/default/in/ButtonNext",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/ButtonBack",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Joystick",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -195,7 +207,9 @@
       "/actions/default/in/Forward": "Forward",
       "/actions/default/in/Backward": "Backward",
       "/actions/default/in/Left": "Left",
-      "/actions/default/in/Right": "Right"
+      "/actions/default/in/Right": "Right",
+      "/actions/default/in/ButtonBack": "Button_Back",
+      "/actions/default/in/Joystick": "Joystick"
     }
   ]
 }

@@ -289,6 +289,33 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/butttonnext"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/buttonback"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "scroll" : {
+                     "output" : "/actions/default/in/joystick"
+                  }
+               },
+               "mode" : "scroll",
+               "path" : "/user/hand/right/input/joystick"
             }
          ]
       },
@@ -325,7 +352,7 @@
    "controller_type" : "hpmotioncontroller",
    "description" : "(auto-remapped from oculus_touch)",
    "interaction_profile" : "",
-   "name" : "oculus_touch",
+   "name" : "Konfiguration 06-01 (teil 2)",
    "options" : {
       "simulate_hmd" : true,
       "simulate_rendermodel" : true,
