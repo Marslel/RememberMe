@@ -23,6 +23,9 @@ public class SwitchScreensUI : MonoBehaviour
     public float time = 2.0f;
     public float timer;
     private bool antispam = false;
+    private LevelSettings levelsettings;
+    private ChangeScene changeScene;
+    private int selectedLevel;
 
     
     // Start is called before the first frame update
@@ -31,6 +34,8 @@ public class SwitchScreensUI : MonoBehaviour
         handType = SteamVR_Input_Sources.RightHand;
         textIndex = 0;
         timer = Time.time;
+        levelsettings = GetComponent<LevelSettings>();
+        changeScene = GetComponent<ChangeScene>();
         
     }
 
@@ -40,6 +45,27 @@ public class SwitchScreensUI : MonoBehaviour
 
         //if button a pressed initate button "weiter"
         if (buttonNext.GetStateDown(handType)){
+            if(textIndex == texts.Length-1){
+                // set level and switch to mainscene
+                switch(selectedLevel) {
+                    case 0:
+                         levelsettings.setLevel1();
+                         break;
+                    case 1:
+                        levelsettings.setLevel2();
+                        break;
+                    case 2:
+                        levelsettings.setLevel3();
+                        break;
+                    default:
+                        levelsettings.setLevel1();
+                        break;
+                }
+                
+                changeScene.LoadOtherScene();
+
+                
+            }
             ShowNextText();
 
         }else if(buttonBack.GetStateDown(handType)){
@@ -55,13 +81,12 @@ public class SwitchScreensUI : MonoBehaviour
         }
 
         if(joystickInput.y != 0 && !antispam){
-                Debug.Log("You have scrolled " + joystickInput.y);
                 buttonindex = (buttonindex + level.Length - (int)joystickInput.y) % level.Length;
-                Debug.Log("ahhhhhhhhhh  " + buttonindex);
                 if(textIndex == texts.Length-1){
                     for(int i = 0; i < level.Length; i++){
                         if(i==buttonindex){
                             level[i].GetComponent<Image>().color = Color.green;
+                            selectedLevel = i;
                         }else{
                             level[i].GetComponent<Image>().color = Color.white;
                         }
@@ -75,7 +100,6 @@ public class SwitchScreensUI : MonoBehaviour
     }
 
     void ShowNextText(){
-        Debug.Log("You have clicked the next button!");
 
         if(textIndex < texts.Length-1){
             textIndex ++;
@@ -99,7 +123,6 @@ public class SwitchScreensUI : MonoBehaviour
     }
 
     void ShowPreviousText(){
-        Debug.Log("You have clicked the back button!");
          if(textIndex == texts.Length-1){
             nextButton.gameObject.SetActive(true);
                 startButton.gameObject.SetActive(false);
