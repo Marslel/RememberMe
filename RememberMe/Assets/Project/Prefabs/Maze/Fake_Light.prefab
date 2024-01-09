@@ -1871,6 +1871,7 @@ GameObject:
   - component: {fileID: 6182318426211427873}
   - component: {fileID: 6182318426211427887}
   - component: {fileID: 344880793144186476}
+  - component: {fileID: 1924156056216264271}
   m_Layer: 0
   m_Name: Fake_Light
   m_TagString: Untagged
@@ -2111,6 +2112,19 @@ MonoBehaviour:
   previewPoseSelection: 0
   blendingBehaviours: []
   scale: 1
+--- !u!114 &1924156056216264271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183315136000218931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &6751454418680945030
 GameObject:
   m_ObjectHideFlags: 0

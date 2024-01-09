@@ -33,11 +33,23 @@ public class Collectables : MonoBehaviour
 
     ArrayList puzzleparts = new ArrayList();
     int countPiece;
+
+    private AudioSource audio;
+
+
+    [SerializeField]
+    NPCInteractable cristobal;
+
+    [SerializeField]
+    NPCInteractable don;
+
     // Start is called before the first frame update
     void Start()
     {
 
         addPuzzlePosAndRot();
+
+        audio = GetComponent<AudioSource>();
 
         
         switch (data_Storage.level){
@@ -60,12 +72,23 @@ public class Collectables : MonoBehaviour
         if(data_Storage.alpaca){
             alpacaIgnorePlayer = true;
         }  
+        Invoke ("updatePhoto", 1);
+    }
+
+    private void updatePhoto(){
         for(int i = 0; i <data_Storage.puzzlesSolved ; i++){
-            Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
+            //Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
+            puzzleObjects[countPiece].GetComponent<HideObject>().makeVisible();
             countPiece ++;
             pablo.dialogueIndex ++;
             timeText.text = countPiece.ToString();
         }  
+        if(data_Storage.mazeWon){
+            cristobal.dialogueIndex ++;
+        }
+        if(data_Storage.shootingRangeWon){
+            don.dialogueIndex ++;
+        }
     }
 
     // Update is called once per frame
@@ -81,19 +104,31 @@ public class Collectables : MonoBehaviour
 
     public void addPuzzlePiece(){
         Debug.Log("You found a puzzle part");
-
-        Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
+            
+        puzzleObjects[countPiece].GetComponent<HideObject>().makeVisible();
+        //Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
         countPiece ++;
         data_Storage.puzzlesSolved ++;
         pablo.dialogueIndex ++;
 
-        
-        
+        audio.Play();
+
         timeText.text = countPiece.ToString();
+
+        if(data_Storage.level == 1 && data_Storage.puzzlesSolved == 5){
+            // play audio 
+            //"Super du hast die benoetigte Anzahl an Phototeilen gefunden, wenn du fruehzeitig aufhoeren willst geh zu Pablo. Du kannst aber natuerlich auch noch die zwei uebrigen finden Muchacho."
+        } else if(data_Storage.puzzlesSolved == 7){
+            // play audio
+            //"Bravo du hast alle Teile des Photos gefunden geh zurueck zu Pablo und die Party kann beginnen."
+            time.GetComponent<Timer>().stopTimer();
+        }
+
     }
 
     public void collectTreat(){
         treatCollected = true;
+        audio.Play();
          Debug.Log("You found an alpaca treat");
         
     }

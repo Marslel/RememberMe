@@ -531,7 +531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85102485b74c102458a7987e9dbb521b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetChess: {fileID: 0}
   chessPrefab: {fileID: 415331142743414023}
   chessPlayer: {fileID: 2219979960915880722}
   endTile: {fileID: 3465486619956934581}
@@ -574,6 +573,7 @@ GameObject:
   - component: {fileID: 6546024469312552528}
   - component: {fileID: 8116195850582111912}
   - component: {fileID: 2581713885471476683}
+  - component: {fileID: 483658904935977044}
   m_Layer: 0
   m_Name: king_black
   m_TagString: Untagged
@@ -812,6 +812,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &483658904935977044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424471311698986560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &517611487226795644
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +940,7 @@ GameObject:
   - component: {fileID: 7957305734262943849}
   - component: {fileID: 1727059547020288300}
   - component: {fileID: 2460914183167561171}
+  - component: {fileID: 6762695646737059570}
   m_Layer: 0
   m_Name: knight_white (1)
   m_TagString: Untagged
@@ -1177,6 +1191,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &6762695646737059570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629382827947012023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &677170547547056584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2486,7 @@ GameObject:
   - component: {fileID: 7672136787293038706}
   - component: {fileID: 8374458822103137741}
   - component: {fileID: 2102633298455672575}
+  - component: {fileID: 6252437845746948357}
   m_Layer: 0
   m_Name: rook_black (1)
   m_TagString: Untagged
@@ -2697,6 +2725,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &6252437845746948357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166421939966312273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &1181305513010499767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,6 +2981,7 @@ GameObject:
   - component: {fileID: 6200875073124668383}
   - component: {fileID: 7293700378762932675}
   - component: {fileID: 1364641101572788000}
+  - component: {fileID: 7843076873139635656}
   m_Layer: 0
   m_Name: pawn_white (6)
   m_TagString: Untagged
@@ -3178,6 +3220,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &7843076873139635656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296748811980705477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &1312187344267022694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,6 +3476,7 @@ GameObject:
   - component: {fileID: 7919891419241125060}
   - component: {fileID: 3177812301171011776}
   - component: {fileID: 4382809420368539876}
+  - component: {fileID: 581149281961915969}
   m_Layer: 0
   m_Name: king_white
   m_TagString: Untagged
@@ -3659,6 +3715,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 3
   currPlayerColor: 0
+--- !u!114 &581149281961915969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466494737833248932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &1510309789394887654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4128,6 +4197,7 @@ GameObject:
   - component: {fileID: 4929276179444612537}
   - component: {fileID: 2718654976876626938}
   - component: {fileID: 3214264273921525276}
+  - component: {fileID: 2038109545227829002}
   m_Layer: 0
   m_Name: pawn_black (2)
   m_TagString: Untagged
@@ -4366,6 +4436,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &2038109545227829002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997141659887342108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2005833458857074548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4511,6 +4594,7 @@ GameObject:
   - component: {fileID: 7042571252042218195}
   - component: {fileID: 7786037000526206783}
   - component: {fileID: 4027624925438836951}
+  - component: {fileID: 1280227778495068610}
   m_Layer: 0
   m_Name: pawn_black (7)
   m_TagString: Untagged
@@ -4749,6 +4833,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 8
   currPlayerColor: 1
+--- !u!114 &1280227778495068610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2215100840632712653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2219979960915880722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,6 +4863,7 @@ GameObject:
   - component: {fileID: 6954929156576511131}
   - component: {fileID: 625350845775109831}
   - component: {fileID: 2603181383827762122}
+  - component: {fileID: 5396514917048379074}
   m_Layer: 0
   m_Name: knight_black
   m_TagString: Untagged
@@ -5004,6 +5102,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &5396514917048379074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2219979960915880722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2276976623986532929
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +5230,7 @@ GameObject:
   - component: {fileID: 4618285964392276749}
   - component: {fileID: 6174514818931665803}
   - component: {fileID: 928233286286679004}
+  - component: {fileID: 788634236225843091}
   m_Layer: 0
   m_Name: pawn_black (4)
   m_TagString: Untagged
@@ -5357,6 +5469,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &788634236225843091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2286133811367939932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2395415108276936629
 GameObject:
   m_ObjectHideFlags: 0
@@ -5502,6 +5627,7 @@ GameObject:
   - component: {fileID: 5577622876524643761}
   - component: {fileID: 946653675875138193}
   - component: {fileID: 3246385128817330064}
+  - component: {fileID: 1910565450172691810}
   m_Layer: 0
   m_Name: pawn_white (3)
   m_TagString: Untagged
@@ -5740,6 +5866,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 11
   currPlayerColor: 0
+--- !u!114 &1910565450172691810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445118427482319920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2470984818849822352
 GameObject:
   m_ObjectHideFlags: 0
@@ -6977,6 +7116,7 @@ GameObject:
   - component: {fileID: 8787887320269655172}
   - component: {fileID: 2542615482968787834}
   - component: {fileID: 4357490484024460188}
+  - component: {fileID: 6099598205461554859}
   m_Layer: 0
   m_Name: bishop_white (1)
   m_TagString: Untagged
@@ -7215,6 +7355,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &6099598205461554859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2791526712355348954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &2799363185755653761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7827,6 +7980,7 @@ GameObject:
   - component: {fileID: 1423283631910262393}
   - component: {fileID: 2900535211864415346}
   - component: {fileID: 3207500150453242612}
+  - component: {fileID: 2874521576811728015}
   m_Layer: 0
   m_Name: pawn_black (1)
   m_TagString: Untagged
@@ -8065,6 +8219,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &2874521576811728015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236739184626246015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &3369396258540441377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,6 +8633,7 @@ GameObject:
   - component: {fileID: 7620307878386390517}
   - component: {fileID: 9079668848338458293}
   - component: {fileID: 2977340398809440506}
+  - component: {fileID: 2388386081642090200}
   m_Layer: 0
   m_Name: queen_white
   m_TagString: Untagged
@@ -8704,6 +8872,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &2388386081642090200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3461957569596193819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &3465486619956934581
 GameObject:
   m_ObjectHideFlags: 0
@@ -8849,6 +9030,7 @@ GameObject:
   - component: {fileID: 4690886309612763655}
   - component: {fileID: 742443638047908611}
   - component: {fileID: 1134766360014333893}
+  - component: {fileID: 3727429135192586415}
   m_Layer: 0
   m_Name: knight_white
   m_TagString: Untagged
@@ -9087,6 +9269,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 6
   currPlayerColor: 0
+--- !u!114 &3727429135192586415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647862353025216971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &3680361138475236839
 GameObject:
   m_ObjectHideFlags: 0
@@ -9360,6 +9555,7 @@ GameObject:
   - component: {fileID: 4882097528045540081}
   - component: {fileID: 5235602026265878671}
   - component: {fileID: 7043747471217285050}
+  - component: {fileID: 971753692561862612}
   m_Layer: 0
   m_Name: pawn_black (5)
   m_TagString: Untagged
@@ -9598,6 +9794,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &971753692561862612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837625794340995554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &3905912837691650094
 GameObject:
   m_ObjectHideFlags: 0
@@ -9615,6 +9824,7 @@ GameObject:
   - component: {fileID: 6724503979813772295}
   - component: {fileID: 8948911547257598104}
   - component: {fileID: 9349261941947096}
+  - component: {fileID: 3671233303223024006}
   m_Layer: 0
   m_Name: pawn_black (6)
   m_TagString: Untagged
@@ -9853,6 +10063,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &3671233303223024006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3905912837691650094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &3935115478694039466
 GameObject:
   m_ObjectHideFlags: 0
@@ -10477,6 +10700,7 @@ GameObject:
   - component: {fileID: 4992199493516455757}
   - component: {fileID: 9001331964031392106}
   - component: {fileID: 1532991069146246190}
+  - component: {fileID: 5457742053196314831}
   m_Layer: 0
   m_Name: pawn_white (4)
   m_TagString: Untagged
@@ -10715,6 +10939,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &5457742053196314831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277610036790928617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &4298510684386744900
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,6 +11097,7 @@ GameObject:
   - component: {fileID: 6911120401191358254}
   - component: {fileID: 2740240452039757833}
   - component: {fileID: 2770102376694619165}
+  - component: {fileID: 2938956758099182516}
   m_Layer: 0
   m_Name: bishop_black (1)
   m_TagString: Untagged
@@ -11098,6 +11336,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 5
   currPlayerColor: 1
+--- !u!114 &2938956758099182516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456298130228192943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &4658288072212259879
 GameObject:
   m_ObjectHideFlags: 0
@@ -11567,6 +11818,7 @@ GameObject:
   - component: {fileID: 8039023110969997845}
   - component: {fileID: 8205346502403481531}
   - component: {fileID: 391887494464723108}
+  - component: {fileID: 1487968883522188747}
   m_Layer: 0
   m_Name: pawn_white
   m_TagString: Untagged
@@ -11805,6 +12057,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 8
   currPlayerColor: 0
+--- !u!114 &1487968883522188747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868744982421736331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &5050915265669433632
 GameObject:
   m_ObjectHideFlags: 0
@@ -11920,6 +12185,7 @@ GameObject:
   - component: {fileID: 5374218352986424649}
   - component: {fileID: 7156575814657521399}
   - component: {fileID: 265392149637521069}
+  - component: {fileID: 5641242836277727028}
   m_Layer: 0
   m_Name: bishop_black
   m_TagString: Untagged
@@ -12158,6 +12424,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 2
   currPlayerColor: 1
+--- !u!114 &5641242836277727028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105582705212781526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &5262023137007090860
 GameObject:
   m_ObjectHideFlags: 0
@@ -12883,6 +13162,7 @@ GameObject:
   - component: {fileID: 5541170914669650689}
   - component: {fileID: 244100359823290596}
   - component: {fileID: 1874843463549982329}
+  - component: {fileID: 7745554223654918782}
   m_Layer: 0
   m_Name: bishop_white
   m_TagString: Untagged
@@ -13121,6 +13401,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &7745554223654918782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473951665070274029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &5627724196769507061
 GameObject:
   m_ObjectHideFlags: 0
@@ -13138,6 +13431,7 @@ GameObject:
   - component: {fileID: 5445268670653810585}
   - component: {fileID: 6190791915410421285}
   - component: {fileID: 4363985093417231470}
+  - component: {fileID: 5027879815989111452}
   m_Layer: 0
   m_Name: pawn_black
   m_TagString: Untagged
@@ -13376,6 +13670,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 15
   currPlayerColor: 1
+--- !u!114 &5027879815989111452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5627724196769507061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &5643633769343262790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13619,6 +13926,7 @@ GameObject:
   - component: {fileID: 7978830596441905301}
   - component: {fileID: 8438200032021578708}
   - component: {fileID: 2241582425949526433}
+  - component: {fileID: 4403542272515550131}
   m_Layer: 0
   m_Name: rook_white
   m_TagString: Untagged
@@ -13857,6 +14165,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &4403542272515550131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832075360556357355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &5969998630236221546
 GameObject:
   m_ObjectHideFlags: 0
@@ -14228,6 +14549,7 @@ GameObject:
   - component: {fileID: 6113334718281015791}
   - component: {fileID: 7760245396309252131}
   - component: {fileID: 3807883353958543923}
+  - component: {fileID: 5771484485785111143}
   m_Layer: 0
   m_Name: pawn_white (1)
   m_TagString: Untagged
@@ -14466,6 +14788,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 9
   currPlayerColor: 0
+--- !u!114 &5771484485785111143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6021702466668411780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &6103852598895227558
 GameObject:
   m_ObjectHideFlags: 0
@@ -14867,6 +15202,7 @@ GameObject:
   - component: {fileID: 6641351652505173291}
   - component: {fileID: 8256744416262408121}
   - component: {fileID: 3427197467076985689}
+  - component: {fileID: 1114839200130980497}
   m_Layer: 0
   m_Name: pawn_white (2)
   m_TagString: Untagged
@@ -15105,6 +15441,19 @@ MonoBehaviour:
   interactable: {fileID: 0}
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
+--- !u!114 &1114839200130980497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273561692319200375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &6323356897107177583
 GameObject:
   m_ObjectHideFlags: 0
@@ -15122,6 +15471,7 @@ GameObject:
   - component: {fileID: 5337941050429261329}
   - component: {fileID: 1443687214354747759}
   - component: {fileID: 2072428795000947446}
+  - component: {fileID: 2555722345861601415}
   m_Layer: 0
   m_Name: pawn_white (5)
   m_TagString: Untagged
@@ -15360,6 +15710,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 13
   currPlayerColor: 0
+--- !u!114 &2555722345861601415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323356897107177583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &6338939778500403331
 GameObject:
   m_ObjectHideFlags: 0
@@ -15829,6 +16192,7 @@ GameObject:
   - component: {fileID: 4900678591679192467}
   - component: {fileID: 6273847211774877556}
   - component: {fileID: 9159698919158957194}
+  - component: {fileID: 3109972976022854064}
   m_Layer: 0
   m_Name: knight_black (1)
   m_TagString: Untagged
@@ -16067,6 +16431,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &3109972976022854064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557788608256755461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &6609024667252511509
 GameObject:
   m_ObjectHideFlags: 0
@@ -17047,6 +17424,7 @@ GameObject:
   - component: {fileID: 1118647931661839821}
   - component: {fileID: 3124700427809885153}
   - component: {fileID: 4093540103804868954}
+  - component: {fileID: 323533478198358255}
   m_Layer: 0
   m_Name: queen_black
   m_TagString: Untagged
@@ -17285,6 +17663,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &323533478198358255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992743416154537598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &8048575029632720948
 GameObject:
   m_ObjectHideFlags: 0
@@ -18010,6 +18401,7 @@ GameObject:
   - component: {fileID: 4662436730613953449}
   - component: {fileID: 5068287769139209985}
   - component: {fileID: 1799321435143346049}
+  - component: {fileID: 542562650187312716}
   m_Layer: 0
   m_Name: pawn_white (7)
   m_TagString: Untagged
@@ -18248,6 +18640,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &542562650187312716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8690955017151891373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &8777464361240234302
 GameObject:
   m_ObjectHideFlags: 0
@@ -18265,6 +18670,7 @@ GameObject:
   - component: {fileID: 5041644904532298381}
   - component: {fileID: 8006072941791541796}
   - component: {fileID: 3764525271758676437}
+  - component: {fileID: 4255656067477906473}
   m_Layer: 0
   m_Name: rook_black
   m_TagString: Untagged
@@ -18503,6 +18909,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 0
   currPlayerColor: 1
+--- !u!114 &4255656067477906473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8777464361240234302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &8814092099230778203
 GameObject:
   m_ObjectHideFlags: 0
@@ -18874,6 +19293,7 @@ GameObject:
   - component: {fileID: 6299634105729359757}
   - component: {fileID: 6500057020637006188}
   - component: {fileID: 4250814559862039752}
+  - component: {fileID: 4977454230805511961}
   m_Layer: 0
   m_Name: pawn_black (3)
   m_TagString: Untagged
@@ -19112,6 +19532,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 12
   currPlayerColor: 1
+--- !u!114 &4977454230805511961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976960215708261414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1 &9138407396762919282
 GameObject:
   m_ObjectHideFlags: 0
@@ -19259,6 +19692,7 @@ GameObject:
   - component: {fileID: 348922482522540642}
   - component: {fileID: 8665857796282351348}
   - component: {fileID: 860330275708730023}
+  - component: {fileID: 1262976536744697669}
   m_Layer: 0
   m_Name: rook_white (1)
   m_TagString: Untagged
@@ -19605,3 +20039,16 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &1262976536744697669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152381334050870023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1

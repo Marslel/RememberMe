@@ -1344,6 +1344,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.059670955
       objectReference: {fileID: 0}
+    - target: {fileID: 2517469485807959596, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
+      propertyPath: m_Size.y
+      value: 7.44
+      objectReference: {fileID: 0}
     - target: {fileID: 2539925774051400935, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12574936
@@ -1775,7 +1779,7 @@ PrefabInstance:
     - target: {fileID: 4500511238937738712, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: npcText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4395138481193683116}
     - target: {fileID: 4500511238937738712, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: neededItem
       value: 
@@ -2867,7 +2871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7892814946011427448, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: "Gracias Amigo. Jetzt geht Antonios und meine Reise los. Adi\xF3s! "
+      value: 'Gracias Amigo. Jetzt geht Antonios und meine Reise los. Adios! '
       objectReference: {fileID: 0}
     - target: {fileID: 8091014071621574230, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2986,9 +2990,21 @@ PrefabInstance:
       value: -0.18960315
       objectReference: {fileID: 0}
     - target: {fileID: 8338200165570440177, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
+      propertyPath: npcText
+      value: 
+      objectReference: {fileID: 4395138481193683116}
+    - target: {fileID: 8338200165570440177, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
+      propertyPath: neededItem
+      value: 
+      objectReference: {fileID: 5878633257548509665}
+    - target: {fileID: 8338200165570440177, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: dataStorage
       value: 
       objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 8338200165570440177, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
+      propertyPath: objectToHide
+      value: 
+      objectReference: {fileID: 4836327481620145979}
     - target: {fileID: 8439937842717920094, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.583834
@@ -3492,6 +3508,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7206358188073956191, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
   m_PrefabInstance: {fileID: 5869952048188144340}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4395138481193683116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7892814946011427448, guid: bde993b2586c60349b2a674e8ca00023, type: 3}
+  m_PrefabInstance: {fileID: 5869952048188144340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d458bc133854b14099b722d9e2f1f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4836327481620145979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1326402938590535151, guid: bde993b2586c60349b2a674e8ca00023, type: 3}

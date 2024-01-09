@@ -53,10 +53,10 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 displayTime(timeRemaining);
-                if(timeRemaining <= 5300.0 && timeRemaining >= 5298.0){
+                if(timeRemaining <= 1000.0 && timeRemaining >= 999.0){
                     sky.changeSkyboxMaterial(1);
                 }
-                if (timeRemaining <= 5200.0&& timeRemaining >= 5198.0){
+                if (timeRemaining <= 500.0&& timeRemaining >= 499.0){
                     sky.changeSkyboxMaterial(2);
                 }
             }
@@ -66,6 +66,9 @@ public class Timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 
+                // play audio
+                // "Hermano du hast es leider nicht geschaft unser Dorf zu retten..."
+
                 SceneManager.LoadScene(sceneName);
             
         
@@ -78,5 +81,9 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(time/60);
         float seconds = Mathf.FloorToInt(time%60);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void stopTimer(){
+        timerIsRunning = false;
     }
 }

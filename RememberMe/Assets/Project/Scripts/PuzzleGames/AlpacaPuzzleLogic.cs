@@ -60,7 +60,9 @@ public void updateAlpacaPuzzle(){
     Debug.Log("You found my Hat thank you!");
     
     tempHat.GetComponent<HideObject>().makeInvisible();
-    col.addPuzzlePiece();
+    if(!puzzleCompleted){
+        col.addPuzzlePiece();
+    }
     puzzleCompleted = true;
     dataStorage.alpaca = true;
     col.alpacaIgnorePlayer = true;
