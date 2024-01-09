@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3241803789084661366}
-  - component: {fileID: 3241803789084661361}
+  - component: {fileID: 4978745529894870532}
   m_Layer: 0
   m_Name: MovingWall
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &3241803789084661361
+--- !u!111 &4978745529894870532
 Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,9 +43,9 @@ Animation:
   m_GameObject: {fileID: 3241803789084661364}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 7b3ad7dee86d1514a9ed4e1a734cc358, type: 2}
+  m_Animation: {fileID: 7400000, guid: 9d3e7877c2ab2834c9d73edc1fae3433, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 7b3ad7dee86d1514a9ed4e1a734cc358, type: 2}
+  - {fileID: 7400000, guid: 9d3e7877c2ab2834c9d73edc1fae3433, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 235673611045470178}
   wall: {fileID: 8323364310245813550}
-  anim: {fileID: 3241803789084661361}
+  anim: {fileID: 0}
 --- !u!4 &580567746463147352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2662652214757875597, guid: 881400b9674de5c4fb00804c423f6cd5, type: 3}
