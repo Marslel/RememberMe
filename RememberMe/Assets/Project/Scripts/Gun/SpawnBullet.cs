@@ -34,7 +34,7 @@ namespace Valve.VR.InteractionSystem
 
         void Update()
         {
-            if (canSpawn && (Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight)) && shootBullets < maxBullets)
+            if (canSpawn && (Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight)) && shootBullets < maxBullets && startGame.hasTriggered)
             {
                 Spawn();
                 StartCoroutine(StartCooldown());
