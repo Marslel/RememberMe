@@ -27,11 +27,16 @@ public class ShowSequence : MonoBehaviour
     bool modifiable = true;
     int keyCount = 0;
 
+    [SerializeField]
+    private Data_Storage data;
+    [SerializeField]
+    private Collectables collectables;
+
     void Update()
     {
 
         
-        if (IsSequenceGoing)
+        if (IsSequenceGoing && !data.pianoWon)
         {
             if (IsPlayerTrying)
             {
@@ -73,7 +78,11 @@ public class ShowSequence : MonoBehaviour
                         for (int i = 1; i < 53; i++)
                         {
                             ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.white);
+
                         }
+                        data.updatePuzzlesSolved(1);
+                        data.pianoWon = true;
+                        collectables.addPuzzlePiece();
                         IsSequenceGoing = false;
                     }
                     else
@@ -104,8 +113,13 @@ public class ShowSequence : MonoBehaviour
 
     UnityEngine.Vector3 teleportPosition;
 
-    void OnCollisionEnter()  //Plays Sound Whenever collision detected
+    void OnCollisionEnter()  
     {
+        if(data.pianoWon)
+        {
+            return;
+        }
+        Debug.Log("Collision");
         currentKey = GetRandomKey();
 
         timer = System.DateTime.Now;
@@ -115,10 +129,10 @@ public class ShowSequence : MonoBehaviour
         keyCount = 0;
 
         GameObject position = GameObject.Find("Teleport_Position_Piano");
-        GameObject player = GameObject.FindGameObjectWithTag("test");
+        GameObject player = null;// GameObject.FindGameObjectWithTag("test");
         if(player != null)
         {
-
+            Debug.Log(player.name);
         position = GameObject.Find("Teleport_Position_Piano");
         player = GameObject.FindGameObjectWithTag("test");
         player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
@@ -127,6 +141,7 @@ public class ShowSequence : MonoBehaviour
         GameObject camHolder = GameObject.Find("CameraHolder"); 
         camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
         }else{
+            Debug.Log("in VR Teleport");
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");
