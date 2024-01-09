@@ -21,7 +21,7 @@ public class ButtonMovement : MonoBehaviour
 
         if(other != wall && !activated){
             activated = true;
-            anim.Play("wall_goes_down");
+            anim.Play();
             //buttonPos = new UnityEngine.Vector3(73.9f,-67.81284f,3.069515f);
             button.transform.position = buttonPos;
         }
@@ -36,8 +36,6 @@ public class ButtonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("down")){
-            anim.Play("wall_goes_down");
-        }
+
     }
 }

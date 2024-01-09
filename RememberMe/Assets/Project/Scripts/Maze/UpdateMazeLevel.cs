@@ -25,7 +25,7 @@ public class UpdateMazeLevel : MonoBehaviour
             
         }else if(data_Storage.level == 2 ){
             Instantiate(MazePrefabs[1], new Vector3(-51.01407f, -4.77844f, -5.782525f), Quaternion.identity);
-            npc.dialogueIndex = 0;
+            npc.dialogueIndex = 2;
         }else if(data_Storage.level == 3){
             Instantiate(MazePrefabs[1], new Vector3(-51.01407f, -4.77844f, -5.782525f), Quaternion.identity);
             npc.dialogueIndex = 0;

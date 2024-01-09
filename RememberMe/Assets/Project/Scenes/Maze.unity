@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 14893277}
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: interactorTransform
@@ -514,12 +514,20 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0]
       value: Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
         verloren. Kannst du fuer mich suchen? Ich wuerde diese Maiz-Fackel mitnehmen.
-        Es ist dunkel...
+        Es ist dunkel...  Mit dem Button A kannst du das Menu zum Verlassen des Labyrinths
+        oeffnen
       objectReference: {fileID: 0}
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: "Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
-        verloren. Kannst du ihn f\xFCr mich suchen?"
+      value: Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
+        verloren. Kannst du ihn fuer mich suchen? Mit dem Button A kannst du das
+        Menu zum Verlassen des Labyrinths oeffnen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
+        verloren. Kannst du fuer mich suchen? Mit dem Button A kannst du das Menu
+        zum Verlassen des Labyrinths oeffnen
       objectReference: {fileID: 0}
     - target: {fileID: 624241224956532383, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31807,7 +31815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4893171751082896111, guid: 53be17d79fe015f49a2fcd73871294fa, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4901800391081053413, guid: 53be17d79fe015f49a2fcd73871294fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36962,8 +36970,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8975915608144531163, guid: 478b07856ec5413449c971f9c26f9056, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 8975915607206450729}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478b07856ec5413449c971f9c26f9056, type: 3}
+--- !u!111 &8975915607206450729 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 1546395213244967433, guid: 478b07856ec5413449c971f9c26f9056, type: 3}
+  m_PrefabInstance: {fileID: 8975915607206450728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9068798331050711079
 PrefabInstance:
   m_ObjectHideFlags: 0
