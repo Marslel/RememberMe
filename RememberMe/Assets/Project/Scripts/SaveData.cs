@@ -27,7 +27,7 @@ public class SaveData : MonoBehaviour
         
         string logMessage = CreateEntry();
 
-        Debug.Log("Kackapupu bin aktiviert mein Freund");
+        Debug.Log("TXT LOG Location:");
         Debug.Log(m_exePath + " ist mein Pfad");
         
         try

@@ -23,6 +23,7 @@ public class Reset : MonoBehaviour
         data_Storage.level = 0;
         data_Storage.MazePrefabs.Clear();
         data_Storage.MazepPrefabIndex = 0;
+        data_Storage.alpacaTreat = false;
         
     }
 
