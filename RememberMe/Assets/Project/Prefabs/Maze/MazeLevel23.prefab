@@ -7102,9 +7102,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3644678724690766842}
-  - component: {fileID: 6589120357683651464}
   - component: {fileID: 5207698053490170071}
   - component: {fileID: 4915846080394024557}
+  - component: {fileID: 7167309459955710830}
   m_Layer: 0
   m_Name: MovingWall
   m_TagString: Untagged
@@ -7129,22 +7129,6 @@ Transform:
   m_Father: {fileID: 4893171751082896110}
   m_RootOrder: 167
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!111 &6589120357683651464
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3644678724690766840}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9a1ff4f8703044347bc3bc59b1f8c251, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 9a1ff4f8703044347bc3bc59b1f8c251, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &5207698053490170071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7256,6 +7240,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!111 &7167309459955710830
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3644678724690766840}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c7f12abe86100c64a884d2b8fef5ae02, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: feb95f8d617f8d84591499152cd91145, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3738177328675164041
 GameObject:
   m_ObjectHideFlags: 0
@@ -20118,7 +20118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 2102067517646799470}
   wall: {fileID: 7920647699742347426}
-  anim: {fileID: 6589120357683651464}
+  anim: {fileID: 7167309459955710830}
 --- !u!1001 &3644678724212369040
 PrefabInstance:
   m_ObjectHideFlags: 0
