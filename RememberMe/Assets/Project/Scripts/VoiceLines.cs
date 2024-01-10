@@ -20,6 +20,8 @@ public class VoiceLines : MonoBehaviour
 
         // Voice Line zuweisen
         audioSource.clip = voiceLine;
+        audioSource.maxDistance = 2;
+        audioSource.spatialBlend = 1;
     }
 
     // Update is called once per frame

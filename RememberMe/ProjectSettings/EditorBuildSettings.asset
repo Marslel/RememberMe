@@ -20,6 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/EndSceneHappyEnd.unity
     guid: fae7ec7eaa7d7a847b4576f7c5e87463
+  - enabled: 1
     path: Assets/Project/Scenes/Eclipse.unity
     guid: 03d68f61109fd2145b68d7aff9e7482f
   m_configObjects:

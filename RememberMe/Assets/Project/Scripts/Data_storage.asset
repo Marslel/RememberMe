@@ -25,7 +25,7 @@ MonoBehaviour:
   mazetime: 600
   level: 2
   MazePrefabs: []
-  MazepPrefabIndex: 1
+  MazepPrefabIndex: 0
   ShootingrangePrefabs: []
   ShootingrangepPrefabIndex: 0
   PianoPrefabs: []
