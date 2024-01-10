@@ -31,10 +31,18 @@ public class ShowSequence : MonoBehaviour
     private Data_Storage data;
     [SerializeField]
     private Collectables collectables;
+    private bool explanationNeeded = true;
 
     void Update()
     {
-
+        if(explanationNeeded)
+        {
+            if(System.DateTime.Now > timer.AddMilliseconds(20000))
+            {
+                explanationNeeded = false;
+                timer = System.DateTime.Now;
+            }
+        }
         
         if (IsSequenceGoing && !data.pianoWon)
         {
@@ -84,6 +92,7 @@ public class ShowSequence : MonoBehaviour
                         data.pianoWon = true;
                         collectables.addPuzzlePiece();
                         IsSequenceGoing = false;
+                        gameObject.SetActive(false);
                     }
                     else
                     {
@@ -130,22 +139,25 @@ public class ShowSequence : MonoBehaviour
 
         GameObject position = GameObject.Find("Teleport_Position_Piano");
         GameObject player = null;// GameObject.FindGameObjectWithTag("test");
+        explanationNeeded = true;
         if(player != null)
         {
             Debug.Log(player.name);
-        position = GameObject.Find("Teleport_Position_Piano");
-        player = GameObject.FindGameObjectWithTag("test");
-        player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
-        
-        //player.transform.position = new Vector3(0, 1, 6);
-        GameObject camHolder = GameObject.Find("CameraHolder"); 
-        camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
+            position = GameObject.Find("Teleport_Position_Piano");
+            player = GameObject.FindGameObjectWithTag("test");
+            player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
+            
+            //player.transform.position = new Vector3(0, 1, 6);
+            GameObject camHolder = GameObject.Find("CameraHolder"); 
+            camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
+            GetComponent<AudioSource>().Play();
         }else{
             Debug.Log("in VR Teleport");
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");
             perspective.transform.eulerAngles = new Vector3(45, 142, 0);
+            GetComponent<AudioSource>().Play();
         }
     }
 
