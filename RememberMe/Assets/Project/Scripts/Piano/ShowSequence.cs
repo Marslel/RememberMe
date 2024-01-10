@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShowSequence : MonoBehaviour
 {
+	public AudioClip saw;    // Add your Audi Clip Here;
+
     public int SHOWTIME = 5000;
 
     [HideInInspector]
@@ -33,20 +35,26 @@ public class ShowSequence : MonoBehaviour
     private Collectables collectables;
     private bool explanationNeeded = true;
 
+    void Start ()   
+	{
+		GetComponent<AudioSource> ().playOnAwake = false;
+		GetComponent<AudioSource> ().clip = saw;
+    }    	
+
     void Update()
     {
-        if(explanationNeeded)
-        {
-            if(System.DateTime.Now > timer.AddMilliseconds(20000))
-            {
-                explanationNeeded = false;
-                timer = System.DateTime.Now;
-            }
-        }
         
         if (IsSequenceGoing && !data.pianoWon)
         {
-            if (IsPlayerTrying)
+            if(explanationNeeded)
+            {
+                if(System.DateTime.Now > timer.AddMilliseconds(20000))
+                {
+                    explanationNeeded = false;
+                    timer = System.DateTime.Now;
+                }
+            }
+            else if (IsPlayerTrying)
             {
                 ChangeColor(currentKey, Color.blue);
 
@@ -88,7 +96,6 @@ public class ShowSequence : MonoBehaviour
                             ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.white);
 
                         }
-                        data.updatePuzzlesSolved(1);
                         data.pianoWon = true;
                         collectables.addPuzzlePiece();
                         IsSequenceGoing = false;
@@ -156,8 +163,8 @@ public class ShowSequence : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");
-            perspective.transform.eulerAngles = new Vector3(45, 142, 0);
             GetComponent<AudioSource>().Play();
+            perspective.transform.eulerAngles = new Vector3(45, 142, 0);
         }
     }
 

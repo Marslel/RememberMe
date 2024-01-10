@@ -21,7 +21,7 @@ public class StartGame : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
-        if (!hasTriggered){
+        if (!hasTriggered && other.gameObject.CompareTag("Head")){
             Debug.Log("Spieler durch die Hitbox gelaufen");
             objectSpawner.SpawnObjects(numberOfObjectsToSpawn, prefabToSpawn);
             hasTriggered = true;

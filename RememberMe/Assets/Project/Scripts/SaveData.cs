@@ -23,7 +23,8 @@ public class SaveData : MonoBehaviour
     }
 
     private void saveMessageToTxt(){
-         m_exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+         //m_exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+         m_exePath = Path.GetDirectoryName("C:\\test");
         
         string logMessage = CreateEntry();
 
@@ -32,7 +33,7 @@ public class SaveData : MonoBehaviour
         
         try
         {
-            using (StreamWriter w = File.AppendText(m_exePath + "\\" + "log.txt"))
+            using (StreamWriter w = File.AppendText("C:\\test\\log.txt"))
             {
                 Log(logMessage, w);
             }

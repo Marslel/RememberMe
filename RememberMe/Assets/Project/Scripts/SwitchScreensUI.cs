@@ -9,7 +9,8 @@ public class SwitchScreensUI : MonoBehaviour
     public SteamVR_Action_Boolean buttonNext = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("ButtonNext");
     public SteamVR_Action_Boolean buttonBack = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("ButtonBack");
     public SteamVR_Action_Vector2 joystick = SteamVR_Input.GetAction<SteamVR_Action_Vector2>("Joystick");
-    private SteamVR_Input_Sources handType;
+    private SteamVR_Input_Sources righthand;
+    private SteamVR_Input_Sources lefthand;
     public Button nextButton;
     public Button backButton;
     public Button startButton;
@@ -31,7 +32,8 @@ public class SwitchScreensUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        handType = SteamVR_Input_Sources.RightHand;
+        righthand = SteamVR_Input_Sources.RightHand;
+        lefthand = SteamVR_Input_Sources.LeftHand;
         textIndex = 0;
         timer = Time.time;
         levelsettings = GetComponent<LevelSettings>();
@@ -44,9 +46,11 @@ public class SwitchScreensUI : MonoBehaviour
     {
 
         //if button a pressed initate button "weiter"
-        if (buttonNext.GetStateDown(handType)){
+        if (buttonNext.GetStateDown(righthand) || buttonNext.GetStateDown(lefthand) || Input.GetKeyDown(KeyCode.Space)){
+            Debug.Log("Button A pressed");
             if(textIndex == texts.Length-1){
                 // set level and switch to mainscene
+                Debug.Log("Button A pressed - last screen");
                 switch(selectedLevel) {
                     case 0:
                          levelsettings.setLevel1();
@@ -68,11 +72,12 @@ public class SwitchScreensUI : MonoBehaviour
             }
             ShowNextText();
 
-        }else if(buttonBack.GetStateDown(handType)){
+        }else if(buttonBack.GetStateDown(righthand) || buttonBack.GetStateDown(lefthand)){
+            Debug.Log("Button B pressed");
             ShowPreviousText();
         }
 
-        Vector2 joystickInput = joystick.GetAxis(handType);
+        Vector2 joystickInput = joystick.GetAxis(righthand);
 
         //timer -= Time.deltaTime;
         if (timer < Time.time)
@@ -81,6 +86,7 @@ public class SwitchScreensUI : MonoBehaviour
         }
 
         if(joystickInput.y != 0 && !antispam){
+            Debug.Log("Joystick gedrueckt");
                 buttonindex = (buttonindex + level.Length - (int)joystickInput.y) % level.Length;
                 if(textIndex == texts.Length-1){
                     for(int i = 0; i < level.Length; i++){
@@ -100,33 +106,35 @@ public class SwitchScreensUI : MonoBehaviour
     }
 
     void ShowNextText(){
-
+        Debug.Log("Show Text");
         if(textIndex < texts.Length-1){
             textIndex ++;
             texts[textIndex-1].SetActive(false);
             texts[textIndex].SetActive(true);
-
+            Debug.Log("Set Text");
             if(textIndex == texts.Length-1){
+                Debug.Log("Button nicht da");
                 nextButton.gameObject.SetActive(false);
                 startButton.gameObject.SetActive(true);
+                Debug.Log("Button jetzt");
 
-                for(int i = 0; i < level.Length; i++){
-                    if(i==buttonindex){
-                        level[i].GetComponent<Image>().color = Color.green;
-                    }else{
-                        level[i].GetComponent<Image>().color = Color.white;
-                    }
-                }
+                // for(int i = 0; i < level.Length; i++){
+                //     if(i==buttonindex){
+                //         level[i].GetComponent<Image>().color = Color.green;
+                //     }else{
+                //         level[i].GetComponent<Image>().color = Color.white;
+                //     }
+                // }
             }
         }
 
     }
 
     void ShowPreviousText(){
-         if(textIndex == texts.Length-1){
+        if(textIndex == texts.Length-1){
             nextButton.gameObject.SetActive(true);
-                startButton.gameObject.SetActive(false);
-         }
+            startButton.gameObject.SetActive(false);
+        }
         if(textIndex > 0){
             textIndex --;
         }

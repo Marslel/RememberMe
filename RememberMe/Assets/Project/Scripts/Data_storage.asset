@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efc4b77435e1ee4eb199644fe28dd61, type: 3}
   m_Name: Data_storage
   m_EditorClassIdentifier: 
-  puzzlesSolved: 0
+  puzzlesSolved: 1
   mazeWon: 0
   shootingRangeWon: 0
   pianoWon: 0
@@ -21,11 +21,11 @@ MonoBehaviour:
   bell: 0
   alpaca: 0
   alpacaTreat: 0
-  time: 1500
+  time: 1084.0343
   mazetime: 600
-  level: 2
+  level: 3
   MazePrefabs: []
-  MazepPrefabIndex: 0
+  MazepPrefabIndex: 1
   ShootingrangePrefabs: []
   ShootingrangepPrefabIndex: 0
   PianoPrefabs: []
