@@ -36,7 +36,6 @@ public class PianoNPCInteractable : MonoBehaviour
             dm.beginDialogue(dialogue);
             //dm.beginDialogue(dialogue, dialogueIndex );
             timer = System.DateTime.Now;
-            HideNote();
         }
         
     }
@@ -47,7 +46,7 @@ public class PianoNPCInteractable : MonoBehaviour
         if(other.gameObject.CompareTag("Head")){
             dm.ShowDialog(transform.position);
             npcHeadLookAt.LookAtPosition(interactorTransform.position);
-                if(System.DateTime.Now > timer.AddMilliseconds(test) && !data.pianoWon){
+                if(!data.pianoWon && System.DateTime.Now > timer.AddMilliseconds(test) && !data.pianoWon){
                     ShowNote();
                     timer = System.DateTime.Now.AddDays(10);
                 }
