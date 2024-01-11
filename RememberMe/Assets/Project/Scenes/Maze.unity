@@ -526,8 +526,8 @@ PrefabInstance:
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: dialogue.Array.data[2]
       value: Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
-        verloren. Kannst du fuer mich suchen? Mit dem Button A kannst du das Menu
-        zum Verlassen des Labyrinths oeffnen
+        verloren. Kannst du ihn fuer mich suchen? Mit dem Button A kannst du das
+        Menu zum Verlassen des Labyrinths oeffnen
       objectReference: {fileID: 0}
     - target: {fileID: 624241224956532383, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: m_LocalPosition.x

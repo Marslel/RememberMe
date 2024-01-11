@@ -364,9 +364,9 @@ MonoBehaviour:
   interactorTransform: {fileID: 0}
   dm: {fileID: 0}
   dialogue:
-  - "Hey Amigo! Como estas? Ich wurde schon einsam hier allein. Gut, dass du hier
-    bist! Dieses Portal l\xE4sst sich nur zu zweit \xF6ffnen. Ich will endlich zurueck
-    zu meinen Bruedern."
+  - Hey Amigo! Como estas? Ich wurde schon einsam hier allein. Gut, dass du hier
+    bist! Dieses Portal laesst sich nur zu zweit oeffnen. Ich will endlich zurueck
+    zu meinen Bruedern. Geh mit mir durch den Nebel links von mir.
   dialogueIndex: 0
 --- !u!1 &8975915607523205753
 GameObject:
