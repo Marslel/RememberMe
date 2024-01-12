@@ -9,6 +9,9 @@ public class NPCInteractable : MonoBehaviour
     private NPCHeadLookAt npcHeadLookAt;
     public DialogManager dm;
     public string[] dialogue;
+    public AudioClip[] voiceLine;
+
+    private AudioSource audioSource;
 
     public int dialogueIndex;
 
@@ -18,19 +21,36 @@ public class NPCInteractable : MonoBehaviour
         //animator = GetComponent<Animator>();
         npcHeadLookAt = GetComponent<NPCHeadLookAt>();
         dialogueIndex = 0;
+
+
+         // AudioSource-Komponente abrufen oder hinzufügen
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Voice Line zuweisen
+        audioSource.clip = voiceLine[dialogueIndex];
+        audioSource.maxDistance = 2;
+        audioSource.spatialBlend = 1;
         
     }
 
     private void UpdateDialogue(){
+            audioSource.Stop();
             dm.HideDialog();
             dm.beginDialogue(dialogue, dialogueIndex );
-        
+            audioSource.clip = voiceLine[dialogueIndex];
+            audioSource.Play();
+
     }
 
     
     public void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Head")){
             dm.beginDialogue(dialogue, dialogueIndex );
+            audioSource.Play();
             currentIndex = dialogueIndex;
         }
         
