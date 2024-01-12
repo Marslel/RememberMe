@@ -16,8 +16,8 @@ public class ObjectSpawner : MonoBehaviour
 
             do{
             int randomIndex = Random.Range(0, prefabToSpawn.Length);
-            float randomX = Random.Range(-14f,-11f);
-            float randomZ = Random.Range(-14f, -6f);
+            float randomX = Random.Range(-18f,-11f);
+            float randomZ = Random.Range(-14f, -3f);
             Vector3 randomSpawnPosition = new Vector3(randomX, -0.55f, randomZ);
 
             spawnedGameObject = Instantiate(prefabToSpawn[randomIndex], randomSpawnPosition, Quaternion.identity);

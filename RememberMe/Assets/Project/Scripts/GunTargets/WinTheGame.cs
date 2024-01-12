@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Valve.VR.InteractionSystem;
 
 public class WinTheGame : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class WinTheGame : MonoBehaviour
     public Data_Storage data;
     [SerializeField]
     public Text timeText;
+
+    public SpawnBullet spawnBullet;
+
+    public EndLine endLine;
 
     void Start()
     {
@@ -27,7 +32,9 @@ public class WinTheGame : MonoBehaviour
             Debug.Log("Win Game");
             data.updateShootingRangeWon(true);
             data.updatePuzzlesSolved(1);
-            SceneManager.LoadScene("MainScene");
+            endLine.PlayVoiceLine();
+        }else if (spawnBullet.shootBullets == spawnBullet.maxBullets){
+            points = 0;
         }
     }
 

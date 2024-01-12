@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efc4b77435e1ee4eb199644fe28dd61, type: 3}
   m_Name: Data_storage
   m_EditorClassIdentifier: 
-  puzzlesSolved: 0
+  puzzlesSolved: 3
   mazeWon: 0
-  shootingRangeWon: 0
+  shootingRangeWon: 1
   pianoWon: 0
   balloon: 0
   chess: 0
