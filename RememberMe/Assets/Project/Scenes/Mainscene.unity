@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8927,7 +8927,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880562191}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a1b7a5207942f48802a03e63a86f50, type: 3}
   m_Name: 
@@ -9386,12 +9386,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
     - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: dialog
+      value: 
+      objectReference: {fileID: 1892510188}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
       propertyPath: collectables
       value: 
       objectReference: {fileID: 1103035753}
     - target: {fileID: 1100234148061056002, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136823622802978082, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: m_Name
+      value: NPCTriggerCollider
       objectReference: {fileID: 0}
     - target: {fileID: 2136823622802978082, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
       propertyPath: m_Layer
@@ -10710,6 +10718,9 @@ MonoBehaviour:
   timeText: {fileID: 1550975291}
   cristobal: {fileID: 2683455877874786234}
   don: {fileID: 1224880376}
+  voiceLine:
+  - {fileID: 8300000, guid: 006c6db50a7cfb04d95bc21a00d5b8b7, type: 3}
+  - {fileID: 8300000, guid: 87bc8847fb8339e40b2e144081be40f2, type: 3}
 --- !u!114 &1103035754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10727,6 +10738,7 @@ MonoBehaviour:
   timeText: {fileID: 313894770}
   sceneName: Eclipse
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  voiceLine: {fileID: 8300000, guid: f3f99c44a5e52b440968d4db2281c91b, type: 3}
   sky: {fileID: 1103035755}
 --- !u!114 &1103035755
 MonoBehaviour:
@@ -12748,9 +12760,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 809438c214d33a1418ceec205d4869a0, type: 3}
+    - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 809438c214d33a1418ceec205d4869a0, type: 3}
     - target: {fileID: 6355211474623609665, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03630652
@@ -15382,9 +15410,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 672246798}
     - target: {fileID: 4934800182430389282, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 4934800182430389282, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 4934800182430389282, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934800182430389282, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9412b6e7b6e9a8c46adda44af00c5dbc, type: 3}
     - target: {fileID: 4979379535659645696, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99649066
@@ -15482,6 +15522,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 5606249553006698317, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 5606249553006698317, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: currentNPC
       value: 
       objectReference: {fileID: 896051347}
@@ -15489,6 +15533,18 @@ PrefabInstance:
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 5606249553006698317, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5606249553006698317, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 85fe751bd81cf27488e19658267011ee, type: 3}
+    - target: {fileID: 5606249553006698317, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 94dead24daf8b334e998db64c723597e, type: 3}
     - target: {fileID: 5630689860590662189, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99976194
@@ -15654,9 +15710,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 9009321866022428550, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 9009321866022428550, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 9009321866022428550, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009321866022428550, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: de0aed8712603df4bb89fc1509801baa, type: 3}
     - target: {fileID: 9176736235603914225, guid: f1d3c7263860f1246b4dc44a173ea15c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9999908
@@ -24954,7 +25022,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766037593}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a1b7a5207942f48802a03e63a86f50, type: 3}
   m_Name: 
@@ -26127,6 +26195,10 @@ MonoBehaviour:
   dialogue:
   - Ayy Carramba Amigo. Spiele noch einmal diese Melodie.          Amigo Amigo Amigo        
     Ergreife die Note und du ergreifst mein Herz
+  - Amigoo, mein Herz. So wie diese eine Seniorita.
+  voiceLine:
+  - {fileID: 8300000, guid: a658d97548a3127438d6566336f7b325, type: 3}
+  - {fileID: 8300000, guid: 62ab9e309e6427b40bcab7fe3cdec8a4, type: 3}
   dialogueIndex: 0
   test: 9000
   data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
@@ -26777,7 +26849,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002770869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a1b7a5207942f48802a03e63a86f50, type: 3}
   m_Name: 
@@ -27627,7 +27699,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110707470}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a1b7a5207942f48802a03e63a86f50, type: 3}
   m_Name: 
@@ -30409,9 +30481,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 4395138481193683116, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 4395138481193683116, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 4395138481193683116, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395138481193683116, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c0344d66bd88f434b8bc3a758eaf7bed, type: 3}
+    - target: {fileID: 4395138481193683116, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ba881f08d6f59944838ebe06b906cdc, type: 3}
     - target: {fileID: 4436585126563319467, guid: bece6bfc25b1e7c4dac9c71343371eeb, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
@@ -31379,6 +31467,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
       propertyPath: dialogue.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -31387,10 +31479,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 915905976}
     - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: Danke dass du meine hermanos gefunden hast. Sie haben sich schon gemeldet
         und kommen gleich wieder zurueck.
       objectReference: {fileID: 0}
+    - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d10ec891816d8c54aa15777beb46d480, type: 3}
+    - target: {fileID: 2365190192335714767, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 41f4b365ab04cb74fbafb97599e9692b, type: 3}
     - target: {fileID: 6283814400211435908, guid: 4c1c943f30f54ec49a11baf6bf62fd10, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31951,9 +32055,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: 'Hola mein Retter in der Not. Bitte hilf mir alle Piezas de nuestra
@@ -31990,6 +32102,38 @@ PrefabInstance:
         abend gibt es eine grosse Party. Ich muss erst noch etwas vorbereiten du
         kannst ja erst mal zum Brunnenplatz zurueckkehren.
       objectReference: {fileID: 0}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 927543e4b63e65b40a73881b27906b03, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a11bdc9549d2ed24d8c6623f55cddd80, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70b077631eb008d4999fa0be54f890de, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: fa4bf1d1c329d184bbdef949477a8ffb, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 63a771f67fc250c4086edf8e80838596, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f82b234a926a0f4fbe8cd1959f0e334, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: abe3afd555f235946bf727234dacbfb2, type: 3}
+    - target: {fileID: 3753331790964597987, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
+      propertyPath: voiceLine.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: d349dfb78f4425446aa5737006f2345a, type: 3}
     - target: {fileID: 8032086406355794569, guid: b5f45488ae04ece42822570bfedc6df4, type: 3}
       propertyPath: m_Effectors.Array.size
       value: 4
@@ -32428,7 +32572,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232287993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14a1b7a5207942f48802a03e63a86f50, type: 3}
   m_Name: 
@@ -32447,6 +32591,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
       propertyPath: dialogue.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -32455,9 +32603,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 915905976}
     - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: Chapo! Du bist ins Auto gestiegen und hast deinen Mut bewiesen.
       objectReference: {fileID: 0}
+    - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d695a6ffb0df7ec47b985d674f180f36, type: 3}
+    - target: {fileID: 1766571338494057436, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b186232fc3dfaa547943271b287fa805, type: 3}
     - target: {fileID: 5657539012473062350, guid: 88efaeca7ed4bf04b88ed98cf5fb10bc, type: 3}
       propertyPath: m_Name
       value: Don
@@ -35020,9 +35180,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 6287089992964540520, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 6287089992964540520, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 6287089992964540520, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287089992964540520, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 82909ecd337a99443a7cefc15dd29045, type: 3}
+    - target: {fileID: 6287089992964540520, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b19e8eefa8ba5d547bdd4030c20a8a2f, type: 3}
     - target: {fileID: 6302643168872359123, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03630652
@@ -35332,9 +35508,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 7214579765278500909, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 7214579765278500909, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 7214579765278500909, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214579765278500909, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2058460abb7f41246bd69a7e16debc11, type: 3}
+    - target: {fileID: 7214579765278500909, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4be719dfcd900c040901f1f3490d0cf5, type: 3}
     - target: {fileID: 7217037687500833942, guid: 3945b6119c0350c44aa8e85a16ec8342, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03630652
@@ -36125,9 +36317,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 820202583}
     - target: {fileID: 7124940071506793354, guid: e033a89c605a25b448f081f91842a735, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 7124940071506793354, guid: e033a89c605a25b448f081f91842a735, type: 3}
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 915905976}
+    - target: {fileID: 7124940071506793354, guid: e033a89c605a25b448f081f91842a735, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124940071506793354, guid: e033a89c605a25b448f081f91842a735, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ac37ad5c6a72f734184cd9ac630ce3f1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e033a89c605a25b448f081f91842a735, type: 3}
 --- !u!1001 &7966478594221693409

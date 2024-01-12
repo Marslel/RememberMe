@@ -29,7 +29,8 @@ public class Update_Maze_Status : MonoBehaviour
             if(data_Storage != null && alreadyUpdated != true){
                 data_Storage.updateMazeWon(true);
                 data_Storage.updatePuzzlesSolved(1);
-                data_Storage.adaptTimer(time.GetComponent<Timer>().timeRemaining);
+                data_Storage.mazeRemainedTime = time.GetComponent<Timer>().timeRemaining;
+                data_Storage.adaptTimer(data_Storage.mazetime - time.GetComponent<Timer>().timeRemaining);
                 alreadyUpdated = true;
             }
             exit.GetComponent<HideObject>().makeVisible();

@@ -17,6 +17,9 @@ public class NPCInteractable : MonoBehaviour
 
     private int currentIndex;
 
+    [SerializeField]
+    Data_Storage data;
+
     private void Awake(){
         //animator = GetComponent<Animator>();
         npcHeadLookAt = GetComponent<NPCHeadLookAt>();
@@ -50,8 +53,10 @@ public class NPCInteractable : MonoBehaviour
     public void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("Head")){
             dm.beginDialogue(dialogue, dialogueIndex );
+            audioSource.clip = voiceLine[dialogueIndex];
             audioSource.Play();
             currentIndex = dialogueIndex;
+            data.VoiceLinesFound ++;
         }
         
     }

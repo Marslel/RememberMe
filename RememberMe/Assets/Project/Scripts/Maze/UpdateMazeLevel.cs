@@ -35,6 +35,7 @@ public class UpdateMazeLevel : MonoBehaviour
         countPiece = data_Storage.puzzlesSolved;
         Debug.Log("Puzzles solved :" +countPiece);
         timeText.text = countPiece.ToString();
+        data_Storage.mazeTries += 1;
         
     }
 

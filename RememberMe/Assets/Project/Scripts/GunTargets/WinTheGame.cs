@@ -33,7 +33,10 @@ public class WinTheGame : MonoBehaviour
             data.updateShootingRangeWon(true);
             data.updatePuzzlesSolved(1);
             endLine.PlayVoiceLine();
+            data.missedShots = data.missedShots + spawnBullet.maxBullets - spawnBullet.shootBullets;
         }else if (spawnBullet.shootBullets == spawnBullet.maxBullets){
+            data.shootingTries++;
+            data.missedShots = data.missedShots + spawnBullet.maxBullets - spawnBullet.shootBullets;
             points = 0;
         }
     }
@@ -64,4 +67,6 @@ public class WinTheGame : MonoBehaviour
         }
         return false;
     }
+
+    
 }

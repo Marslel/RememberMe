@@ -10,6 +10,9 @@ public class ChessPlayer : MonoBehaviour
     [SerializeField]
     public playercolor currPlayerColor;
 
+    [SerializeField]
+    Data_Storage data;
+
 
     Vector3 startPos;
     Quaternion startRot;
@@ -46,6 +49,7 @@ public class ChessPlayer : MonoBehaviour
 
     public void setBackToStart()
     {        
+        data.ChessResetAmount ++;
         transform.position = startPos;
         transform.rotation = startRot;
         //transform.scale = startPos.scale;

@@ -18,6 +18,10 @@ public class Timer : MonoBehaviour
     public Data_Storage data_Storage;
 
     
+    public AudioClip voiceLine;
+    private AudioSource audioSource;
+
+
     [SerializeField]
     Skybox sky;
 
@@ -41,6 +45,20 @@ public class Timer : MonoBehaviour
         }else if(currentScene.name == "ShootingRange"){
             timeRemaining = data_Storage.time;
         }
+
+        // AudioSource-Komponente abrufen oder hinzufügen
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Voice Line zuweisen
+        audioSource.clip = voiceLine;
+        audioSource.maxDistance = 2;
+        audioSource.spatialBlend = 1;
+
+
         
     }
 
@@ -53,10 +71,10 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 displayTime(timeRemaining);
-                if(timeRemaining <= 1000.0 && timeRemaining >= 999.0){
+                if(timeRemaining <= 800.0 && timeRemaining >= 799.0){
                     sky.changeSkyboxMaterial(1);
                 }
-                if (timeRemaining <= 500.0&& timeRemaining >= 499.0){
+                if (timeRemaining <= 400.0&& timeRemaining >= 399.0){
                     sky.changeSkyboxMaterial(2);
                 }
             }
@@ -68,12 +86,17 @@ public class Timer : MonoBehaviour
                 
                 // play audio
                 // "Hermano du hast es leider nicht geschaft unser Dorf zu retten..."
-
-                SceneManager.LoadScene(sceneName);
+                audioSource.Play();
+                Invoke ("changeToEclipse", 7);
+               
             
         
             }
         }
+    }
+
+    private void changeToEclipse(){
+        SceneManager.LoadScene(sceneName);
     }
 
     void displayTime(float time){

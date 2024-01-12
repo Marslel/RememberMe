@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -499,6 +499,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7957065212781953574}
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 14893277}
@@ -510,6 +514,10 @@ PrefabInstance:
       propertyPath: interactorTransform
       value: 
       objectReference: {fileID: 309169574201420614}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: voiceLine.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: Alejandro, wo bleibst du? ...    Ich hab meinen Bruder im Labyrinth
@@ -529,6 +537,18 @@ PrefabInstance:
         verloren. Kannst du ihn fuer mich suchen? Mit dem Button A kannst du das
         Menu zum Verlassen des Labyrinths oeffnen
       objectReference: {fileID: 0}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: voiceLine.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dd1e56b0781ea04c895c25d8a1d1401, type: 3}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: voiceLine.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa3a5025abb59994c807da1e672fb1e3, type: 3}
+    - target: {fileID: 427660639327597815, guid: 778b1559591957441b4e78e1552d565a, type: 3}
+      propertyPath: voiceLine.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa3a5025abb59994c807da1e672fb1e3, type: 3}
     - target: {fileID: 624241224956532383, guid: 778b1559591957441b4e78e1552d565a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03290912
@@ -19284,8 +19304,9 @@ MonoBehaviour:
   timeRemaining: 1500
   timerIsRunning: 1
   timeText: {fileID: 1705587880}
-  sceneName: Mainscene
+  sceneName: Eclipse
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  voiceLine: {fileID: 8300000, guid: f3f99c44a5e52b440968d4db2281c91b, type: 3}
   sky: {fileID: 0}
 --- !u!65 &1615561819
 BoxCollider:
@@ -31316,6 +31337,10 @@ PrefabInstance:
       value: 0.09633576
       objectReference: {fileID: 0}
     - target: {fileID: 2092985681972274393, guid: 53be17d79fe015f49a2fcd73871294fa, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+    - target: {fileID: 2092985681972274393, guid: 53be17d79fe015f49a2fcd73871294fa, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: Hey Amigo! Como estas? Ich wurde schon einsam hier allein. Gut, dass
         du hier bist! Dieses Portal laesst sich nur zu zweit oeffnen. Ich will endlich
@@ -33850,6 +33875,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5eb7c4a01a591745bdebf1876916371, type: 3}
+--- !u!1 &6182318424631034391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6183315136000218931, guid: a5eb7c4a01a591745bdebf1876916371, type: 3}
+  m_PrefabInstance: {fileID: 6182318424631034390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6182318424631034392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6182318424631034391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f874e1f48b2019548b1d99431bfc47fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnInFront: 1
 --- !u!1001 &6203973960879922519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36898,6 +36941,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3622857386857036506, guid: 478b07856ec5413449c971f9c26f9056, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
     - target: {fileID: 8975915606991313368, guid: 478b07856ec5413449c971f9c26f9056, type: 3}
       propertyPath: dm
       value: 

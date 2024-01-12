@@ -43,6 +43,11 @@ public class Collectables : MonoBehaviour
     [SerializeField]
     NPCInteractable don;
 
+    public AudioClip[] voiceLine;
+
+    private AudioSource audioSource;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +78,19 @@ public class Collectables : MonoBehaviour
             alpacaIgnorePlayer = true;
         }  
         Invoke ("updatePhoto", 1);
+
+        // AudioSource-Komponente abrufen oder hinzufügen
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Voice Line zuweisen
+        audioSource.clip = voiceLine[0];
+        audioSource.maxDistance = 2;
+        audioSource.spatialBlend = 1;
+
     }
 
     private void updatePhoto(){
@@ -103,7 +121,6 @@ public class Collectables : MonoBehaviour
 
 
     public void addPuzzlePiece(){
-        Debug.Log("You found a puzzle part");
             
         puzzleObjects[countPiece].GetComponent<HideObject>().makeVisible();
         //Instantiate(puzzleObjects[countPiece], puzzlePos[countPiece], Quaternion.Euler(puzzleRot));
@@ -118,9 +135,14 @@ public class Collectables : MonoBehaviour
         if(data_Storage.level == 1 && data_Storage.puzzlesSolved == 5){
             // play audio 
             //"Super du hast die benoetigte Anzahl an Phototeilen gefunden, wenn du fruehzeitig aufhoeren willst geh zu Pablo. Du kannst aber natuerlich auch noch die zwei uebrigen finden Muchacho."
+            audioSource.Play();
         } else if(data_Storage.puzzlesSolved == 7){
             // play audio
             //"Bravo du hast alle Teile des Photos gefunden geh zurueck zu Pablo und die Party kann beginnen."
+
+            audioSource.clip = voiceLine[1];
+            audioSource.Play();
+
             time.GetComponent<Timer>().stopTimer();
         }
 
@@ -129,7 +151,6 @@ public class Collectables : MonoBehaviour
     public void collectTreat(){
         treatCollected = true;
         audio.Play();
-         Debug.Log("You found an alpaca treat");
         
     }
 

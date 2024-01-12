@@ -1513,6 +1513,8 @@ MonoBehaviour:
   - "Hey Amigo! Como estas? Ich wurde schon einsam hier allein. Gut, dass du hier
     bist! Dieses Portal l\xE4sst sich nur zu zweit \xF6ffnen. Ich will endlich zurueck
     zu meinen Bruedern."
+  voiceLine:
+  - {fileID: 8300000, guid: 5ba881f08d6f59944838ebe06b906cdc, type: 3}
   dialogueIndex: 0
 --- !u!114 &7683188884110925352
 MonoBehaviour:

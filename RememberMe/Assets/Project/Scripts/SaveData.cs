@@ -63,7 +63,8 @@ public class SaveData : MonoBehaviour
 
     private string CreateEntry(){
         string msg;
-        msg = "Choosen Level: " + data.level  + "\n";
+        msg = "Player ID : " + data.uniqueId + "\n" ;
+        msg += "Choosen Level: " + data.level  + "\n";
         msg += "Puzzles solved: " + data.puzzlesSolved + "\n";
         msg += "Time left: " + Mathf.FloorToInt(data.time/60) + " Minutes , " + Mathf.FloorToInt(data.time%60) + " Seconds \n";
         msg += "Maze : " + data.mazeWon + "\n";
@@ -73,6 +74,20 @@ public class SaveData : MonoBehaviour
         msg += "Chess : " + data.chess + "\n";
         msg += "Bell Puzzle : " + data.bell + "\n";
         msg += "Alpaca Puzzle : " + data.alpaca + "\n";
+        msg += "Shooting Range \n";
+        msg += "total shots : " + data.totalShots + "\n";
+        msg += "shooting tries : " + data.shootingTries + "\n";
+        msg += "missed shots : " + data.missedShots + "\n";
+        msg += "Piano \n";
+        msg += "piano tries : " + data.pianoTries + "\n";
+        msg += "Piano Failed Due Time : " + data.PianoFailedDueTime + "\n";
+        msg += "Piano Failed Due Error : " + data.PianoFailedDueError + "\n";
+        msg += "Maze \n";
+        msg += "maze tries : " + data.mazeTries + "\n";
+        msg += "maze remained time : " + Mathf.FloorToInt(data.mazeRemainedTime/60) + " Minutes , " + Mathf.FloorToInt(data.mazeRemainedTime%60) + " Seconds \n";
+        msg += "Chess \n";
+        msg += "Chess Reset Amount : " + data.ChessResetAmount + "\n";
+        msg += "Voice Lines Found : " + data.VoiceLinesFound  + " /43 \n";
         
 
         return msg;

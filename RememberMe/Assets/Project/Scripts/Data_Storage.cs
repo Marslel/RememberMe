@@ -24,6 +24,31 @@ public class Data_Storage : ScriptableObject {
      [SerializeField] public float time;
      [SerializeField] public float mazetime;
      [SerializeField] public int level;
+
+
+    [SerializeField] public int totalShots;
+    [SerializeField] public int shootingTries;
+    [SerializeField] public int missedShots;
+
+
+    [SerializeField] public int pianoTries;
+    [SerializeField] public int PianoFailedDueTime;
+    [SerializeField] public int PianoFailedDueError;
+
+
+    [SerializeField] public int mazeTries;
+
+    [SerializeField] public float mazeRemainedTime;
+
+    [SerializeField] public int ChessResetAmount;
+
+
+    [SerializeField] public int VoiceLinesFound;
+
+
+    [SerializeField] public int uniqueId;
+
+
      public List<GameObject> MazePrefabs;
      public int MazepPrefabIndex;
 

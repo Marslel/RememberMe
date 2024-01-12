@@ -760,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 3
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2581713885471476683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,6 +1140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 1
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2460914183167561171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1844,6 +1846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 0
   currPlayerColor: 0
+  data: {fileID: 0}
 --- !u!114 &6644404049761278160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 7
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2102633298455672575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3112,6 +3116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 14
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &7293700378762932675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3715,6 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 3
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &581149281961915969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4384,6 +4390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 13
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &3214264273921525276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4833,6 +4840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 8
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1280227778495068610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4994,6 +5002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 1
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &625350845775109831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,6 +5370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 11
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &6174514818931665803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5866,6 +5876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 11
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1910565450172691810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7247,6 +7258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 5
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2542615482968787834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8163,6 +8175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 14
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &3207500150453242612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8764,6 +8777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 4
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &9079668848338458293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9269,6 +9283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 6
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &3727429135192586415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9742,6 +9757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 10
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &7043747471217285050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10011,6 +10027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 9
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &9349261941947096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10883,6 +10900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 12
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1532991069146246190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11336,6 +11354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 5
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2938956758099182516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12057,6 +12076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 8
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1487968883522188747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12424,6 +12444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 2
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &5641242836277727028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13349,6 +13370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 2
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &1874843463549982329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13670,6 +13692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 15
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &5027879815989111452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14109,6 +14132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 7
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2241582425949526433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14788,6 +14812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 9
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &5771484485785111143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15385,6 +15410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 10
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &3427197467076985689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15710,6 +15736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 13
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &2555722345861601415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16323,6 +16350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 6
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &6273847211774877556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17555,6 +17583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 4
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &3124700427809885153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18532,6 +18561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 15
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &5068287769139209985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18909,6 +18939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 0
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &4255656067477906473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19532,6 +19563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 12
   currPlayerColor: 1
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &4977454230805511961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19823,6 +19855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currPlayer: 0
   currPlayerColor: 0
+  data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
 --- !u!114 &4974368817044766015
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,8 @@ namespace Valve.VR.InteractionSystem
 
         public StartGame startGame;
 
+        public Data_Storage dataStorage;
+
         public LineRenderer bulletPathRenderer;
         public int pathResolution = 10; // Anzahl der Punkte in der Flugbahnvisualisierung
 
@@ -37,6 +39,7 @@ namespace Valve.VR.InteractionSystem
             if (canSpawn && (Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight)) && shootBullets < maxBullets && startGame.hasTriggered)
             {
                 Spawn();
+                dataStorage.totalShots++;
                 StartCoroutine(StartCooldown());
                 shootBullets++;
             }

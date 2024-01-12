@@ -24,6 +24,18 @@ public class Reset : MonoBehaviour
         data_Storage.MazePrefabs.Clear();
         data_Storage.MazepPrefabIndex = 0;
         data_Storage.alpacaTreat = false;
+        data_Storage.totalShots = 0;
+        data_Storage.shootingTries = 0;
+        data_Storage.missedShots = 0;
+        data_Storage.pianoTries = 0;
+        data_Storage.PianoFailedDueTime = 0;
+        data_Storage.PianoFailedDueError = 0;
+        data_Storage.mazeTries = 0;
+        data_Storage.mazeRemainedTime = 0;
+        data_Storage.ChessResetAmount = 0;
+        data_Storage.VoiceLinesFound = 0;
+        
+
         
     }
 

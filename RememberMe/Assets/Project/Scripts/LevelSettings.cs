@@ -28,21 +28,21 @@ public class LevelSettings : MonoBehaviour
         data_Storage.setLevel(1);
         //int random = rnd.Next(2);
         data_Storage.setMazePrefabIndex(0);
-        data_Storage.time = 3600;
-        data_Storage.mazetime = 1000;
+        data_Storage.time = 2700;
+        data_Storage.mazetime = 900;
     }
 
         public void setLevel2(){
         data_Storage.setLevel(2);
         data_Storage.setMazePrefabIndex(1);
-        data_Storage.time = 1900;
-        data_Storage.mazetime = 800;
+        data_Storage.time = 1800;
+        data_Storage.mazetime = 720;
     }
 
         public void setLevel3(){
         data_Storage.setLevel(3);
         data_Storage.setMazePrefabIndex(1);
-        data_Storage.time = 1500;
+        data_Storage.time = 1200;
         data_Storage.mazetime = 600;
     }
 }

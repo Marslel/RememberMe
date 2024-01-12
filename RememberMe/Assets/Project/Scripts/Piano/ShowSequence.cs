@@ -35,6 +35,10 @@ public class ShowSequence : MonoBehaviour
     private Collectables collectables;
     private bool explanationNeeded = true;
 
+    public GameObject dialog;
+
+    private bool dummyTimeFail = false;
+
     void Start ()   
 	{
 		GetComponent<AudioSource> ().playOnAwake = false;
@@ -67,6 +71,7 @@ public class ShowSequence : MonoBehaviour
                 }
                 else
                 {
+                    dummyTimeFail = true;
                     rightKey = false;
                     IsPlayerTrying = false;
                     for (int i = 1; i < 53; i++)
@@ -88,6 +93,7 @@ public class ShowSequence : MonoBehaviour
                             ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.green);
                             timer = System.DateTime.Now;
                         }
+                        dialog.GetComponent<PianoNPCInteractable>().dialogueIndex++;
                     }
                     else if(keyCount >= numberOfKeys && rightKey.Value == true)
                     {
@@ -118,6 +124,12 @@ public class ShowSequence : MonoBehaviour
                         else
                         {
                             IsSequenceGoing = false;
+                            if(dummyTimeFail){
+                                data.PianoFailedDueTime++;
+                            } else {
+                                data.PianoFailedDueError++;
+                            }
+                            dummyTimeFail = false;
                         }
                     }
                 }
@@ -143,6 +155,7 @@ public class ShowSequence : MonoBehaviour
         IsPlayerTrying = true;
         rightKey = null;
         keyCount = 0;
+        dummyTimeFail = false;
 
         GameObject position = GameObject.Find("Teleport_Position_Piano");
         GameObject player = null;// GameObject.FindGameObjectWithTag("test");
@@ -160,6 +173,8 @@ public class ShowSequence : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }else{
             Debug.Log("in VR Teleport");
+            data.pianoTries++;
+
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");

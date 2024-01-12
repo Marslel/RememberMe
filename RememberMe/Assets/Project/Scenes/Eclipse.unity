@@ -929,6 +929,7 @@ MonoBehaviour:
   timeText: {fileID: 1691353994}
   cristobal: {fileID: 0}
   don: {fileID: 0}
+  voiceLine: []
 --- !u!114 &108885710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,6 +966,7 @@ MonoBehaviour:
   timeText: {fileID: 1470288094}
   sceneName: StartScene
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  voiceLine: {fileID: 0}
   sky: {fileID: 108885710}
 --- !u!4 &108885712 stripped
 Transform:
@@ -1751,6 +1753,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3178757265254480503, guid: 0d373ce7553e08c49a9f039dc1506167, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
     - target: {fileID: 3178757265254480503, guid: 0d373ce7553e08c49a9f039dc1506167, type: 3}
       propertyPath: dialogue.Array.size
       value: 1
@@ -50440,6 +50446,10 @@ PrefabInstance:
       propertyPath: dm
       value: 
       objectReference: {fileID: 117101911}
+    - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
     - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: interactorTransform
       value: 

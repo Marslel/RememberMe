@@ -20,24 +20,23 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentScene = SceneManager.GetActiveScene();
+
         
     }
 
     private void OnTriggerEnter(Collider other){
-        Debug.Log("irgendways gefunden auf zum Maze :" + other.tag + other.name);
+
         if(other.tag == "Head" && data_Storage.mazeWon == false){
 
-            Debug.Log("Player gefunden auf zum Maze");
                 SceneManager.LoadScene(sceneName);
             
         }else if(other.tag == "Head" && currentScene.name == "Maze"){
-            Debug.Log("Player gefunden , raus aus dem Maze");
                 SceneManager.LoadScene(sceneName);
         }
     }
