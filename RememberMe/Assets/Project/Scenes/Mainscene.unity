@@ -2399,6 +2399,7 @@ MonoBehaviour:
   main:
     m_Handle: 0
   data_Storage: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
+  time: {fileID: 0}
 --- !u!4 &192746050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446164, guid: 946a4974b6ec78f4fbfdc53aa2363b28, type: 3}
@@ -12774,11 +12775,11 @@ PrefabInstance:
     - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: voiceLine.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 809438c214d33a1418ceec205d4869a0, type: 3}
+      objectReference: {fileID: 8300000, guid: c37dfa004d0b296478cd9cbcd74ee86a, type: 3}
     - target: {fileID: 6342608357434611706, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: voiceLine.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 809438c214d33a1418ceec205d4869a0, type: 3}
+      objectReference: {fileID: 8300000, guid: ea7b58a68ec71ff44992a448161e0283, type: 3}
     - target: {fileID: 6355211474623609665, guid: 68e2cbf3548815d40919b68c86dfbd93, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.03630652
