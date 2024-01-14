@@ -15,7 +15,10 @@ public class WinTheGame : MonoBehaviour
 
     public SpawnBullet spawnBullet;
 
-    public EndLine endLine;
+    public EndLine endLineWin;
+
+    public EndLine endLineLoose;
+
 
     void Start()
     {
@@ -28,19 +31,20 @@ public class WinTheGame : MonoBehaviour
     public void collectPoints(){
         points++;
         Debug.Log("Add Points: " + points);
-        if(enoughPoints(points)){
-            Debug.Log("Win Game");
-            data.updateShootingRangeWon(true);
-            data.updatePuzzlesSolved(1);
-            endLine.PlayVoiceLine();
-            data.missedShots = data.missedShots + spawnBullet.maxBullets - spawnBullet.shootBullets;
-        }else if (spawnBullet.shootBullets == spawnBullet.maxBullets){
-            data.shootingTries++;
-            data.missedShots = data.missedShots + spawnBullet.maxBullets - spawnBullet.shootBullets;
-            points = 0;
-        }
     }
 
+    public void playerWins(){
+        Debug.Log("Win Game");
+        data.updateShootingRangeWon(true);
+        data.updatePuzzlesSolved(1);
+        endLineWin.PlayVoiceLine();
+    }
+
+    public void playerLoose(){
+        Debug.Log("Loose Game");
+        endLineLoose.PlayVoiceLine();
+        points = 0;
+    }
     public bool enoughPoints(int points){
         switch (level)
         {

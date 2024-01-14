@@ -23,31 +23,59 @@ namespace Valve.VR.InteractionSystem
         public Data_Storage dataStorage;
 
         public LineRenderer bulletPathRenderer;
+
+        public WinTheGame win;
+
+        public bool isWinning = false;
         public int pathResolution = 10; // Anzahl der Punkte in der Flugbahnvisualisierung
+
+        private int temp;
+
+        private bool firstTry = true;
 
         void Start()
         {
             handTyperight = SteamVR_Input_Sources.RightHand;
             handTypeleft = SteamVR_Input_Sources.LeftHand;
-
+            dataStorage.shootingTries++;
             bulletPathRenderer.positionCount = pathResolution;
             bulletPathRenderer.enabled = true;
         }
 
         void Update()
         {
-            if (canSpawn && (Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight)) && shootBullets < maxBullets && startGame.hasTriggered)
+            if (win.enoughPoints(win.points) && !isWinning){  
+                    win.playerWins();
+                    isWinning = true;
+                    if(temp == win.points){
+                        dataStorage.missedShots++;
+                    }
+            }
+            
+            if (canSpawn && (Input.GetKeyDown(KeyCode.Space) || gunTrigger.GetStateDown(handTypeleft) || gunTrigger.GetStateDown(handTyperight)) && shootBullets < maxBullets && startGame.hasTriggered && !isWinning)
             {
+                if(firstTry){
+                    firstTry = false;
+                }else{
+                    if(temp == win.points){
+                        dataStorage.missedShots++;
+                    }
+                }
+                temp = win.points;
                 Spawn();
                 dataStorage.totalShots++;
                 StartCoroutine(StartCooldown());
+                
                 shootBullets++;
-            }
-
-            if (shootBullets == maxBullets)
-            {
+            }else if (shootBullets == maxBullets && !isWinning){
+                if(temp == win.points){
+                    dataStorage.missedShots++;
+                }
                 startGame.DeleteList();
+                dataStorage.shootingTries++;
                 shootBullets = 0;
+                win.playerLoose();
+                firstTry = true;
             }
         }
 

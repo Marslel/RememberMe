@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efc4b77435e1ee4eb199644fe28dd61, type: 3}
   m_Name: Data_storage
   m_EditorClassIdentifier: 
-  puzzlesSolved: 0
+  puzzlesSolved: 7
   mazeWon: 0
-  shootingRangeWon: 0
+  shootingRangeWon: 1
   pianoWon: 0
   balloon: 0
   chess: 0
   bell: 0
   alpaca: 0
   alpacaTreat: 0
-  time: 0
+  time: 5398.2637
   mazetime: 720
   level: 0
   totalShots: 0
