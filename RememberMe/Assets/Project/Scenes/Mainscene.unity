@@ -26199,7 +26199,7 @@ MonoBehaviour:
   - Amigoo, mein Herz. So wie diese eine Seniorita.
   voiceLine:
   - {fileID: 8300000, guid: a658d97548a3127438d6566336f7b325, type: 3}
-  - {fileID: 8300000, guid: 62ab9e309e6427b40bcab7fe3cdec8a4, type: 3}
+  - {fileID: 8300000, guid: 5836b907fce51ff49a3fd45d4d4978c0, type: 3}
   dialogueIndex: 0
   test: 9000
   data: {fileID: 11400000, guid: ad0a747f292567b48b4511544841a35a, type: 2}
