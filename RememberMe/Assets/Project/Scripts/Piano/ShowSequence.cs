@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowSequence : MonoBehaviour
 {
-	public AudioClip saw[];    // Add your Audi Clip Here;
+	public AudioClip[] saw;    // Add your Audi Clip Here;
 
     public int SHOWTIME = 5000;
 
@@ -164,7 +164,6 @@ public class ShowSequence : MonoBehaviour
 
         GameObject position = GameObject.Find("Teleport_Position_Piano");
         GameObject player = null;// GameObject.FindGameObjectWithTag("test");
-        explanationNeeded = true;
         if(player != null)
         {
             Debug.Log(player.name);
@@ -175,7 +174,9 @@ public class ShowSequence : MonoBehaviour
             //player.transform.position = new Vector3(0, 1, 6);
             GameObject camHolder = GameObject.Find("CameraHolder"); 
             camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
-            GetComponent<AudioSource>().Play();
+            if(explanationNeeded){
+                GetComponent<AudioSource>().Play();
+            }
         }else{
             Debug.Log("in VR Teleport");
             data.pianoTries++;
@@ -183,7 +184,9 @@ public class ShowSequence : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");
-            GetComponent<AudioSource>().Play();
+            if(explanationNeeded){
+                GetComponent<AudioSource>().Play();
+            }
             perspective.transform.eulerAngles = new Vector3(45, 142, 0);
         }
     }
