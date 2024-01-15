@@ -9394,6 +9394,22 @@ PrefabInstance:
       propertyPath: collectables
       value: 
       objectReference: {fileID: 1103035753}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: saw.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: saw.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26c8c7d3fe04d7f429a6497bc86e1550, type: 3}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: saw.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e03774054e277444d9df7c85bc194f5e, type: 3}
+    - target: {fileID: 997072498602241383, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
+      propertyPath: saw.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 29c98e060aabaab4ea2a5a8fd140f8ac, type: 3}
     - target: {fileID: 1100234148061056002, guid: 58ead84e7f2f3fb4698ba8083195fd17, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
