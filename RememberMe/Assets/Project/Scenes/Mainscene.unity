@@ -10736,6 +10736,7 @@ MonoBehaviour:
   cristobal: {fileID: 2683455877874786234}
   don: {fileID: 1224880376}
   voiceLine:
+  - {fileID: 8300000, guid: 918548be0ce6f70489cf853d506e8ad1, type: 3}
   - {fileID: 8300000, guid: 006c6db50a7cfb04d95bc21a00d5b8b7, type: 3}
   - {fileID: 8300000, guid: 87bc8847fb8339e40b2e144081be40f2, type: 3}
 --- !u!114 &1103035754
@@ -10799,8 +10800,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 918548be0ce6f70489cf853d506e8ad1, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_PlayOnAwake: 1
+  m_Volume: 0.701
   m_Pitch: 1
   Loop: 0
   Mute: 0

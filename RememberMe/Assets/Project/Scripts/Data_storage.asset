@@ -21,22 +21,22 @@ MonoBehaviour:
   bell: 0
   alpaca: 0
   alpacaTreat: 0
-  time: 1723.029
-  mazetime: 720
-  level: 2
+  time: 0
+  mazetime: 900
+  level: 0
   totalShots: 0
   shootingTries: 0
   missedShots: 0
-  pianoTries: 30
-  PianoFailedDueTime: 1
+  pianoTries: 0
+  PianoFailedDueTime: 0
   PianoFailedDueError: 0
   mazeTries: 0
   mazeRemainedTime: 0
   ChessResetAmount: 0
   VoiceLinesFound: 0
-  uniqueId: 5
+  uniqueId: 6
   MazePrefabs: []
-  MazepPrefabIndex: 1
+  MazepPrefabIndex: 0
   ShootingrangePrefabs: []
   ShootingrangepPrefabIndex: 0
   PianoPrefabs: []

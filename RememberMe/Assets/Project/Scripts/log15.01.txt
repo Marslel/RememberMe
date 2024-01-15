@@ -1,0 +1,226 @@
+
+Log Entry : 18:54:19 Freitag, 12. Januar 2024
+  :
+Choosen Level: 2
+Puzzles solved: 7
+Time left: 11 Minutes , 26 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+
+-------------------------------
+
+Log Entry : 19:29:42 Freitag, 12. Januar 2024
+  :
+Player ID : 0
+Choosen Level: 3
+Puzzles solved: 7
+Time left: 0 Minutes , 51 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 14
+shooting tries : 0
+missed shots : 6
+Piano 
+piano tries : 1
+Piano Failed Due Time : 0
+Piano Failed Due Error : 0
+Maze 
+maze tries : 1
+maze remained time : 9 Minutes , 14 Seconds 
+Chess 
+Chess Reset Amount : 1
+Voice Lines Found : 11 /43 
+
+-------------------------------
+
+Log Entry : 11:10:13 Montag, 15. Januar 2024
+  :
+Player ID : 1
+Choosen Level: 1
+Puzzles solved: 5
+Time left: 19 Minutes , 23 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : False
+Chess : True
+Bell Puzzle : False
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 7
+shooting tries : 1
+missed shots : 5
+Piano 
+piano tries : 4
+Piano Failed Due Time : 0
+Piano Failed Due Error : 2
+Maze 
+maze tries : 1
+maze remained time : 9 Minutes , 52 Seconds 
+Chess 
+Chess Reset Amount : 1
+Voice Lines Found : 31 /43 
+
+-------------------------------
+
+Log Entry : 12:38:25 Montag, 15. Januar 2024
+  :
+Player ID : 2
+Choosen Level: 2
+Puzzles solved: 6
+Time left: 0 Minutes , 0 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : False
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 6
+shooting tries : 1
+missed shots : 2
+Piano 
+piano tries : 1
+Piano Failed Due Time : 0
+Piano Failed Due Error : 0
+Maze 
+maze tries : 1
+maze remained time : 1 Minutes , 5 Seconds 
+Chess 
+Chess Reset Amount : 0
+Voice Lines Found : 28 /43 
+
+-------------------------------
+
+Log Entry : 13:29:27 Montag, 15. Januar 2024
+  :
+Player ID : 3
+Choosen Level: 2
+Puzzles solved: 7
+Time left: 0 Minutes , 48 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 8
+shooting tries : 1
+missed shots : 3
+Piano 
+piano tries : 3
+Piano Failed Due Time : 1
+Piano Failed Due Error : 1
+Maze 
+maze tries : 1
+maze remained time : 4 Minutes , 53 Seconds 
+Chess 
+Chess Reset Amount : 3
+Voice Lines Found : 25 /43 
+
+-------------------------------
+
+Log Entry : 13:55:25 Montag, 15. Januar 2024
+  :
+Player ID : 4
+Choosen Level: 3
+Puzzles solved: 5
+Time left: 4 Minutes , 3 Seconds 
+Maze : True
+Shooting Range : False
+Piano : True
+Balloon Puzzle : False
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 41
+shooting tries : 5
+missed shots : 25
+Piano 
+piano tries : 2
+Piano Failed Due Time : 0
+Piano Failed Due Error : 1
+Maze 
+maze tries : 1
+maze remained time : 5 Minutes , 14 Seconds 
+Chess 
+Chess Reset Amount : 6
+Voice Lines Found : 14 /43 
+
+-------------------------------
+
+Log Entry : 17:05:31 Montag, 15. Januar 2024
+  :
+Player ID : 5
+Choosen Level: 1
+Puzzles solved: 7
+Time left: 21 Minutes , 21 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 3
+shooting tries : 1
+missed shots : 1
+Piano 
+piano tries : 2
+Piano Failed Due Time : 0
+Piano Failed Due Error : 0
+Maze 
+maze tries : 1
+maze remained time : 13 Minutes , 12 Seconds 
+Chess 
+Chess Reset Amount : 22
+Voice Lines Found : 34 /43 
+
+-------------------------------
+
+
+Log Entry : 18:55:18 Montag, 15. Januar 2024
+  :
+Player ID : 6
+Choosen Level: 2
+Puzzles solved: 7
+Time left: 7 Minutes , 39 Seconds 
+Maze : True
+Shooting Range : True
+Piano : True
+Balloon Puzzle : True
+Chess : True
+Bell Puzzle : True
+Alpaca Puzzle : True
+Shooting Range 
+total shots : 58
+shooting tries : 7
+missed shots : 44
+Piano 
+piano tries : 11
+Piano Failed Due Time : 2
+Piano Failed Due Error : 2
+Maze 
+maze tries : 3
+maze remained time : 5 Minutes , 17 Seconds 
+Chess 
+Chess Reset Amount : 0
+Voice Lines Found : 31 /43 
+
+-------------------------------

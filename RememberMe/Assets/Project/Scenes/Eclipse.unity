@@ -166,6 +166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 787956866, guid: 00269f8a354af4149b97e71280eb8776, type: 3}
+      propertyPath: m_Volume
+      value: 0.342
+      objectReference: {fileID: 0}
     - target: {fileID: 1865603112017772757, guid: 00269f8a354af4149b97e71280eb8776, type: 3}
       propertyPath: m_Name
       value: ToonTornadoWithWindEfc
@@ -7777,6 +7781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1520758548, guid: 8e329fe21c043a1459b57cfea18d3f50, type: 3}
+      propertyPath: m_Volume
+      value: 0.232
+      objectReference: {fileID: 0}
     - target: {fileID: 1865603112017772757, guid: 8e329fe21c043a1459b57cfea18d3f50, type: 3}
       propertyPath: m_Name
       value: TornadoWithWindEfc
@@ -43550,6 +43558,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 787956866, guid: 8dcfe46022b769a45b0b2b54898736af, type: 3}
+      propertyPath: m_Volume
+      value: 0.239
+      objectReference: {fileID: 0}
     - target: {fileID: 1865603112017772757, guid: 8dcfe46022b769a45b0b2b54898736af, type: 3}
       propertyPath: m_Name
       value: ToonTornadoEfc
@@ -43778,6 +43790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1520758548, guid: 0f059e5d480c814408dc615079587fad, type: 3}
+      propertyPath: m_Volume
+      value: 0.305
+      objectReference: {fileID: 0}
     - target: {fileID: 1865603112017772757, guid: 0f059e5d480c814408dc615079587fad, type: 3}
       propertyPath: m_Name
       value: TornadoEfc

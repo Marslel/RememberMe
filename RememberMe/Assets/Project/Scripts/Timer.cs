@@ -86,6 +86,7 @@ public class Timer : MonoBehaviour
                 
                 // play audio
                 // "Hermano du hast es leider nicht geschaft unser Dorf zu retten..."
+                audioSource.clip = voiceLine;
                 audioSource.Play();
                 Invoke ("changeToEclipse", 7);
                

@@ -128,19 +128,24 @@ public class Collectables : MonoBehaviour
         data_Storage.puzzlesSolved ++;
         pablo.dialogueIndex ++;
 
-        audio.Play();
+        audioSource.clip = voiceLine[0];
+        //audio.Play();
+        audioSource.Play();
 
         timeText.text = countPiece.ToString();
 
         if(data_Storage.level == 1 && data_Storage.puzzlesSolved == 5){
             // play audio 
             //"Super du hast die benoetigte Anzahl an Phototeilen gefunden, wenn du fruehzeitig aufhoeren willst geh zu Pablo. Du kannst aber natuerlich auch noch die zwei uebrigen finden Muchacho."
+            audioSource.clip = voiceLine[1];
             audioSource.Play();
+            audioSource.clip = voiceLine[0];
+
         } else if(data_Storage.puzzlesSolved == 7){
             // play audio
             //"Bravo du hast alle Teile des Photos gefunden geh zurueck zu Pablo und die Party kann beginnen."
 
-            audioSource.clip = voiceLine[1];
+            audioSource.clip = voiceLine[2];
             audioSource.Play();
 
             time.GetComponent<Timer>().stopTimer();
@@ -150,7 +155,8 @@ public class Collectables : MonoBehaviour
 
     public void collectTreat(){
         treatCollected = true;
-        audio.Play();
+        //audio.Play();
+        audioSource.Play();
         
     }
 
