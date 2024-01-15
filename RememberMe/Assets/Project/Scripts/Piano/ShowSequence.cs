@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowSequence : MonoBehaviour
 {
-	public AudioClip saw;    // Add your Audi Clip Here;
+	public AudioClip[] saw;    // Add your Audi Clip Here;
 
     public int SHOWTIME = 5000;
 
@@ -42,7 +42,7 @@ public class ShowSequence : MonoBehaviour
     void Start ()   
 	{
 		GetComponent<AudioSource> ().playOnAwake = false;
-		GetComponent<AudioSource> ().clip = saw;
+		GetComponent<AudioSource> ().clip = saw[0];
     }    	
 
     void Update()
@@ -60,13 +60,13 @@ public class ShowSequence : MonoBehaviour
             }
             else if (IsPlayerTrying)
             {
-                ChangeColor(currentKey, Color.blue);
 
                 if(System.DateTime.Now < timer.AddMilliseconds(inputTime))
                 {
                     if(rightKey.HasValue)
                     {
                         IsPlayerTrying = false;
+                        return;
                     }
                 }
                 else
@@ -79,7 +79,9 @@ public class ShowSequence : MonoBehaviour
                         ChangeColor(GameObject.Find("props_148key" + i.ToString()), Color.red);
                     }
                     timer = System.DateTime.Now;
+                    return;
                 }
+                ChangeColor(currentKey, Color.blue);
             }
             else
             {
@@ -126,9 +128,12 @@ public class ShowSequence : MonoBehaviour
                             IsSequenceGoing = false;
                             if(dummyTimeFail){
                                 data.PianoFailedDueTime++;
+		                        GetComponent<AudioSource> ().clip = saw[1];
                             } else {
                                 data.PianoFailedDueError++;
+		                        GetComponent<AudioSource> ().clip = saw[2];
                             }
+                            GetComponent<AudioSource> ().Play();
                             dummyTimeFail = false;
                         }
                     }
@@ -159,7 +164,6 @@ public class ShowSequence : MonoBehaviour
 
         GameObject position = GameObject.Find("Teleport_Position_Piano");
         GameObject player = null;// GameObject.FindGameObjectWithTag("test");
-        explanationNeeded = true;
         if(player != null)
         {
             Debug.Log(player.name);
@@ -170,7 +174,9 @@ public class ShowSequence : MonoBehaviour
             //player.transform.position = new Vector3(0, 1, 6);
             GameObject camHolder = GameObject.Find("CameraHolder"); 
             camHolder.transform.position =  new Vector3(position.transform.position.x, position.transform.position.y - 1, position.transform.position.z - 6);
-            GetComponent<AudioSource>().Play();
+            if(explanationNeeded){
+                GetComponent<AudioSource>().Play();
+            }
         }else{
             Debug.Log("in VR Teleport");
             data.pianoTries++;
@@ -178,7 +184,9 @@ public class ShowSequence : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
             player.transform.position = new Vector3(position.transform.position.x, position.transform.position.y, position.transform.position.z);
             GameObject perspective = GameObject.Find("FallbackObjects");
-            GetComponent<AudioSource>().Play();
+            if(explanationNeeded){
+                GetComponent<AudioSource>().Play();
+            }
             perspective.transform.eulerAngles = new Vector3(45, 142, 0);
         }
     }
