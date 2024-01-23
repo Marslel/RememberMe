@@ -15,6 +15,8 @@ public class UpdateMazeLevel : MonoBehaviour
     [SerializeField]
     public Text timeText;
     int countPiece;
+    [SerializeField]
+    public Image map;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class UpdateMazeLevel : MonoBehaviour
             
             Instantiate(MazePrefabs[0], new Vector3(-39.52f, 0.0f, 16.55f), Quaternion.identity);
             npc.dialogueIndex = 1;
-            
+            map.enabled = false;
         }else if(data_Storage.level == 2 ){
             Instantiate(MazePrefabs[1], new Vector3(-51.01407f, -4.77844f, -5.782525f), Quaternion.identity);
             npc.dialogueIndex = 2;
