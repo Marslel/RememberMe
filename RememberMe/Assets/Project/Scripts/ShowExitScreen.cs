@@ -10,6 +10,8 @@ public class ShowExitScreen : MonoBehaviour
     private bool menuVisible;
     public GameObject exitText;
     public GameObject exitButton;
+    public GameObject map;
+    public GameObject exitText2;
     GameObject player;
 
     public Camera mainCamera;
@@ -41,9 +43,13 @@ public class ShowExitScreen : MonoBehaviour
 
                 exitText.SetActive(true);
                 exitButton.SetActive(true);
+                exitText2.SetActive(true);
+                map.SetActive(true);
             }else{
                 exitText.SetActive(false);
                 exitButton.SetActive(false);
+                exitText2.SetActive(false);
+                map.SetActive(false);
             }    
         }
     }

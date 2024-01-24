@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11740,6 +11740,8 @@ MonoBehaviour:
     needsReinit: 0
   exitText: {fileID: 137600084}
   exitButton: {fileID: 1945362424}
+  map: {fileID: 685833485}
+  exitText2: {fileID: 2089670859}
   mainCamera: {fileID: 309169574202981960}
   menuScreen: {fileID: 986317905}
 --- !u!1001 &988531755
@@ -19593,7 +19595,7 @@ MonoBehaviour:
   - {fileID: 4893171751082896111, guid: 53be17d79fe015f49a2fcd73871294fa, type: 3}
   npc: {fileID: 971834629}
   timeText: {fileID: 8732959842013856869}
-  map: {fileID: 0}
+  map: {fileID: 685833485}
 --- !u!1001 &1619077661
 PrefabInstance:
   m_ObjectHideFlags: 0
