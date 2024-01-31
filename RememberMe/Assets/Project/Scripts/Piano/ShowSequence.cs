@@ -153,6 +153,25 @@ public class ShowSequence : MonoBehaviour
             return;
         }
         Debug.Log("Collision");
+        
+
+        if(data.level == 1){
+            SHOWTIME = 5000;
+            inputTime = 10000;
+            keyRange = 8;
+            numberOfKeys = 5; 
+        } else if (data.level == 2){
+            SHOWTIME = 3000;
+            inputTime = 7000;
+            keyRange = 15;
+            numberOfKeys = 15;
+        } else {
+            SHOWTIME = 3000;
+            inputTime = 5000;
+            keyRange = 26;
+            numberOfKeys = 20;
+        }
+        
         currentKey = GetRandomKey();
 
         timer = System.DateTime.Now;
